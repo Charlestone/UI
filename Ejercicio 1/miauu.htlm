@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Miau</title>
+	<link rel="stylesheet" type="text/css" href="../Ejercicio 1/style.css" />
+</head>
+<body>
+	<div id="web">
+		<div id="header">
+			<img src="../Ejercicio 1/img/miaulogo.png" alt="Logo de Miau">
+			<nav>
+				<a href="">Series</a>
+				<a href="">Peliculas</a>
+				<a href="">Otros</a>
+			</nav>
+			
+		</div>
+		<div id="pinfo">
+			
+		</div>
+		<div id="binfo">
+			
+		</div>
+		<div id="footer">
+			
+		</div>
+
+	</div>
+
+</body>
+</html>
