@@ -1,5 +1,6 @@
 body { /*se usa para referirse a etiquetas*/
 	background-image: url("../Ejercicio 1/img/geometry.png");
+	font-family: 'Dosis', sans-serif;
 }
 
 a {
@@ -15,9 +16,11 @@ a {
 	color: ; /*para el color del texto dentro de header*/
 }
 
+
+
 #footer {
 	clear: both; /*para que no haya partes flotantes de otros elementos encima*/
-	text-align: right; /*para alinear el texto*/
+	text-align: left; /*para alinear el texto*/
 }
 
 .algo { /*se usa el punto para referirse a elementos de una clase*/
