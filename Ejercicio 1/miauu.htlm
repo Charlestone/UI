@@ -3,12 +3,14 @@
 <head>
 	<title>Miau</title>
 	<link rel="stylesheet" type="text/css" href="../Ejercicio 1/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 </head>
 <body>
 	<div id="web">
 		<div id="header">
-			<img src="../Ejercicio 1/img/miaulogo.png" alt="Logo de Miau">
-			<nav>
+
+			<img id ="logo" src="../Ejercicio 1/img/miaulogo.png" alt="Logo de Miau">
+			<nav id="menu">
 				<a href="">Series</a>
 				<a href="">Peliculas</a>
 				<a href="">Otros</a>
@@ -16,13 +18,18 @@
 			
 		</div>
 		<div id="pinfo">
+			<hr />
 			
 		</div>
 		<div id="binfo">
-			
+			<hr />
 		</div>
 		<div id="footer">
-			
+			<a href="">Series</a>
+			&#124
+			<a href="">Peliculas</a>
+			&#124
+			<a href="">Otros</a>
 		</div>
 
 	</div>
