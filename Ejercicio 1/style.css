@@ -1,0 +1,29 @@
+body { /*se usa para referirse a etiquetas*/
+	background-image: url("../Ejercicio 1/img/geometry.png");
+}
+
+a {
+	text-decoration: none; /*para quitar el subrayado de los links*/
+	color: #4dd2ff;
+}
+#web { /*se usa la almohadilla para referirse a elementos con id*/
+
+}
+#header {
+	
+	background-color:  ; /*para el color de fondo*/
+	color: ; /*para el color del texto dentro de header*/
+}
+
+#footer {
+	clear: both; /*para que no haya partes flotantes de otros elementos encima*/
+	text-align: right; /*para alinear el texto*/
+}
+
+.algo { /*se usa el punto para referirse a elementos de una clase*/
+
+}
+
+#alga .marina { /*se usa lo anterior para referirse a una clase dentro de un elemento con un id*/
+
+}
