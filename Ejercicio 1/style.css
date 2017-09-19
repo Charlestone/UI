@@ -1,32 +1,44 @@
-body { /*se usa para referirse a etiquetas*/
-	background-image: url("../Ejercicio 1/img/geometry.png");
-	font-family: 'Dosis', sans-serif;
+@font-face {
+	font-family: Dosis;
+	src: url(../Ejercicio 1/font/Dosis/Dosis-Regular.ttf);
 }
+body { /*se usa para referirse a etiquetas*/
+	margin: 0;
+	background-image: url("../Ejercicio 1/img/bg/grey_wall.png")
+}
+
+header {
+	background-image: url("../Ejercicio 1/img/bg/geometry.png");
+	border: 3px solid #0f0f0a;
+	
+}
+
+header nav{
+	vertical-align: center;
+}
+
 
 a {
 	text-decoration: none; /*para quitar el subrayado de los links*/
 	color: #4dd2ff;
-}
-#web { /*se usa la almohadilla para referirse a elementos con id*/
-
-}
-#header {
-	
-	background-color:  ; /*para el color de fondo*/
-	color: ; /*para el color del texto dentro de header*/
+	font-family: 'Dosis', sans-serif;
 }
 
-
-
-#footer {
-	clear: both; /*para que no haya partes flotantes de otros elementos encima*/
-	text-align: left; /*para alinear el texto*/
+footer ul {
+	align-content: left;
+	vertical-align: center;
+	position: absolute;
+    margin: 0;
+    padding: 8px;
 }
 
-.algo { /*se usa el punto para referirse a elementos de una clase*/
+#logo {
 
+	margin-left: 18px;
 }
 
-#alga .marina { /*se usa lo anterior para referirse a una clase dentro de un elemento con un id*/
-
+#menu {
+	float: right;
+	margin: 18px ;
 }
+
