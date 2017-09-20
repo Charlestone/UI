@@ -2,6 +2,12 @@
 	font-family: Dosis;
 	src: url(../Ejercicio 1/font/Dosis/Dosis-Regular.ttf);
 }
+
+@font-face{
+	font-family: Dosis;
+	src: url(../Ejercicio 1/font/Dosis/Dosis-Bold.ttf);
+	font-weight: bold;
+}
 body { /*se usa para referirse a etiquetas*/
 	margin: 0;
 	background-image: url("../Ejercicio 1/img/bg/grey_wall.png")
@@ -35,13 +41,35 @@ footer ul {
 footer {
 	
 }
+
+#pinfo {
+	vertical-align: center;
+}
+#colizq1 {
+	width: 33%;
+}
+#colcen1 {
+	width: 33%;
+}
+#colder1 {
+	width: 33%;
+	float: right;
+}
 #logo {
 
 	margin-left: 18px;
 }
 
-#menu {
+
+#lista2 {
+	vertical-align: center;
 	float: right;
-	margin: 18px ;
+	margin: 30px;
 }
 
+#barra2{
+	clear: both;
+}
+#binfo {
+
+}
