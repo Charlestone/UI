@@ -44,16 +44,15 @@ footer {
 }
 
 #pinfo {
-	vertical-align: center;
 }
+
 #colizq1 {
-	width: 33%;
+	float: left;
 }
 #colcen1 {
-	width: 33%;
+	float: left;
 }
 #colder1 {
-	width: 33%;
 	float: right;
 }
 #logo {
