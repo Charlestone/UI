@@ -20,7 +20,8 @@ header {
 }
 
 header nav{
-	vertical-align: center;
+	float: right;
+	margin: 18px;
 }
 
 
