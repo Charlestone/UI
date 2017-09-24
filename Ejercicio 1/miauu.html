@@ -20,7 +20,7 @@
 		<div id="main">
 			<div id="pinfo">
 				<hr />
-				<h3 id="colizq1">Personal Information</h3>
+				<h3 id="colizq1">PERSONAL INFORMATION</h3>
 				<div id="colcen1">
 					<ul id="lista1">
 					<form id="name">
@@ -42,7 +42,7 @@
 					<form id="e-mail">
 						e-mail<br>
 						<input type="email" name="email">
-					</form><br
+					</form><br>
 					language<br>
 					<select id="language">
 						<option value="español">espa&ntilde;ol</option>
@@ -55,14 +55,40 @@
 			</div>
 			<div id="binfo">
 				<hr id="barra2" />
-				<h3 id="colizq2">Billing Information</h3>
+				<h3 id="colizq2">BILLING INFORMATION</h3>
+				<div id="colder2">
+					<ul>
+						<form>
+							Address<br>
+							<input type="text" name="address">
+						</form><br>
+						Payment method<br>
+						<select>
+							<option value="paypal">PayPal</option>
+							<option value="transferencia">Transferencia bancaria</option>
+							<option value="tarjeta">Tarjeta</option>
+						</select>
+					</ul>
+					<form class="junto">
+						Number<br>
+						<input type="number" name="number" max="9999999999999999">
+					</form>
+					<form class="junto">
+						Valid Thru<br>
+						<input type="month" name="valid">
+					</form>
+					<form class="junto">
+						Code<br>
+						<input type="number" name="code" max="999">
+					</form>
+				</div>
 			</div>
 		</div>
 		<footer>
 			<ul>
-				<a href=""><img src="../Ejercicio 1/img/fb.png" alt="Facebook"></a>
+				<a href=""><img id="facebook" src="../Ejercicio 1/img/fb.png" alt="Facebook"></a>
 				&#124
-				<a href=""><img src="../Ejercicio 1/img/twitter.png" alt="Twitter"></a>
+				<a href=""><img id="twitter" src="../Ejercicio 1/img/twitter.png" alt="Twitter"></a>
 				&#124
 				<a href="">Otros</a>
 			</ul>
