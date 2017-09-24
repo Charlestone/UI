@@ -37,29 +37,44 @@ footer ul {
 	position: absolute;
     margin: 0;
     padding: 8px;
+    color: #4dd2ff;
+}
+
+ul {
+	padding: 0;
 }
 
 footer {
-	
+	border: 3px solid #0f0f0a;	
+	clear: both;
+	position: relative;
+	bottom: 0;
 }
 
-#pinfo {
+.junto {
+	display: inline;
+}
+#pinfo, #binfo{
+	color: #cccccc;
 }
 
 #colizq1 {
 	float: left;
+	width: 33%;
+	
 }
 #colcen1 {
 	float: left;
+	width: 33%;
 }
 #colder1 {
 	float: right;
+	width: 33%;
 }
-#logo {
 
+#logo {
 	margin-left: 18px;
 }
-
 
 #lista2 {
 	vertical-align: center;
@@ -70,6 +85,17 @@ footer {
 #barra2{
 	clear: both;
 }
-#binfo {
 
+#colder2 {
+	float: left;
+}
+#colizq2 {
+	float: left;
+	width: 33%;
+}
+#twitter {
+	overflow: auto;
+}
+#facebook {
+	overflow: auto;
 }
