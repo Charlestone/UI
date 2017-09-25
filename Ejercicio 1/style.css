@@ -10,7 +10,8 @@
 }
 body { /*se usa para referirse a etiquetas*/
 	margin: 0;
-	background-image: url("../Ejercicio 1/img/bg/negro.png")
+	background-image: url("../Ejercicio 1/img/bg/negro.png");
+
 }
 
 header {
@@ -52,11 +53,16 @@ footer {
 	height: 34px;
 }
 
+h3 {
+	padding-left: 10px;
+}
+
 .junto {
 	display: inline;
 }
 #pinfo, #binfo{
 	color: #cccccc;
+	height: 210px;
 }
 
 #colizq1 {
@@ -71,6 +77,7 @@ footer {
 #colder1 {
 	float: right;
 	width: 33%;
+	align-content: center;
 }
 
 #logo {
@@ -89,14 +96,38 @@ footer {
 
 #colder2 {
 	float: left;
+	width: 45%; 
 }
+
 #colizq2 {
 	float: left;
 	width: 33%;
 }
+
 #twitter {
 	overflow: auto;
 }
+
 #facebook {
 	overflow: auto;
+}
+
+#number {
+	width:50%; 
+}
+
+#valid {
+	width: 30%;
+}
+
+#code {
+	width: 20%;
+}
+
+#lista2 {
+	width: 100%;
+	
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 16px;
 }
