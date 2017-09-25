@@ -1,17 +1,17 @@
 @font-face {
-	font-family: Dosis;
-	src: url(../Ejercicio 1/font/Dosis/Dosis-Regular.ttf);
+	font-family: PTSans;
+	src: url(../Ejercicio 1/font/PT_Sans/PT_Sans-Web-Regular.ttf);
 }
 
 @font-face{
-	font-family: Dosis;
-	src: url(../Ejercicio 1/font/Dosis/Dosis-Bold.ttf);
+	font-family: PTSans;
+	src: url(../Ejercicio 1/font/PT_Sans/PT_Sans-Web-Bold.ttf);
 	font-weight: bold;
 }
 body { /*se usa para referirse a etiquetas*/
 	margin: 0;
 	background-image: url("../Ejercicio 1/img/bg/negro.png");
-	font-family: 'Dosis', sans-serif;
+	font-family: 'PTSans', sans-serif;
 
 }
 
