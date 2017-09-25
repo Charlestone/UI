@@ -34,21 +34,22 @@ a {
 footer ul {
 	align-content: left;
 	vertical-align: center;
-	position: absolute;
-    margin: 0;
-    padding: 8px;
     color: #4dd2ff;
+    margin: 0;
+    padding-top: 6px; 
+    padding-bottom: 6px;
 }
 
 ul {
 	padding: 0;
+
 }
 
 footer {
 	border: 3px solid #0f0f0a;	
 	clear: both;
 	position: relative;
-	bottom: 0;
+	height: 34px;
 }
 
 .junto {
