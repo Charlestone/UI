@@ -56,76 +56,70 @@ h3 {
 	padding-left: 10px;
 }
 
-.junto {
-	display: inline;
-}
-#pinfo, #binfo{
-	color: #cccccc;
-	height: 210px;
+.col-1 {
+	width: 8.33%;
 }
 
-#colizq1 {
-	float: left;
-	width: 33%;
-	
-}
-#colcen1 {
-	float: left;
-	width: 33%;
-}
-#colder1 {
-	float: right;
-	width: 33%;
-	align-content: center;
+.col-2 {
+	width: 16.66%;
 }
 
-#logo {
-	margin-left: 18px;
+.col-3 {
+	width: 25%;
 }
 
-#lista2 {
-	vertical-align: center;
-	float: right;
-	margin: 30px;
+.col-4 {
+	width: 33.33%;
 }
 
-#barra2{
-	clear: both;
+.col-5 {
+	width: 41.66%;
 }
 
-#colder2 {
-	float: left;
-	width: 45%; 
+.col-6 {
+	width: 50%;
 }
 
-#colizq2 {
-	float: left;
-	width: 33%;
+.col-7 {
+	width: 58.33%;
 }
 
-#twitter {
-	overflow: auto;
+.col-8{
+	width: 66.66%;
 }
 
-#facebook {
-	overflow: auto;
+.col-9{
+	width: 75%;
 }
 
-#number {
-	width:50%; 
+.col-10 {
+	width: 83.33%;
 }
 
-#valid {
-	width: 30%;
+.col-11 {
+	width: 91.66%;
 }
 
-#code {
-	width: 20%;
-}
-
-#lista2 {
+.col-12 {
 	width: 100%;
-	margin-left: 0;
-	margin-right: 0;
-	margin-top: 16px;
+}
+
+.form-1 {
+
+}
+
+.form-2 {
+
+}
+
+.link-top {
+
+}
+
+.link-bot{
+
+}
+
+.bar {
+	
 }
