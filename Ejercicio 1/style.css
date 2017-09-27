@@ -1,3 +1,4 @@
+/*Fuentes*/
 @font-face {
 	font-family: PTSans;
 	src: url(../Ejercicio 1/font/PT_Sans/PT_Sans-Web-Regular.ttf);
@@ -8,54 +9,9 @@
 	src: url(../Ejercicio 1/font/PT_Sans/PT_Sans-Web-Bold.ttf);
 	font-weight: bold;
 }
-body { /*se usa para referirse a etiquetas*/
-	margin: 0;
-	background-image: url("../Ejercicio 1/img/bg/negro.png");
-	font-family: 'PTSans', sans-serif;
 
-}
-
-header {
-	background-image: url("../Ejercicio 1/img/bg/geometry.png");
-	border: 3px solid #0f0f0a;
-	
-}
-
-header nav{
-	float: right;
-	margin: 18px;
-}
-
-
-a {
-	text-decoration: none; /*para quitar el subrayado de los links*/
-	color: #4dd2ff;
-}
-
-footer ul {
-	align-content: left;
-    color: #4dd2ff;
-    margin: 0;
-    padding-top: 6px; 
-    padding-bottom: 6px;
-}
-
-ul {
-	padding: 0;
-
-}
-
-footer {
-	border: 3px solid #0f0f0a;	
-	clear: both;
-	position: relative;
-	height: 34px;
-}
-
-h3 {
-	padding-left: 10px;
-}
-
+/*12 Tipos de columnas para asignar anchura a 
+elementos de manera más sencilla y estandarizada*/
 .col-1 {
 	width: 8.33%;
 }
@@ -104,6 +60,76 @@ h3 {
 	width: 100%;
 }
 
+/*Configuracíón general de la pagina*/
+body {
+	margin: 0;
+	background-image: url("../Ejercicio 1/img/bg/negro.png");
+	font-family: 'PTSans', sans-serif;
+
+}
+
+/*Cabecera-header*/
+header {
+	background-image: url("../Ejercicio 1/img/bg/geometry.png");
+	border: 3px solid #cccccc;
+	height: 94px;
+	align-items: center;
+}
+
+h1 {
+	margin-top: 29px;
+	margin-bottom: 29px;
+	margin-left: 25px;
+	display: inline-block;
+}
+
+.link-top {
+	margin-top: 38px;
+	margin-bottom: 38px;
+	margin-right: 20px;
+	float: right;
+}
+
+a { /*También nos sirve para los enlaces del pie de página*/
+	text-decoration: none; 
+	color: #4dd2ff;
+}
+
+#logo {
+	margin-top: 22px;
+	margin-bottom: 22px;
+	margin-left: 10px; 
+	float: left;
+}
+
+/*Personal information*/
+
+
+
+footer ul {
+	align-content: left;
+    color: #4dd2ff;
+    margin: 0;
+    padding-top: 6px; 
+    padding-bottom: 6px;
+}
+
+footer {
+	border: 3px solid #cccccc;	
+	clear: both;
+	position: relative;
+	height: 34px;
+}
+
+h3 {
+	padding-left: 10px;
+}
+
+
+
+.subcol-top {
+	margin: 0;
+}
 .form-1 {
 
 }
@@ -112,9 +138,11 @@ h3 {
 
 }
 
-.link-top {
-
+.form-3 {
+	display: inline;
 }
+
+
 
 .link-bot{
 
@@ -122,4 +150,8 @@ h3 {
 
 .bar {
 	
+}
+
+.minititle {
+	margin-bottom: 3px;
 }
