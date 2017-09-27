@@ -74,6 +74,7 @@ header {
 	border: 3px solid #cccccc;
 	height: 94px;
 	align-items: center;
+	margin-bottom: 40px;
 }
 
 h1 {
@@ -104,7 +105,16 @@ a { /*También nos sirve para los enlaces del pie de página*/
 
 /*Personal information*/
 
+hr {
 
+}
+h3 { /*También nos sirve para billing infomation*/
+	padding-left: 10px;
+}
+
+.form-1 {
+
+}
 
 footer ul {
 	align-content: left;
@@ -120,19 +130,10 @@ footer {
 	position: relative;
 	height: 34px;
 }
-
-h3 {
-	padding-left: 10px;
-}
-
-
-
 .subcol-top {
 	margin: 0;
 }
-.form-1 {
 
-}
 
 .form-2 {
 
@@ -141,8 +142,6 @@ h3 {
 .form-3 {
 	display: inline;
 }
-
-
 
 .link-bot{
 
