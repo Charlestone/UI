@@ -68,7 +68,7 @@ body {
 	margin: 0;
 	background-image: url("../Ejercicio 1/img/bg/negro.png");
 	font-family: 'PTSans', sans-serif;
-
+	overflow: hidden;
 }
 
 #main {
@@ -87,6 +87,9 @@ header {
 	height: 94px;
 	align-items: center;
 	margin-bottom: 40px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 h1 {
@@ -175,6 +178,11 @@ footer {
 	border: 3px solid #cccccc;	
 	clear: both;
 	height: 48px;
+	position: absolute;
+	bottom: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 footer ul {
@@ -188,12 +196,10 @@ footer ul {
 
 footer a {
 	align-self: center;
-	
 	margin-left: 5px;
 	margin-right: 5px;
 }
 
 footer p {
 	align-self: center;
-	
 }
