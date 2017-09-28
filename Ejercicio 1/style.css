@@ -174,15 +174,26 @@ input:focus, select:focus { /*También nos sirve para billing information*/
 footer {
 	border: 3px solid #cccccc;	
 	clear: both;
-	position: relative;
-	height: 34px;
+	height: 48px;
 }
 
 footer ul {
-	align-content: left;
+	display: flex;
     color: #4dd2ff;
     margin: 0;
-    padding-top: 6px; 
-    padding-bottom: 6px;
+    padding-top: 10px; 
+    padding-left: 20px;
 
+}
+
+footer a {
+	align-self: center;
+	
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+footer p {
+	align-self: center;
+	
 }
