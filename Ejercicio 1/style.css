@@ -136,8 +136,45 @@ ul { /*También nos sirve para billing information*/
 	padding: 0;
 }
 
-input, select {
+input, select { /*También nos sirve para billing information*/
 	margin-top: 8px;
+	padding: 3px 8px;
+	outline: none;
+	background-image: url('../Ejercicio 1/img/bg/negro.png');
+	color: #cccccc;
+}
+
+input { /*También nos sirve para billing information*/
+	border: none;
+	border-bottom: 2px solid white;
+}
+
+input:focus, select:focus { /*También nos sirve para billing information*/
+	background-color: white;
+	color: black;
+	background-image: none;
+}
+
+/*Billing Information*/
+
+.inline-form{
+	margin-left: 9px;
+}
+
+.dis-input {
+	margin-top: 12.8px;
+}
+
+.code{
+	width: 
+}
+/*Pie de página-footer*/
+
+footer {
+	border: 3px solid #cccccc;	
+	clear: both;
+	position: relative;
+	height: 34px;
 }
 
 footer ul {
@@ -146,35 +183,5 @@ footer ul {
     margin: 0;
     padding-top: 6px; 
     padding-bottom: 6px;
-}
 
-footer {
-	border: 3px solid #cccccc;	
-	clear: both;
-	position: relative;
-	height: 34px;
-}
-.subcol-top {
-	margin: 0;
-}
-
-
-.form-2 {
-
-}
-
-.form-3 {
-	display: inline;
-}
-
-.link-bot{
-
-}
-
-.bar {
-	
-}
-
-.minititle {
-	margin-bottom: 3px;
 }
