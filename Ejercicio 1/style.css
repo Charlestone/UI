@@ -1,4 +1,5 @@
 /*Fuentes*/
+
 @font-face {
 	font-family: PTSans;
 	src: url(../Ejercicio 1/font/PT_Sans/PT_Sans-Web-Regular.ttf);
@@ -12,6 +13,7 @@
 
 /*12 Tipos de columnas para asignar anchura a 
 elementos de manera más sencilla y estandarizada*/
+
 .col-1 {
 	width: 8.33%;
 }
@@ -61,6 +63,7 @@ elementos de manera más sencilla y estandarizada*/
 }
 
 /*Configuracíón general de la pagina*/
+
 body {
 	margin: 0;
 	background-image: url("../Ejercicio 1/img/bg/negro.png");
@@ -68,7 +71,16 @@ body {
 
 }
 
+#main {
+	color: #cccccc;
+}
+
+hr { 
+	border: 1px solid #cccccc; 
+}
+
 /*Cabecera-header*/
+
 header {
 	background-image: url("../Ejercicio 1/img/bg/geometry.png");
 	border: 3px solid #cccccc;
@@ -82,6 +94,7 @@ h1 {
 	margin-bottom: 29px;
 	margin-left: 25px;
 	display: inline-block;
+	color: #404040;
 }
 
 .link-top {
@@ -105,13 +118,27 @@ a { /*También nos sirve para los enlaces del pie de página*/
 
 /*Personal information*/
 
-hr {
-
-}
 h3 { /*También nos sirve para billing infomation*/
-	padding-left: 10px;
+	margin: 16px; 
 }
 
+p { /*También nos sirve para billing infomation*/
+	margin: 0;
+	padding: 0px; 
+	display: inline;
+}
+
+.multi-column { /*También nos sirve para billing information*/
+	display: inline-flex;
+}
+
+ul {
+	padding: 0;
+}
+
+form {
+	
+}
 .form-1 {
 
 }
