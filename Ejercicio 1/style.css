@@ -132,15 +132,12 @@ p { /*También nos sirve para billing infomation*/
 	display: inline-flex;
 }
 
-ul {
+ul { /*También nos sirve para billing information*/
 	padding: 0;
 }
 
-form {
-	
-}
-.form-1 {
-
+input, select {
+	margin-top: 10px;
 }
 
 footer ul {
