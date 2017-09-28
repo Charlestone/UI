@@ -166,8 +166,9 @@ input:focus, select:focus { /*También nos sirve para billing information*/
 }
 
 .code{
-	width: 
+	width: 30px;
 }
+
 /*Pie de página-footer*/
 
 footer {
