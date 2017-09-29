@@ -137,6 +137,7 @@ p { /*También nos sirve para billing infomation*/
 
 ul { /*También nos sirve para billing information*/
 	padding: 0;
+	list-style: none;
 }
 
 input, select { /*También nos sirve para billing information*/
@@ -157,6 +158,7 @@ input:focus, select:focus { /*También nos sirve para billing information*/
 	color: black;
 	background-image: none;
 }
+
 
 /*Billing Information*/
 
