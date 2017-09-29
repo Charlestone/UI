@@ -68,7 +68,8 @@ body {
 	margin: 0;
 	background-image: url("../Ejercicio_1/img/bg/negro.png");
 	font-family: 'PTSans', sans-serif;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 #main {
@@ -178,9 +179,8 @@ input:focus, select:focus { /*También nos sirve para billing information*/
 
 footer {
 	border: 3px solid #cccccc;	
-	clear: both;
 	height: 48px;
-	position: absolute;
+	clear: both;
 	bottom: 0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
