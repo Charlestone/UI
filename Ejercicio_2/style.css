@@ -2,12 +2,12 @@
 
 @font-face {
 	font-family: PTSans;
-	src: url(../Ejercicio_1/font/PT_Sans/PT_Sans-Web-Regular.ttf);
+	src: url(../Ejercicio_2/font/PT_Sans/PT_Sans-Web-Regular.ttf);
 }
 
 @font-face{
 	font-family: PTSans;
-	src: url(../Ejercicio_1/font/PT_Sans/PT_Sans-Web-Bold.ttf);
+	src: url(../Ejercicio_2/font/PT_Sans/PT_Sans-Web-Bold.ttf);
 	font-weight: bold;
 }
 
@@ -60,6 +60,47 @@ elementos de manera más sencilla y estandarizada*/
 
 .col-12 {
 	width: 100%;
+}
+
+/*Configuracíón general de la pagina*/
+
+body {
+	margin: 0;
+	background-image: url("../Ejercicio_2/img/bg/negro.png");
+	font-family: 'PTSans', sans-serif;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#main {
+	color: #cccccc;
+}
+
+/*Cabecera-header*/
+
+header {
+	background-image: url("../Ejercicio_2/img/bg/geometry.png");
+	border: 3px solid #cccccc;
+	height: 94px;
+	margin-bottom: 40px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1 {
+	margin-top: 29px;
+	margin-bottom: 29px;
+	margin-left: 25px;
+	display: inline-block;
+	color: #404040;
+}
+
+#logo {
+	margin-top: 22px;
+	margin-bottom: 22px;
+	margin-left: 10px; 
+	float: left;
 }
 
 /*Pie de página-footer*/
