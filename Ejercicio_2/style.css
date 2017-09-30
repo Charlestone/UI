@@ -81,7 +81,6 @@ body {
 header {
 	background-image: url("../Ejercicio_2/img/bg/geometry.png");
 	border: 3px solid #cccccc;
-	height: 94px;
 	margin-bottom: 40px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -101,6 +100,12 @@ h1 {
 	margin-bottom: 22px;
 	margin-left: 10px; 
 	float: left;
+}
+
+h3 {
+	display: inline-flex;
+	float: right;
+
 }
 
 /*Pie de página-footer*/
