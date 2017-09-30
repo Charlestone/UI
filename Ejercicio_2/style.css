@@ -61,3 +61,40 @@ elementos de manera más sencilla y estandarizada*/
 .col-12 {
 	width: 100%;
 }
+
+/*Pie de página-footer*/
+
+footer {
+	border: 3px solid #cccccc;	
+	height: 48px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #cccccc;
+}
+
+footer ul {
+	display: inline-flex;
+    color: #4dd2ff;
+    margin: 0;
+    padding-top: 10px; 
+    padding-left: 20px;
+
+}
+
+footer a {
+	align-self: center;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+footer p {
+	align-self: center;
+}
+
+.copy {
+	float: right;
+	margin-bottom: 11px;
+	margin-top: 11px;
+	margin-right: 20px;
+}
