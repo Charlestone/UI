@@ -125,7 +125,7 @@ h3 { /*También nos sirve para billing infomation*/
 	margin: 16px; 
 }
 
-p { /*También nos sirve para billing infomation*/
+p { /*También nos sirve para billing infomation y footer*/
 	margin: 0;
 	padding: 0px; 
 	display: inline;
@@ -135,7 +135,7 @@ p { /*También nos sirve para billing infomation*/
 	display: inline-flex;
 }
 
-ul { /*También nos sirve para billing information*/
+ul { /*También nos sirve para billing information y footer*/
 	padding: 0;
 	list-style: none;
 }
@@ -179,8 +179,6 @@ input:focus, select:focus { /*También nos sirve para billing information*/
 footer {
 	border: 3px solid #cccccc;	
 	height: 48px;
-	clear: both;
-	bottom: 0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
