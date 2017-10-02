@@ -108,6 +108,12 @@ h3 {
 
 }
 
+p {
+	margin: 0;
+	padding: 0px; 
+	display: inline;
+}
+
 /*Pie de página-footer*/
 
 footer {
@@ -125,6 +131,7 @@ footer ul {
     margin: 0;
     padding-top: 10px; 
     padding-left: 20px;
+    list-style: none;
 
 }
 
@@ -132,6 +139,8 @@ footer a {
 	align-self: center;
 	margin-left: 5px;
 	margin-right: 5px;
+	text-decoration: none; 
+	color: #4dd2ff;
 }
 
 footer p {
@@ -144,3 +153,4 @@ footer p {
 	margin-top: 11px;
 	margin-right: 20px;
 }
+
