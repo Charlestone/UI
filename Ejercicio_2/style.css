@@ -2,12 +2,12 @@
 
 @font-face {
 	font-family: PTSans;
-	src: url(../Ejercicio_1/font/PT_Sans/PT_Sans-Web-Regular.ttf);
+	src: url(../Ejercicio_2/font/PT_Sans/PT_Sans-Web-Regular.ttf);
 }
 
 @font-face{
 	font-family: PTSans;
-	src: url(../Ejercicio_1/font/PT_Sans/PT_Sans-Web-Bold.ttf);
+	src: url(../Ejercicio_2/font/PT_Sans/PT_Sans-Web-Bold.ttf);
 	font-weight: bold;
 }
 
@@ -23,7 +23,7 @@
 
 
 header {
-	background-image: url("../Ejercicio_1/img/bg/geometry.png");
+	background-image: url("../Ejercicio_2/img/bg/geometry.png");
 	border: 3px solid #cccccc;
 	margin-bottom: 40px;
 	-webkit-box-sizing: border-box;
@@ -55,6 +55,13 @@ h1 {
 	float: right;
 }
 
+.multi-column {
+	display: inline-flex;
+}
+
+.alinear {
+	display: inline-block;
+}
 body {
 	margin: 0;
 	background-image: url("../Ejercicio_1/img/bg/negro.png");
