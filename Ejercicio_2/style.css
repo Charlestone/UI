@@ -54,14 +54,13 @@ h1 {
 	float: right;
 }
 
-<<<<<<< HEAD
 .multi-column {
 	display: inline-flex;
 }
 
 .alinear {
 	display: inline-block;
-
+}
 #username {
 	order: 1;
 	display: flex;
@@ -82,7 +81,7 @@ h1 {
 body {
 	margin: 0;
 	padding: 0;
-	background-image: url("../Ejercicio_1/img/bg/negro.png");
+	background-image: url("../Ejercicio_2/img/bg/negro.png");
 	font-family: 'PTSans', sans-serif;
 	overflow-x: hidden;
 	overflow-y: auto;
