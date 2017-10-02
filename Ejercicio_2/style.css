@@ -124,6 +124,11 @@ footer p {
 	margin-right: 20px;
 }
 
+ul { /*También nos sirve para billing information y footer*/
+	padding: 0;
+	list-style: none;
+}
+
 
 /*12 Tipos de columnas para asignar anchura a 
 elementos de manera más sencilla y estandarizada*/
