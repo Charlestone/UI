@@ -250,7 +250,8 @@ footer p {
 
 	.link-top a {
 		display: block;
-		margin-bottom: 20px; 
+		margin-bottom: 20px;
+		margin-left: 16px; 
 	}
 
 	.multi-column2 {
