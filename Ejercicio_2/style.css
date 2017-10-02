@@ -129,7 +129,7 @@ p {
 	margin-bottom: auto;
 }
 
-.left-header {
+.right-header {
 	display: flex;
 	float: right;
 	height: 100px;
