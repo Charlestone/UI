@@ -129,7 +129,7 @@ p {
 	margin-bottom: auto;
 }
 
-.left-header {
+.right-header {
 	display: flex;
 	float: right;
 	height: 100px;
@@ -257,3 +257,27 @@ footer p {
 	margin-right: 20px;
 }
 
+
+
+
+.little {
+	background-color: white;
+	
+	
+}
+
+.title {
+	float: left;
+	display:table;
+	overflow: auto;
+}
+.plus {
+	float: right;
+	display: table;
+	overflow: auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
