@@ -114,10 +114,10 @@ p {
 	display: inline;
 }
 .user {
-	
 	margin-right: 20px;
 	float: right;
 }
+
 #username {
 	order: 1;
 	display: flex;
@@ -136,6 +136,86 @@ p {
 	align-items: center;
 }
 
+/* Estilo del main */
+
+h2{
+	margin-left: 30px;
+	margin-top: 40px;
+}
+
+
+.alinear{ /*Clase para alinear*/
+	float: left;
+}
+
+.multi-column {  /*Clase para colocar la reproduccion del video a la derecha */
+	display: inline-flex; 
+
+}
+
+.margen{
+	margin-left: 60px;
+	margin-top: 30px;
+	
+}
+
+.margen-letras{
+	margin-left: 15px;
+
+}
+
+
+.titulomas{  /*clase para el contenedor que incluye el titulo y el +*/
+	padding-top:5px;
+	background-color: white;
+	color: black;
+	margin-top: 10px;
+}	
+
+.margen-2{
+	height: auto;
+	width: 100%;
+}
+
+.margen-3{
+	margin-left: 77px;
+	margin-right: 77px;
+	margin-bottom: 60px;
+	margin-top: 40px;
+}
+
+
+.alinear-2{
+	display: block;
+}
+
+.titulo{
+	float: left;
+	display: table;
+	margin-left: 3px;
+
+}	
+
+.mas{
+	float: right;
+	display: table;
+	margin-right: 3px;		
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.bordes {
+	outline: 1px solid #cccccc;
+	outline-offset: 1px;
+
+}
+
+
 /*Pie de página-footer*/
 
 footer {
@@ -145,6 +225,7 @@ footer {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	color: #cccccc;
+	clear: both;
 }
 
 footer ul {
