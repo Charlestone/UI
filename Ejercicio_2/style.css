@@ -145,6 +145,7 @@ footer {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	color: #cccccc;
+	clear: both;
 }
 
 footer ul {
@@ -176,3 +177,27 @@ footer p {
 	margin-right: 20px;
 }
 
+
+
+
+.little {
+	background-color: white;
+	
+	
+}
+
+.title {
+	float: left;
+	display:table;
+	overflow: auto;
+}
+.plus {
+	float: right;
+	display: table;
+	overflow: auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
