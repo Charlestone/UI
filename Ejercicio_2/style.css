@@ -54,7 +54,6 @@ h1 {
 	float: right;
 }
 
-<<<<<<< HEAD
 .multi-column {
 	display: inline-flex;
 }
@@ -78,12 +77,11 @@ h1 {
 	float: right;
 	height: 100px;
 	align-items: center;
->>>>>>> 299fdc890df3e17e8e767749837ebfb7b3de826d
 }
 body {
 	margin: 0;
 	padding: 0;
-	background-image: url("../Ejercicio_1/img/bg/negro.png");
+	background-image: url("../Ejercicio_2/img/bg/negro.png");
 	font-family: 'PTSans', sans-serif;
 	overflow-x: hidden;
 	overflow-y: auto;
