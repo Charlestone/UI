@@ -49,21 +49,40 @@ h1 {
 
 /* Clase para el header */
 .usuario {
-	margin-top: 38px;
-	margin-bottom: 38px;
+	
 	margin-right: 20px;
 	float: right;
 }
 
+<<<<<<< HEAD
 .multi-column {
 	display: inline-flex;
 }
 
 .alinear {
 	display: inline-block;
+
+#username {
+	order: 1;
+	display: flex;
+}
+
+#userphoto {
+	order: 2;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.left-header {
+	display: flex;
+	float: right;
+	height: 100px;
+	align-items: center;
+>>>>>>> 299fdc890df3e17e8e767749837ebfb7b3de826d
 }
 body {
 	margin: 0;
+	padding: 0;
 	background-image: url("../Ejercicio_1/img/bg/negro.png");
 	font-family: 'PTSans', sans-serif;
 	overflow-x: hidden;
