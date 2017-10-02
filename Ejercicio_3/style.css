@@ -177,6 +177,10 @@ input:focus, select:focus { /*También nos sirve para billing information*/
 	margin-bottom: 30px;
 }
 
+.multi-column3 {
+	display: inline-flex;
+}
+
 /*Pie de página-footer*/
 
 footer {
@@ -216,31 +220,53 @@ footer p {
 
 /*Para tablets*/
 @media only screen and (min-width: 601px) and (max-width: 768px) {
+
+	/*Header*/
 	.link-top {
 		display: block;
 		width: 100%;
 		float: left;
 	}
+
 	.link-top a {
 		margin-left: 50px; 
 	}
+
+	/*Personal y billing information*/
+
 	.multi-column {
 		display: block;
 	}
-	.multi-column2 { /*También nos sirve para billing information*/
-		display: inline-block;
+
+	.col-4-1 {
 		width: 50%;
+		display: inline;
+	}
+
+	.col-4-2 {
+		width: 100%;
+	}
+
+	.col-8-1 {
+		width: 100%;
+		display: inline-flex;
+	}
+	.col-8 {
+		margin-left: 30px;
 	}
 
 }
 
 /*Para móviles*/
 @media only screen and (max-width: 600px) {
+
+	/*Página en general*/
 	 [class*="col-"] {
 	 	width: 100%;
 	 	display: block;
 	 }
 
+	 /*Header*/
 	.link-top {
 		display: block;
 		width: 100%;
@@ -254,8 +280,9 @@ footer p {
 		margin-left: 16px; 
 	}
 
+	/*Personal y billing information*/
 	.multi-column2 {
-		margin: 16px;
+		margin: 30px;
 	}
 
 } 
