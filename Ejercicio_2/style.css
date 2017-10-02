@@ -60,7 +60,7 @@ h1 {
 
 .alinear {
 	display: inline-block;
-
+}
 #username {
 	order: 1;
 	display: flex;
