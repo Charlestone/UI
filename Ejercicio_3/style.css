@@ -2,12 +2,12 @@
 
 @font-face {
 	font-family: PTSans;
-	src: url(../Ejercicio_1/font/PT_Sans/PT_Sans-Web-Regular.ttf);
+	src: url(../Ejercicio_3/font/PT_Sans/PT_Sans-Web-Regular.ttf);
 }
 
 @font-face{
 	font-family: PTSans;
-	src: url(../Ejercicio_1/font/PT_Sans/PT_Sans-Web-Bold.ttf);
+	src: url(../Ejercicio_3/font/PT_Sans/PT_Sans-Web-Bold.ttf);
 	font-weight: bold;
 }
 
@@ -66,7 +66,7 @@ elementos de manera más sencilla y estandarizada*/
 
 body {
 	margin: 0;
-	background-image: url("../Ejercicio_1/img/bg/negro.png");
+	background-image: url("../Ejercicio_3/img/bg/negro.png");
 	font-family: 'PTSans', sans-serif;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -83,7 +83,7 @@ hr {
 /*Cabecera-header*/
 
 header {
-	background-image: url("../Ejercicio_1/img/bg/geometry.png");
+	background-image: url("../Ejercicio_3/img/bg/geometry.png");
 	border: 3px solid #cccccc;
 	height: 94px;
 	margin-bottom: 40px;
@@ -144,7 +144,7 @@ input, select { /*También nos sirve para billing information*/
 	margin-top: 8px;
 	padding: 3px 8px;
 	outline: none;
-	background-image: url('../Ejercicio_1/img/bg/negro.png');
+	background-image: url('../Ejercicio_3/img/bg/negro.png');
 	color: #cccccc;
 }
 
@@ -213,3 +213,48 @@ footer p {
 	margin-top: 11px;
 	margin-right: 20px;
 }
+
+/*Para tablets*/
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+	.link-top {
+		display: block;
+		width: 100%;
+		float: left;
+	}
+	.link-top a {
+		margin-left: 50px; 
+	}
+	.multi-column {
+		display: block;
+	}
+	.multi-column2 { /*También nos sirve para billing information*/
+		display: inline-block;
+		width: 50%;
+	}
+
+}
+
+/*Para móviles*/
+@media only screen and (max-width: 600px) {
+	 [class*="col-"] {
+	 	width: 100%;
+	 	display: block;
+	 }
+
+	.link-top {
+		display: block;
+		width: 100%;
+		float: left;
+		margin: 0;
+	}
+
+	.link-top a {
+		display: block;
+		margin-bottom: 20px; 
+	}
+
+	.multi-column2 {
+		margin: 16px;
+	}
+
+} 
