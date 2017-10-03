@@ -2,12 +2,12 @@
 
 @font-face {
 	font-family: PTSans;
-	src: url(../Ejercicio_3/font/PT_Sans/PT_Sans-Web-Regular.ttf);
+	src: url(../font/PT_Sans/PT_Sans-Web-Regular.ttf);
 }
 
 @font-face{
 	font-family: PTSans;
-	src: url(../Ejercicio_3/font/PT_Sans/PT_Sans-Web-Bold.ttf);
+	src: url(../font/PT_Sans/PT_Sans-Web-Bold.ttf);
 	font-weight: bold;
 }
 
@@ -66,7 +66,7 @@ elementos de manera más sencilla y estandarizada*/
 
 body {
 	margin: 0;
-	background-image: url("../Ejercicio_3/img/bg/negro.png");
+	background-image: url("../img/bg/negro.png");
 	font-family: 'PTSans', sans-serif;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -83,7 +83,7 @@ hr {
 /*Cabecera-header*/
 
 header {
-	background-image: url("../Ejercicio_3/img/bg/geometry.png");
+	background-image: url("../img/bg/geometry.png");
 	border: 3px solid #cccccc;
 	height: 94px;
 	margin-bottom: 40px;
@@ -144,7 +144,7 @@ input, select { /*También nos sirve para billing information*/
 	margin-top: 8px;
 	padding: 3px 8px;
 	outline: none;
-	background-image: url('../Ejercicio_3/img/bg/negro.png');
+	background-image: url('../img/bg/negro.png');
 	color: #cccccc;
 }
 
