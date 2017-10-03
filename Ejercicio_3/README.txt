@@ -10,3 +10,5 @@ seleccionas un archivo en el form "photo".
 
 -No hemos podido implementar que los datos para el método de pago cambien dependiendo del método
 que se seleccione.
+
+-No hemos conseguido que la primera barra horizontal no desaparezca en Firefox.
