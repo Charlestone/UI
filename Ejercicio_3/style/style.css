@@ -135,13 +135,13 @@ p { /*También nos sirve para billing infomation y footer*/
 	display: inline-flex;
 }
 
-ul { /*También nos sirve para billing information y footer*/
-	padding: 0;
-	list-style: none;
+form {
+	margin-top: 16px;
+	margin-bottom: 16px;
 }
-
 input, select { /*También nos sirve para billing information*/
 	margin-top: 8px;
+	margin-bottom: 8px;
 	padding: 3px 8px;
 	outline: none;
 	background-image: url('../img/bg/negro.png');
@@ -181,6 +181,9 @@ input:focus, select:focus { /*También nos sirve para billing information*/
 	display: inline-flex;
 }
 
+.multi-column2 {
+	display: block;
+}
 /*Pie de página-footer*/
 
 footer {
@@ -198,7 +201,7 @@ footer ul {
     margin: 0;
     padding-top: 10px; 
     padding-left: 20px;
-
+    list-style: none;
 }
 
 footer a {
