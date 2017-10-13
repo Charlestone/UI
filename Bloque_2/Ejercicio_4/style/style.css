@@ -76,8 +76,13 @@ body {
 	color: #cccccc;
 }
 
-hr { 
+.long { 
 	border: 1px solid #cccccc; 
+	width: 98%; 
+}
+.short {
+	border: 1px solid #cccccc; 
+	width: 98%; 
 }
 
 /*Cabecera-header*/
@@ -180,6 +185,11 @@ input:focus, select:focus { /*También nos sirve para billing information*/
 
 .multi-column3 {
 	display: inline-flex;
+}
+
+.block {
+	display: inline-flex;
+	align-self: center;
 }
 
 /*Pie de página-footer*/
