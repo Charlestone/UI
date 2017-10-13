@@ -18,6 +18,16 @@
 			</nav>
 		</header>
 		<form id="main" class="col-12">
+			<ul class="block">
+				<li>
+					<p>Username</p><br>
+					<input type="text" name="username">
+				<br></li>
+				<li>
+					<p>Password</p><br>
+					<input type="password" name="password">
+				</li>	
+			</ul>
 			<hr class="long" />
 			<div class="col-12 multi-column">
 				<h3 class="col-4 col-4-2">PERSONAL INFORMATION</h3>
@@ -87,9 +97,17 @@
 					</ul>
 				</div>
 			</div>
-			<hr class="col-5" />
+			<hr class="col-5"/>
 			<br>
-			<input class="block" type="checkbox" name="terms" value="terms">He le&iacute;do y acepto las <a href="Condiciones">Condiciones de uso</a>
+			<ul class="block">
+				<li>
+					<input type="checkbox" name="terms" value="terms">He le&iacute;do y acepto las <a href="Condiciones">Condiciones de uso</a><br>
+				</li>
+				<li>
+					<input type="submit" name="submit" value="Guardar">
+					<input type="reset" name="reset" value="Borrar">
+				</li>
+			</ul>
 		</form>
 		<footer class="col-12">
 			<ul>
