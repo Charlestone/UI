@@ -142,6 +142,7 @@ ul { /*También nos sirve para billing information y footer*/
 
 input, select { /*También nos sirve para billing information*/
 	margin-top: 8px;
+	margin-bottom: 8px;
 	padding: 3px 8px;
 	outline: none;
 	background-image: url('../img/bg/negro.png');
