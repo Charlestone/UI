@@ -21,57 +21,71 @@
 			<hr class="col-12"/>
 			<div class="col-12 multi-column">
 				<h3 class="col-4 col-4-2">PERSONAL INFORMATION</h3>
-				<form class="col-8 col-8-1 multi-column">
+				<div class="col-8 col-8-1 multi-column">
 					<div class="col-4 col-4-1 multi-column2">
-						<p>Name &AMP; Last Name</p><br>
-						<input type="text" name="Name &AMP; Last Name">
-						<br>
-						<p>Birthday</p><br>
-						<input type="date" name="Birthday">
-						<br>
-						<p>Photo</p><br>
-						<input type="file" name="foto">
+					<ul>
+						<li><form>
+							<p>Name &AMP; Last Name</p><br>
+							<input type="text" name="Name &AMP; Last Name">
+						</form><br></li>
+						<li><form>
+							<p>Birthday</p><br>
+							<input type="date" name="Birthday">
+						</form><br></li>
+						<li><form>
+							<p>Photo</p><br>
+							<input type="file" name="foto">
+						</form><br></li>
+					</ul>
 					</div>
 					<div class="col-4 col-4-1 multi-column2">
-						<p>e-mail</p><br>
-						<input type="email" name="email">
-						<br>
-						<p>language</p><br>
-						<select>
-							<option value="español">espa&ntilde;ol</option>
-							<option value="inglés">ingl&eacute;s</option>
-							<option value="francés">franc&eacute;s</option>
-							<option value="alemán">alem&aacute;n</option>
-						</select>
+						<ul>
+							<li><form>
+								<p>e-mail</p><br>
+								<input type="email" name="email">
+							</form><br><li>
+							<li><p>language</p><br>
+							<select>
+								<option value="español">espa&ntilde;ol</option>
+								<option value="inglés">ingl&eacute;s</option>
+								<option value="francés">franc&eacute;s</option>
+								<option value="alemán">alem&aacute;n</option>
+							</select></li>
+						</ul>
 					</div>
-				</form>			
+				</div>				
 			</div>
 			<hr class="col-12"/>
 			<div class="col-12 multi-column spaced">
 				<h3 class="col-4">BILLING INFORMATION</h3>
-				<form class="col-8 multi-column2">
-					<p>Address</p><br>
-					<input type="text" name="address">
-					<br>
-					<p>Payment method</p><br>
-					<select>
-						<option value="paypal">PayPal</option>
-						<option value="transferencia">Transferencia bancaria</option>
-						<option value="tarjeta">Tarjeta</option>
-					</select>
-					<div class="multi-column3">
-						<p>Number</p><br>
-						<input class="dis-input" type="text" name="number" maxlength="16">
-						<div class="inline-form">
+				<div class="col-8 multi-column2">
+					<ul>
+						<li><form>
+							<p>Address</p><br>
+							<input type="text" name="address">
+						</form><br></li>
+						<li><p>Payment method</p><br>
+						<select>
+							<option value="paypal">PayPal</option>
+							<option value="transferencia">Transferencia bancaria</option>
+							<option value="tarjeta">Tarjeta</option>
+						</select></li>
+					</ul>
+					<ul class="multi-column3">
+						<li><form>
+							<p>Number</p><br>
+							<input class="dis-input" type="text" name="number" maxlength="16">
+						</form></li>
+						<li><form class="inline-form">
 							<p>Valid Thru</p><br>
 							<input type="month" name="valid">
-						</div>
-						<div class="inline-form">
+						</form></li>
+						<li><form class="inline-form">
 							<p>Code</p><br>
 							<input class="dis-input code" type="text" name="code" maxlength="3">
-						</div>
-					</div>
-				</form>
+						</form></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<footer class="col-12">
