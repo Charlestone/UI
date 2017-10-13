@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Miau</title>
+	<link rel="stylesheet" type="text/css" href="../Ejercicio_3/style/style.css"/>
+</head>
+<body class="col-12">
+	<div class="col-12">
+		<header class="col-12">
+			<img id="logo" src="../Ejercicio_3/img/miaulogo.png" alt="Logo de Miau">
+			<h1>MY ACCOUNT</h1>
+			<nav class="link-top">
+				<a href="">Series</a>
+				<a href="">Peliculas</a>
+				<a href="">Favoritos</a>
+			</nav>
+		</header>
+		<form id="main" class="col-12">
+			<hr class="col-12"/>
+			<div class="col-12 multi-column">
+				<h3 class="col-4 col-4-2">PERSONAL INFORMATION</h3>
+				<div class="col-8 col-8-1 multi-column">
+					<div class="col-4 col-4-1 multi-column2">
+					<ul>
+						<li>
+							<p>Name &AMP; Last Name</p><br>
+							<input type="text" name="Name &AMP; Last Name">
+						<br></li>
+						<li>
+							<p>Birthday</p><br>
+							<input type="date" name="Birthday">
+						<br></li>
+						<li>
+							<p>Photo</p><br>
+							<input type="file" name="foto">
+						<br></li>
+					</ul>
+					</div>
+					<div class="col-4 col-4-1 multi-column2">
+						<ul>
+							<li>
+								<p>e-mail</p><br>
+								<input type="email" name="email">
+							<br><li>
+							<li><p>language</p><br>
+							<select>
+								<option value="español">espa&ntilde;ol</option>
+								<option value="inglés">ingl&eacute;s</option>
+								<option value="francés">franc&eacute;s</option>
+								<option value="alemán">alem&aacute;n</option>
+							</select></li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+			<hr class="col-12"/>
+			<div class="col-12 multi-column spaced">
+				<h3 class="col-4">BILLING INFORMATION</h3>
+				<div class="col-8 multi-column2">
+					<ul>
+						<li>
+							<p>Address</p><br>
+							<input type="text" name="address">
+						<br></li>
+						<li><p>Payment method</p><br>
+						<select>
+							<option value="paypal">PayPal</option>
+							<option value="transferencia">Transferencia bancaria</option>
+							<option value="tarjeta">Tarjeta</option>
+						</select></li>
+					</ul>
+					<ul class="multi-column3">
+						<li>
+							<p>Number</p><br>
+							<input class="dis-input" type="text" name="number" maxlength="16">
+						</li>
+						<li><div class="inline-form">
+							<p>Valid Thru</p><br>
+							<input type="month" name="valid">
+						</div></li>
+						<li><div class="inline-form">
+							<p>Code</p><br>
+							<input class="dis-input code" type="text" name="code" maxlength="3">
+						</div></li>
+					</ul>
+				</div>
+			</div>
+		</form>
+		<footer class="col-12">
+			<ul>
+				<li><a href=""><img src="../Ejercicio_3/img/fb.png" alt="Facebook"></a></li>
+				<li><p>&#124;</p></li>
+				<li><a href=""><img src="../Ejercicio_3/img/twitter.png" alt="Twitter"></a></li>
+				<li><p>&#124;</p></li>
+				<li><a href="">Ayuda</a></li>
+			</ul>
+			<p class="copy">&copy; 2017 Cat Entertainment, Inc.</p>
+		</footer>
+	</div>
+</body>
+</html>

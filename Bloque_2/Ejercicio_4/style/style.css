@@ -2,12 +2,12 @@
 
 @font-face {
 	font-family: PTSans;
-	src: url(../Ejercicio_1/font/PT_Sans/PT_Sans-Web-Regular.ttf);
+	src: url(../font/PT_Sans/PT_Sans-Web-Regular.ttf);
 }
 
 @font-face{
 	font-family: PTSans;
-	src: url(../Ejercicio_1/font/PT_Sans/PT_Sans-Web-Bold.ttf);
+	src: url(../font/PT_Sans/PT_Sans-Web-Bold.ttf);
 	font-weight: bold;
 }
 
@@ -66,7 +66,7 @@ elementos de manera más sencilla y estandarizada*/
 
 body {
 	margin: 0;
-	background-image: url("../Ejercicio_1/img/bg/negro.png");
+	background-image: url("../img/bg/negro.png");
 	font-family: 'PTSans', sans-serif;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -76,15 +76,21 @@ body {
 	color: #cccccc;
 }
 
-hr { 
+.long { 
 	border: 1px solid #cccccc; 
+	width: 98%; 
+}
+.short {
+	border: 1px solid #cccccc; 
+	width: 98%; 
 }
 
 /*Cabecera-header*/
 
 header {
-	background-image: url("../Ejercicio_1/img/bg/geometry.png");
+	background-image: url("../img/bg/geometry.png");
 	border: 3px solid #cccccc;
+	height: 94px;
 	margin-bottom: 40px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -141,9 +147,10 @@ ul { /*También nos sirve para billing information y footer*/
 
 input, select { /*También nos sirve para billing information*/
 	margin-top: 8px;
+	margin-bottom: 8px;
 	padding: 3px 8px;
 	outline: none;
-	background-image: url('../Ejercicio_1/img/bg/negro.png');
+	background-image: url('../img/bg/negro.png');
 	color: #cccccc;
 }
 
@@ -174,6 +181,15 @@ input:focus, select:focus { /*También nos sirve para billing information*/
 
 .spaced {
 	margin-bottom: 30px;
+}
+
+.multi-column3 {
+	display: inline-flex;
+}
+
+.block {
+	display: inline-flex;
+	align-self: center;
 }
 
 /*Pie de página-footer*/
@@ -212,3 +228,72 @@ footer p {
 	margin-top: 11px;
 	margin-right: 20px;
 }
+
+/*Para tablets*/
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+	/*Header*/
+	.link-top {
+		display: block;
+		width: 100%;
+		float: left;
+	}
+
+	.link-top a {
+		margin-left: 50px; 
+	}
+
+	/*Personal y billing information*/
+
+	.multi-column {
+		display: block;
+	}
+
+	.col-4-1 {
+		width: 50%;
+		display: inline;
+	}
+
+	.col-4-2 {
+		width: 100%;
+	}
+
+	.col-8-1 {
+		width: 100%;
+		display: inline-flex;
+	}
+	.col-8 {
+		margin-left: 30px;
+	}
+
+}
+
+/*Para móviles*/
+@media only screen and (max-width: 600px) {
+
+	/*Página en general*/
+	 [class*="col-"] {
+	 	width: 100%;
+	 	display: block;
+	 }
+
+	 /*Header*/
+	.link-top {
+		display: block;
+		width: 100%;
+		float: left;
+		margin: 0;
+	}
+
+	.link-top a {
+		display: block;
+		margin-bottom: 20px;
+		margin-left: 16px; 
+	}
+
+	/*Personal y billing information*/
+	.multi-column2 {
+		margin: 30px;
+	}
+
+} 

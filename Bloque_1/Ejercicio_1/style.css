@@ -1,0 +1,215 @@
+/*Fuentes*/
+
+@font-face {
+	font-family: PTSans;
+	src: url(../Ejercicio_1/font/PT_Sans/PT_Sans-Web-Regular.ttf);
+}
+
+@font-face{
+	font-family: PTSans;
+	src: url(../Ejercicio_1/font/PT_Sans/PT_Sans-Web-Bold.ttf);
+	font-weight: bold;
+}
+
+/*12 Tipos de columnas para asignar anchura a 
+elementos de manera más sencilla y estandarizada*/
+
+.col-1 {
+	width: 8.33%;
+}
+
+.col-2 {
+	width: 16.66%;
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-4 {
+	width: 33.33%;
+}
+
+.col-5 {
+	width: 41.66%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-7 {
+	width: 58.33%;
+}
+
+.col-8{
+	width: 66.66%;
+}
+
+.col-9{
+	width: 75%;
+}
+
+.col-10 {
+	width: 83.33%;
+}
+
+.col-11 {
+	width: 91.66%;
+}
+
+.col-12 {
+	width: 100%;
+}
+
+/*Configuracíón general de la pagina*/
+
+body {
+	margin: 0;
+	background-image: url("../Ejercicio_1/img/bg/negro.png");
+	font-family: 'PTSans', sans-serif;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#main {
+	color: #cccccc;
+}
+
+hr { 
+	border: 1px solid #cccccc; 
+}
+
+/*Cabecera-header*/
+
+header {
+	background-image: url("../Ejercicio_1/img/bg/geometry.png");
+	border: 3px solid #cccccc;
+	margin-bottom: 40px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1 {
+	margin-top: 29px;
+	margin-bottom: 29px;
+	margin-left: 25px;
+	display: inline-block;
+	color: #404040;
+}
+
+.link-top {
+	margin-top: 38px;
+	margin-bottom: 38px;
+	margin-right: 20px;
+	float: right;
+}
+
+a { /*También nos sirve para los enlaces del pie de página*/
+	text-decoration: none; 
+	color: #4dd2ff;
+}
+
+#logo {
+	margin-top: 22px;
+	margin-bottom: 22px;
+	margin-left: 10px; 
+	float: left;
+}
+
+/*Personal information*/
+
+h3 { /*También nos sirve para billing infomation*/
+	margin: 16px; 
+}
+
+p { /*También nos sirve para billing infomation y footer*/
+	margin: 0;
+	padding: 0px; 
+	display: inline;
+}
+
+.multi-column { /*También nos sirve para billing information*/
+	display: inline-flex;
+}
+
+ul { /*También nos sirve para billing information y footer*/
+	padding: 0;
+	list-style: none;
+}
+
+input, select { /*También nos sirve para billing information*/
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding: 3px 8px;
+	outline: none;
+	background-image: url('../Ejercicio_1/img/bg/negro.png');
+	color: #cccccc;
+}
+
+input { /*También nos sirve para billing information*/
+	border: none;
+	border-bottom: 2px solid white;
+}
+
+input:focus, select:focus { /*También nos sirve para billing information*/
+	background-color: white;
+	color: black;
+	background-image: none;
+}
+
+/*Billing Information*/
+
+.inline-form{
+	margin-left: 9px;
+}
+
+.dis-input {
+	margin-top: 12.8px;
+}
+
+.code{
+	width: 30px;
+}
+
+.spaced {
+	margin-bottom: 30px;
+}
+
+/*Pie de página-footer*/
+
+footer {
+	border: 3px solid #cccccc;	
+	height: 48px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #cccccc;
+}
+
+footer ul {
+	display: inline-flex;
+    color: #4dd2ff;
+    margin: 0;
+    padding-top: 10px; 
+    padding-left: 20px;
+
+}
+
+footer a {
+	align-self: center;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+footer p {
+	align-self: center;
+}
+
+.copy {
+	float: right;
+	margin-bottom: 11px;
+	margin-top: 11px;
+	margin-right: 20px;
+}
