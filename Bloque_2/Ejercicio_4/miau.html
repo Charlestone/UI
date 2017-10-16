@@ -17,7 +17,7 @@
 				<a href="">Favoritos</a>
 			</nav>
 		</header>
-		<form id="main" class="col-12" name="formulario">
+		<form id="main" class="col-12" name="formulario" onsubmit="return validateForm()" method="post">
 			<hr class="long" />
 			<div class="col-12 multi-column">
 				<h3 class="col-4 col-4-2">PERSONAL INFORMATION</h3>
@@ -25,11 +25,11 @@
 					<div class="col-4 col-4-1 multi-column2">
 					<ul>
 						<li>
-							<p>Name &AMP; Last Name</p><br>
-							<input type="text" name="Name &AMP; Last Name" >
+							<p>Name &AMP; Last Name *</p><br>
+							<input type="text" name="NameLName" >
 						<br></li>
 						<li>
-							<p>Birthday</p><br>
+							<p>Birthday *</p><br>
 							<input type="date" name="Birthday">
 						<br></li>
 						<li>
@@ -41,7 +41,7 @@
 					<div class="col-4 col-4-1 multi-column2">
 						<ul>
 							<li>
-								<p>e-mail</p><br>
+								<p>e-mail *</p><br>
 								<input type="email" name="email">
 							<br><li>
 							<li><p>language</p><br>
@@ -65,7 +65,7 @@
 							<input type="text" name="address">
 						<br></li>
 						<li><p>Payment method</p><br>
-						<select id="payment" >
+						<select id="payment" name="metodopago" >
 							<option value="paypal">PayPal</option>
 							<option value="transferencia">Transferencia bancaria</option>
 							<option value="tarjeta">Tarjeta</option>
@@ -113,7 +113,17 @@
 			</div>
 			<hr class="col-5" />
 			<br>
-			<input class="block" type="checkbox" name="terms" value="terms">He le&iacute;do y acepto las <a href="Condiciones">Condiciones de uso</a>
+
+			<ul class="block">
+				<li>
+					<input id="myCheck" type="checkbox" name="terms" value="terms" onclick="">He le&iacute;do y acepto las <a href="Condiciones">Condiciones de uso *</a><br>
+				</li>
+				<li>
+					<input type="submit" name="submit" value="Guardar">
+					<input type="reset" name="reset" value="Borrar">
+				</li>
+			</ul>
+			
 		</form>
 		<footer class="col-12">
 			<ul>
