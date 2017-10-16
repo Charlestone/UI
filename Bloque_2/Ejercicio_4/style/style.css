@@ -110,23 +110,12 @@ body {
     width: 60%;
 }
 
-.close {
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover , .close:focus {
-	color: #ff0000;
-	text-decoration: none;
-	cursor: pointer;
-}
-
 .modal-block {
 	display: block;
 	text-align: center;
 	margin-top: 30px;
 }
+
 /*Cabecera-header*/
 
 header {
