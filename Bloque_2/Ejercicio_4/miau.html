@@ -65,12 +65,12 @@
 							<input type="text" name="address" required>
 						<br></li>
 						<li><p>Payment method</p><br>
-						<select required>
+						<select id="payment" required>
 							<option value="paypal">PayPal</option>
 							<option value="transferencia">Transferencia bancaria</option>
 							<option value="tarjeta">Tarjeta</option>
 						</select></li>
-						<li><ul class="multi-column3">
+						<li id="tarjeta"><ul class="multi-column3">
 								<li><p>Number</p><br>
 										<input class="dis-input" type="text" name="number" maxlength="16">
 								</li>
@@ -83,13 +83,37 @@
 										<input class="dis-input code" type="text" name="code" maxlength="3">
 								</div></li>
 							</ul>
+						</li>
+						
+						<li id="transferencia"><ul class="multi-column3">
+								<li><p>Beneficiary's name</p><br>
+										<input type="text" name="Beneficiary">
+								</li>
+								<li class="inline-form"><p>Surname</p><br>
+										<input type="text" name="Surname">
+								</li>
+								<li class="inline-form"><p>Account Number</p><br>
+										<input type="text" name="number" maxlength="16">
+								</li>
+								<li class="inline-form"><p>Bank</p><br>
+										<input type="text" name="Beneficiary">
+								</li>
+							</ul>	
+						</li>
+				
+						<li id="paypal"><ul class="multi-column3">
+								<li>
+									<a href="">PayPal</a>
+								</li>
+							</ul>
+							
 						</li>							
 					</ul>
 				</div>
 			</div>
 			<hr class="col-5" />
 			<br>
-			<input class="block" type="checkbox" name="terms" value="terms">He le&iacute;do y acepto las <a href="Condiciones">Condiciones de uso</a>
+			<input class="block" type="checkbox" name="terms" value="terms" required>He le&iacute;do y acepto las <a href="Condiciones">Condiciones de uso</a>
 		</form>
 		<footer class="col-12">
 			<ul>
@@ -102,5 +126,7 @@
 			<p class="copy">&copy; 2017 Cat Entertainment, Inc.</p>
 		</footer>
 	</div>
+
+<script src="./script/script.js" type="text/javascript"></script>
 </body>
 </html>

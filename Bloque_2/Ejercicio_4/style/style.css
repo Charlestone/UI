@@ -84,7 +84,26 @@ body {
 	border: 1px solid #cccccc; 
 	width: 98%; 
 }
+/*Ventana modal*/
 
+.modal {
+    display: none; /* Para que se oculte */
+    position: fixed; /* */
+    z-index: 1; /* Para que esté por encima del resto de elementos */
+    left: 0;
+    top: 0;
+    height: 100%;
+	background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255,0.6); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: rgb(102, 102, 102);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
 /*Cabecera-header*/
 
 header {
@@ -147,7 +166,7 @@ ul { /*También nos sirve para billing information y footer*/
 
 input, select { /*También nos sirve para billing information*/
 	margin-top: 8px;
-	margin-bottom: 8px;
+	margin-bottom: 12px;
 	padding: 3px 8px;
 	outline: none;
 	background-image: url('../img/bg/negro.png');
@@ -188,8 +207,13 @@ input:focus, select:focus { /*También nos sirve para billing information*/
 }
 
 .block {
-	display: inline-flex;
-	align-self: center;
+	display: block;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#transferencia, #tarjeta{
+	display: none;
 }
 
 /*Pie de página-footer*/
