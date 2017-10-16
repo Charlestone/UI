@@ -1,10 +1,12 @@
-var body = document.getElementsByTagName('body')[0];
 var modal = document.getElementsByClassName('modal')[0];
-body.addEventListener("load",showModal);
-
-//body.addEventListener("unload",);
-
+var close = document.getElementsByClassName('close')[0];
+close.addEventListener("click", hideModal);
+window.addEventListener("load", showModal);
 
 function showModal() {
 	modal.style.display = "block";
+}
+
+function hideModal() {
+	modal.style.display = "none";
 }

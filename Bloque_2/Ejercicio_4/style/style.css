@@ -92,17 +92,40 @@ body {
     z-index: 1; /* Para que esté por encima del resto de elementos */
     left: 0;
     top: 0;
+    padding-top: 50px;
     height: 100%;
+    overflow: auto;
 	background-color: rgb(255,255,255);
     background-color: rgba(255,255,255,0.6); /* Black w/ opacity */
 }
 
 .modal-content {
-    background-color: rgb(102, 102, 102);
+	display: block;
+	color: #cccccc;
+	position: relative;
+    background-image: url("../img/bg/negro.png");
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 2px solid #cccccc;
     width: 60%;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover , .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-block {
+	display: block;
+	text-align: center;
+	margin-top: 30px;
 }
 /*Cabecera-header*/
 
