@@ -7,6 +7,14 @@ var paypal = document.getElementById('paypal');
 payment.addEventListener("change", metodospago);
 
 
+function validateForm() {
+    var x = document.forms["formulario"]["email"].value;
+    if (x == "") {
+        alert("e-mail must be filled out");
+        return false;
+    }
+}
+
 function metodospago(){
 
 	switch(payment.value){
