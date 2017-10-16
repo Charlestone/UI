@@ -117,7 +117,7 @@ body {
 }
 
 .close:hover , .close:focus {
-	color: black;
+	color: #ff0000;
 	text-decoration: none;
 	cursor: pointer;
 }
