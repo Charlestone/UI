@@ -13,10 +13,10 @@ function showModal() {
 
 function hideModal() {
 	modal.style.display = "none";
-	if (document.getElementById('modal-email') !== null) {
+	if (document.getElementById('modal-email').value != null && document.getElementById('modal-email').value != "") {
 		document.getElementById('f-email').value = document.getElementById('modal-email').value;
 	}
-	if (document.getElementById('modal-password' !== null)) {
+	if (document.getElementById('modal-password').value != null && document.getElementById('modal-password').value != "") {
 		document.getElementById('f-password').value = document.getElementById('modal-password').value;
 	}
 	
