@@ -1,44 +1,49 @@
-
+/*--Variables--*/
 var payment = document.getElementById('payment');
 var transferencia = document.getElementById('transferencia');
 var tarjeta = document.getElementById('tarjeta');
 var paypal = document.getElementById('paypal');
+var form = document.getElementById('main');
 
 payment.addEventListener("change", metodospago);
+form.addEventListener("submit", validateForm);
 
 
 function validateForm() {
-    var x = document.forms["formulario"]["email"].value;
-    var atpos = x.indexOf("@");
-    var dotpos = x.lastIndexOf(".");
-    
-    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
-        alert("Not a valid e-mail address");
-        return false;
-    }
-
+    /*Comprobación de nombre*/
     var y = document.forms["formulario"]["NameLName"].value;
     if (y == "") {
         alert("Name and Last Name must be filled out");
-        return false;
     } 
 
-    var a = document.forms["formulario"]["adress"].value;
-    if (a == "") {
-        alert("Adress must be filled out");
-        return false;
+    /*Comprobación email*/
+    var x = document.forms["formulario"]["email"].value;
+    if (x == "") {
+        alert("Email must be filled out");
+    } else {
+        var atpos = x.indexOf("@");
+        var dotpos = x.lastIndexOf(".");
+        if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+            alert("Not a valid e-mail address");
+        } 
     }
 
-    var b = document.forms["formulario"]["metodospago"].value;
-	if (b == "") {
-        alert("Payment method must be filled out");
-        return false;
+    /*Comprobación dirección*/
+    var a = document.forms["formulario"]["address"].value;
+    if (a == "") {
+        alert("Adress must be filled out");
     }
-    
-   var c = document.getElementById("myCheck").checked;
-   if(c == false){
+
+    //var b = document.forms["formulario"]["metodospago"].value;
+	//if (b == "") {
+    //    alert("Payment method must be filled out");
+    //    return false;
+    //}
+    /*Comprobación de check*/
+    var c = document.getElementById("myCheck").checked;
+    if(c == false){
 		alert('You must agree to the terms first.');
-   }
+    }
 
 }
 
