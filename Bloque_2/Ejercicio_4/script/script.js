@@ -1,7 +1,5 @@
 /*Declaración de variables*/
 var modal = document.getElementsByClassName('modal')[0];
-//usar para cuando se intenta acceder sin cuenta
-//var close = document.getElementsByClassName('close')[0]; 
 var log = document.getElementById('login');
 
 window.addEventListener("load", showModal);
