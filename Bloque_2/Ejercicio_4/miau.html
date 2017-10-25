@@ -6,7 +6,29 @@
 	<title>Miau</title>
 	<link rel="stylesheet" type="text/css" href="../Ejercicio_4/style/style.css"/>
 </head>
-<body class="col-12">
+<body id = "body" class="col-12">
+	<div class="modal col-12">
+
+ 		 <!-- Contenido de la ventana-->
+  		<div class="modal-content">
+    		<form>
+    			<ul class="modal-block">
+					<li>
+						<p>Email</p><br>
+						<input id="modal-email" type="email" name="email"><br>
+					</li>
+					<li>
+						<p>Password</p><br>
+						<input id="modal-password" type="password" name="password">
+					</li>
+					<li>
+						<input id="login" type="button" name="log"	value="Log In">
+					</li>	
+				</ul>
+    		</form>
+  		</div>
+
+	</div>
 	<div class="col-12">
 		<header class="col-12">
 			<img id="logo" src="../Ejercicio_4/img/miaulogo.png" alt="Logo de Miau">
@@ -18,6 +40,16 @@
 			</nav>
 		</header>
 		<form id="main" class="col-12" name="formulario" method="post">
+			<ul class="block">
+				<li>
+					<p>Username *</p><br>
+					<input id="f-username" type="text" name="username">
+				<br></li>
+				<li>
+					<p>Password *</p><br>
+					<input id="f-password" type="password" name="password">
+				</li>	
+			</ul>
 			<hr class="long" />
 			<div class="col-12 multi-column">
 				<h3 class="col-4 col-4-2">PERSONAL INFORMATION</h3>

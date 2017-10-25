@@ -10,27 +10,40 @@ form.addEventListener("submit", validateForm);
 
 
 function validateForm() {
+
+    /*Comprobación del usuario*/
+    var a = document.forms["formulario"]["username"].value;
+    if(a == "") {
+         alert("Username must be filled out");
+    }
+
+    /*Comprobación de la contraseña*/
+    var b = document.forms["formulario"]["password"].value;
+    if(b == "") {
+         alert("Password must be filled out");
+    }
+
     /*Comprobación de nombre*/
-    var y = document.forms["formulario"]["NameLName"].value;
-    if (y == "") {
+    var c = document.forms["formulario"]["NameLName"].value;
+    if (c == "") {
         alert("Name and Last Name must be filled out");
     } 
 
     /*Comprobación email*/
-    var x = document.forms["formulario"]["email"].value;
-    if (x == "") {
+    var d = document.forms["formulario"]["email"].value;
+    if (d == "") {
         alert("Email must be filled out");
     } else {
-        var atpos = x.indexOf("@");
-        var dotpos = x.lastIndexOf(".");
-        if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        var atpos = d.indexOf("@");
+        var dotpos = d.lastIndexOf(".");
+        if (atpos<1 || dotpos<atpos+2 || dotpos+2>=d.length) {
             alert("Not a valid e-mail address");
         } 
     }
 
     /*Comprobación dirección*/
-    var a = document.forms["formulario"]["address"].value;
-    if (a == "") {
+    var e = document.forms["formulario"]["address"].value;
+    if (e == "") {
         alert("Adress must be filled out");
     }
 
@@ -40,8 +53,8 @@ function validateForm() {
     //    return false;
     //}
     /*Comprobación de check*/
-    var c = document.getElementById("myCheck").checked;
-    if(c == false){
+    var f = document.getElementById("myCheck").checked;
+    if(f == false){
 		alert('You must agree to the terms first.');
     }
 
