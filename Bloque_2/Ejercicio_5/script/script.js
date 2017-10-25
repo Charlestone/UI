@@ -36,9 +36,6 @@ $(document).ready(function(){
     });
 
     
-   
-
-
     $("img[name=mas2]").click(function(){
 
         if(oculto2 == false){
