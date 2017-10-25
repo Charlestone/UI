@@ -2,12 +2,12 @@
 
 @font-face {
 	font-family: PTSans;
-	src: url(../Ejercicio_2/font/PT_Sans/PT_Sans-Web-Regular.ttf);
+	src: url(../Ejercicio_5/font/PT_Sans/PT_Sans-Web-Regular.ttf);
 }
 
 @font-face{
 	font-family: PTSans;
-	src: url(../Ejercicio_2/font/PT_Sans/PT_Sans-Web-Bold.ttf);
+	src: url(../Ejercicio_5/font/PT_Sans/PT_Sans-Web-Bold.ttf);
 	font-weight: bold;
 }
 
@@ -66,7 +66,7 @@ elementos de manera más sencilla y estandarizada*/
 
 body {
 	margin: 0;
-	background-image: url("../Ejercicio_2/img/bg/negro.png");
+	background-image: url("../Ejercicio_5/img/bg/negro.png");
 	font-family: 'PTSans', sans-serif;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -79,7 +79,7 @@ body {
 /*Cabecera-header*/
 
 header {
-	background-image: url("../Ejercicio_2/img/bg/geometry.png");
+	background-image: url("../Ejercicio_5/img/bg/geometry.png");
 	border: 3px solid #cccccc;
 	margin-bottom: 40px;
 	-webkit-box-sizing: border-box;

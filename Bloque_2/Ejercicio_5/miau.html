@@ -3,16 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<title>Miau</title>
-	<link rel="stylesheet" type="text/css" href="../Ejercicio_2/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../Ejercicio_5/style.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body class="col-12">
 	<div class="col-12">
 		<header class="col-12">
-			<img id="logo" src="../Ejercicio_2/img/miaulogo.png" alt="Logo de Miau">
+			<img id="logo" src="../Ejercicio_5/img/miaulogo.png" alt="Logo de Miau">
 			<h1>HOME</h1>
 			<div class="right-header">
 				<h3 id="username" class="user">Username</h3>
-				<img id="userphoto" class="user" src="../Ejercicio_2/img/usuario.png" alt="Foto de usuario">
+				<img id="userphoto" class="user" src="../Ejercicio_5/img/usuario.png" alt="Foto de usuario">
 			</div>
 		</header>
 		<div id="main" class="col-12">
@@ -21,19 +22,20 @@
 				<div class="col-12 multi-column"> <!-- div que contiene la descripcion del video, sus likes y shares y el vídeo -->
 					<div class="margen col-4">
 					
-						<img class="alinear" src="../Ejercicio_2/img/corazon.png" alt="Icono de like">
-						<p class="margen-letras">1000 likes </p> <br> <br> 
+						<img class="alinear" src="../Ejercicio_5/img/corazon.png" alt="Icono de like" name="corazon">
+						<p id="likes" class="margen-letras">1000</p>
+						<p> likes </p> <br> <br> 
 					
 					
-						<img class="alinear" src="../Ejercicio_2/img/compartir.png" alt="Icono de compartir">
+						<img class="alinear" src="../Ejercicio_5/img/compartir.png" alt="Icono de compartir">
 						<p class="margen-letras">1000 shares</p> <br> <br>
 					
 						<p>Description of the video</p>
 					</div>
 					<div class="col-8">
 						<video class="bordes" controls> 
-  						<source src="../Ejercicio_2/img/videoserie.mp4" type="video/mp4">
-  						<source src="../Ejercicio_2/img/videoserie.ogg" type="video/ogg">
+  						<source src="../Ejercicio_5/img/videoserie.mp4" type="video/mp4">
+  						<source src="../Ejercicio_5/img/videoserie.ogg" type="video/ogg">
   						Tu navegador no soporta la reproduccion del video. 
 						</video>
 					</div> 
@@ -44,24 +46,24 @@
 				<h2> Other Videos</h2>
 				<div class="multi-column">
 					<div class="col-4 margen-3 bordes ">
-						<img class="alinear-2 margen-2 " src="../Ejercicio_2/img/reproduccion.png" alt="foto del video">
+						<img class="alinear-2 margen-2 " src="../Ejercicio_5/img/reproduccion.png" alt="foto del video">
 						<div class= "margen-2 titulomas clearfix">
 							<p class="titulo">Title</p>
-							<img class="mas" src="../Ejercicio_2/img/mas.png" alt="icono de mas info">
+							<img class="mas" src="../Ejercicio_5/img/mas.png" alt="icono de mas info">
 						</div>
 					</div>
 					<div class="col-4 margen-3 bordes ">
-						<img class="alinear-2 margen-2 " src="../Ejercicio_2/img/reproduccion.png" alt="foto del video">
+						<img class="alinear-2 margen-2 " src="../Ejercicio_5/img/reproduccion.png" alt="foto del video">
 						<div class= "margen-2 titulomas clearfix">
 							<p class="titulo">Title</p>
-							<img class="mas" src="../Ejercicio_2/img/mas.png" alt="icono de mas info">
+							<img class="mas" src="../Ejercicio_5/img/mas.png" alt="icono de mas info">
 						</div>
 					</div>
 					<div class="col-4 margen-3 bordes ">
-						<img class="alinear-2 margen-2 " src="../Ejercicio_2/img/reproduccion.png" alt="foto del video">
+						<img class="alinear-2 margen-2 " src="../Ejercicio_5/img/reproduccion.png" alt="foto del video">
 						<div class= "margen-2 titulomas clearfix">
 							<p class="titulo">Title</p>
-							<img class="mas" src="../Ejercicio_2/img/mas.png" alt="icono de mas info">
+							<img class="mas" src="../Ejercicio_5/img/mas.png" alt="icono de mas info">
 						</div>
 					</div>
 				</div>
@@ -70,14 +72,17 @@
 
 		<footer class="col-12">
 			<ul>
-				<li><a href=""><img src="../Ejercicio_2/img/fb.png" alt="Facebook"></a></li>
+				<li><a href=""><img src="../Ejercicio_5/img/fb.png" alt="Facebook"></a></li>
 				<li><p>&#124;</p></li>
-				<li><a href=""><img src="../Ejercicio_2/img/twitter.png" alt="Twitter"></a></li>
+				<li><a href=""><img src="../Ejercicio_5/img/twitter.png" alt="Twitter"></a></li>
 				<li><p>&#124;</p></li>
 				<li><a href="">Ayuda</a></li>
 			</ul>
 			<p class="copy">&copy; 2017 Cat Entertainment, Inc.</p>
 		</footer>
 	</div>
+
+<script src="./script/script.js" type="text/javascript"></script>
+
 </body>
 </html>
