@@ -209,11 +209,11 @@ h2{
     display: table;
 }
 
-.bordes {
+/*.bordes {
 	outline: 1px solid #cccccc;
 	outline-offset: 1px;
 
-}
+}**/
 
 
 /*Pie de página-footer*/
@@ -281,3 +281,40 @@ footer p {
     clear: both;
     display: table;
 }
+
+#descripcion{
+	display: none;
+	background-color: black;
+}
+
+/*Clases para colocar un div encima de otro */
+.posrelativa{
+	position: relative;
+}
+.posvideo{
+	/*position:absolute; */
+	z-index: 0; 
+
+
+}
+
+.posdescripcion1{
+	position:relative; 
+	z-index:1; 
+	background-color: black;
+
+}
+.posdescripcion2{
+	position:relative; 
+	z-index:1; 
+	background-color: black;
+
+}
+
+.posdescripcion3{
+	position:relative; 
+	z-index:1; 
+	background-color: black;
+
+}
+
