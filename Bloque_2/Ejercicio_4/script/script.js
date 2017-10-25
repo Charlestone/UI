@@ -14,14 +14,26 @@ function validateForm() {
     /*Comprobación del usuario*/
     var a = document.forms["formulario"]["username"].value;
     if(a == "") {
-         alert("Username must be filled out");
+        alert("Username must be filled out");
     }
 
     /*Comprobación de la contraseña*/
     var b = document.forms["formulario"]["password"].value;
     if(b == "") {
-         alert("Password must be filled out");
+        alert("Password must be filled out");
     }
+    /*Que la contraseña tenga un máximo de 8 caracteres 
+    donde los permitidos son las letras a-z y dígitos 0-9*/
+    var x = document.forms["formulario"]["password"].value;
+    if(x.length > 8) {
+       alert("Error: Password must contain a maximum of eight characters");       
+    }
+
+    /*if(x != ([a-z] || [0-9])){
+        alert("Error: Password can only contain leters (a-z) and numbers (0-9)");
+    }*/
+
+
 
     /*Comprobación de nombre*/
     var c = document.forms["formulario"]["NameLName"].value;
