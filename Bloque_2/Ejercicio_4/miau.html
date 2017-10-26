@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Miau</title>
 	<link rel="stylesheet" type="text/css" href="./style/style.css"/>
-	<script src="./script/script.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./script/script.js"></script>
 </head>
 <body id="body" class="col-12">
 	<!--Ventana modal-->
@@ -79,7 +80,8 @@
 								<input type="text" name="email">
 							<br><li>
 							<li><p>language</p><br>
-							<select>
+							<select id="language">
+								<option value="choose">Choose one, please</option>
 								<option value="español">espa&ntilde;ol</option>
 								<option value="inglés">ingl&eacute;s</option>
 								<option value="francés">franc&eacute;s</option>
@@ -100,6 +102,7 @@
 						<br></li>
 						<li><p>Payment method *</p><br>
 						<select id="payment">
+							<option value="choose">Choose one, please</option>
 							<option value="paypal">PayPal</option>
 							<option value="transferencia">Transferencia bancaria</option>
 							<option value="tarjeta">Tarjeta</option>

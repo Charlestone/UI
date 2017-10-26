@@ -88,7 +88,7 @@ body {
 
 .modal {
     display: none; /* Para que se oculte */
-    position: fixed; /* */
+    position: fixed;
     z-index: 1; /* Para que esté por encima del resto de elementos */
     left: 0;
     top: 0;
@@ -96,7 +96,7 @@ body {
     height: 100%;
     overflow: auto;
 	background-color: rgb(255,255,255);
-    background-color: rgba(255,255,255,0.6); /* Black w/ opacity */
+    background-color: rgba(255,255,255,0.6);
 }
 
 .modal-content {
@@ -223,7 +223,6 @@ input:focus, select:focus { /*También nos sirve para billing information*/
 	text-align: center;
 	margin-bottom: 30px;
 }
-
 /*Pie de página-footer*/
 
 footer {
@@ -261,7 +260,7 @@ footer p {
 	margin-right: 20px;
 }
 
-#tarjeta, #transferencia{
+#tarjeta, #transferencia, #paypal{
 	display: none;
 }
 
