@@ -23,15 +23,19 @@ $(document).ready(function(){
 
 
     });
-
+    var mostrardesc1 = false;
     $("img[name=mas1]").click(function(){
-        var mostrardesc = false;
         $("#descripcion1").toggle();
-        $("img[name=mas1]").attr('src','../Ejercicio_5/img/menos.png');
 
+        if(mostrardesc1 == false){
+        $(".mas").attr('src','../Ejercicio_5/img/menos.png');
+        mostrardesc1= true;
+        }else{
+            $(".mas").attr('src','../Ejercicio_5/img/mas.png');
+            mostrardesc1 = false;
+        }
 
     });
-
 
     $("img[name=mas2]").click(function(){
         $("#descripcion2").toggle();
@@ -59,8 +63,6 @@ $(document).ready(function(){
             }
         });
 
-
-    $()
 
     });
 
