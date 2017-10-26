@@ -5,6 +5,8 @@
 	<title>Miau</title>
 	<link rel="stylesheet" type="text/css" href="../Ejercicio_5/style.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="./script/script.js"></script>
 
 </head>
@@ -35,8 +37,8 @@
 					
 						<p>Description of the video</p>
 					</div>
-					<div class="col-8">
-						<video class="bordes" controls> 
+					<div id="droppable" class="col-8">
+						<video id="videoprincipal" class="bordes" controls> 
   						<source src="../Ejercicio_5/img/videoserie.mp4" type="video/mp4">
   						<source src="../Ejercicio_5/img/videoserie.ogg" type="video/ogg">
   						Tu navegador no soporta la reproduccion del video. 
@@ -48,8 +50,8 @@
 			<div class="col-12"> <!-- Contenedor para other videos -->
 				<h2> Other Videos</h2>
 				<div class="multi-column">
-					<div class="col-4 margen-3  ">
-						<img class="alinear-2 margen-2 posvideo" id="draggable" src="../Ejercicio_5/img/reproduccion.png" alt="foto del video">
+					<div id="draggable" class="col-4 margen-3  ">
+						<img class="alinear-2 margen-2 posvideo" src="../Ejercicio_5/img/homeland.png" alt="foto de homeland" urlvideo="../Ejercicio_5/img/homeland.mp4">
 						<div class= "margen-2 titulomas clearfix">
 							<p class="titulo">Title</p>
 							<img class="mas" src="../Ejercicio_5/img/mas.png" name="mas1" alt="icono de mas info">
@@ -60,7 +62,7 @@
 					</div>
 					
 					<div class="col-4 margen-3  ">
-						<img class="alinear-2 margen-2 posvideo" src="../Ejercicio_5/img/reproduccion.png" alt="foto del video">
+						<img class="alinear-2 margen-2 posvideo" src="../Ejercicio_5/img/StrangerThings.png" alt="foto del video">
 						<div class= "margen-2 titulomas clearfix">
 							<p class="titulo">Title</p>
 							<img class="mas" src="../Ejercicio_5/img/mas.png" name="mas2" alt="icono de mas info">
@@ -70,7 +72,7 @@
 					</div>
 
 					<div class="col-4 margen-3  ">
-						<img class="alinear-2 margen-2 posvideo" src="../Ejercicio_5/img/reproduccion.png" alt="foto del video">
+						<img class="alinear-2 margen-2 posvideo" src="../Ejercicio_5/img/billions.png" alt="foto del video">
 						<div class= "margen-2 titulomas clearfix">
 							<p class="titulo">Title</p>
 							<img class="mas" src="../Ejercicio_5/img/mas.png" name="mas3" alt="icono de mas info">

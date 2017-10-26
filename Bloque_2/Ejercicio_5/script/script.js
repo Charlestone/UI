@@ -24,45 +24,40 @@ $(document).ready(function(){
 
     });
 
-     $("img[name=mas1]").click(function(){
-        if(oculto1 == false){
-        $("#descripcion1").hide();
-        oculto1 = true;
-        } else { 
-            $("#descripcion1").show();
-            oculto1=false;
-        }
+    $("img[name=mas1]").click(function(){
+        $("#descripcion1").toggle();
 
     });
 
-    
-    $("img[name=mas2]").click(function(){
 
-        if(oculto2 == false){
-        $("#descripcion2").hide();
-        oculto2 = true;
-        } else { 
-            $("#descripcion2").show();
-            oculto2=false;
-        }
+    $("img[name=mas2]").click(function(){
+        $("#descripcion2").toggle();
 
     });
 
     $("img[name=mas3]").click(function(){
-        if(oculto3 == false){
-        $("#descripcion3").hide();
-        oculto3 = true;
-        } else { 
-            $("#descripcion3").show();
-            oculto3=false;
-        }
+        $("#descripcion3").toggle();
 
     });
+
+   
 
     /*Hago la imagen del primer video draggable*/
     $(function(){
         $("#draggable").draggable();
+        $("#droppable"). droppable({
+            drop: function(event, ui){
+                
+            }
+        });
+
+
     });
+
+
+}
+
+    /*Hago la imagen del primer video droppable*/
 
 
 
