@@ -26,10 +26,10 @@ $(document).ready(function(){
 
      $("img[name=mas1]").click(function(){
         if(oculto1 == false){
-        $(".posdescripcion1").hide();
+        $("#descripcion1").hide();
         oculto1 = true;
         } else { 
-            $(".posdescripcion1").show();
+            $("#descripcion1").show();
             oculto1=false;
         }
 
@@ -39,10 +39,10 @@ $(document).ready(function(){
     $("img[name=mas2]").click(function(){
 
         if(oculto2 == false){
-        $(".posdescripcion2").hide();
+        $("#descripcion2").hide();
         oculto2 = true;
         } else { 
-            $(".posdescripcion2").show();
+            $("#descripcion2").show();
             oculto2=false;
         }
 
@@ -50,15 +50,19 @@ $(document).ready(function(){
 
     $("img[name=mas3]").click(function(){
         if(oculto3 == false){
-        $(".posdescripcion3").hide();
+        $("#descripcion3").hide();
         oculto3 = true;
         } else { 
-            $(".posdescripcion3").show();
+            $("#descripcion3").show();
             oculto3=false;
         }
 
     });
 
+    /*Hago la imagen del primer video draggable*/
+    $(function(){
+        $("#draggable").draggable();
+    });
 
 
 
