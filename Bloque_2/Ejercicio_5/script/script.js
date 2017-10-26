@@ -25,7 +25,10 @@ $(document).ready(function(){
     });
 
     $("img[name=mas1]").click(function(){
+        var mostrardesc = false;
         $("#descripcion1").toggle();
+        $("img[name=mas1]").attr('src','../Ejercicio_5/img/menos.png');
+
 
     });
 
@@ -42,7 +45,8 @@ $(document).ready(function(){
 
    
 
-    /*Hago la imagen del primer video draggable*/
+    /*Hago la imagen del primer video draggable y el contendeor que contiene
+    el vídeo grande*/
     $(function(){
         $("#draggable").draggable();
         $("#droppable"). droppable({
@@ -55,6 +59,8 @@ $(document).ready(function(){
             }
         });
 
+
+    $()
 
     });
 
