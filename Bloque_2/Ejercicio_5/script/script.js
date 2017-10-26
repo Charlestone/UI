@@ -47,15 +47,18 @@ $(document).ready(function(){
         $("#draggable").draggable();
         $("#droppable"). droppable({
             drop: function(event, ui){
-                
+                var dirvideo = $("#draggable").attr("urlvideo");
+                var $video = $("#droppable");
+                $video.empty().append('<source src="'+dirvideo+'" type="video/mp4" />');
+                $video.get(0).load();
+                $video.get(0).play(); 
             }
         });
 
 
     });
 
-
-}
+ 
 
     /*Hago la imagen del primer video droppable*/
 

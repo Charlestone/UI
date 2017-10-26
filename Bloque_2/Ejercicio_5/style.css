@@ -296,10 +296,8 @@ footer p {
 /*Clase para ocultar la descripcion y poner la posicion de la descripcion */
 .posdescripcion{
 	display: none;
-	background-color: black;
 	position:relative;
 	z-index:1;  /*No hace nada*/
-	background-color: black;
 	text-align: center;
 
 
