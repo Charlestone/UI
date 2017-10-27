@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $("#body").ready(function(){
-    //El siguiente par de linea esta puesto por firefox
+    //El siguiente par de lineas esta puesto por firefox
     $("#languages").val("choose");
     $("#languages").val("choose");
     $(".modal").show();
@@ -9,8 +9,8 @@ $(document).ready(function() {
   
   $("#login").click(function(){
     $(".modal").hide();
-    $()
-    $()
+    $("input[name=email]").val($("input[name=emailm]").val());
+    $("input[name=password]").val($("input[name=passwordm]").val());
   });
 
   $("#payment").change(function() {
