@@ -68,8 +68,9 @@ body {
 	margin: 0;
 	background-image: url("../Ejercicio_5/img/bg/negro.png");
 	font-family: 'PTSans', sans-serif;
-	overflow-x: hidden;
+	overflow-x: auto;
 	overflow-y: auto;
+
 }
 
 #main {
@@ -172,23 +173,15 @@ h2{
 	margin-top: 10px;
 }	
 
-/* .margen-2{
-	/*height: auto;*/
-	/*width: 100%;
-}
-*/
 
 .margen-3{
-	margin-left: 77px;
-	
+	margin-left: 60px;
+	margin-right: 60px;
 	margin-bottom: 60px;
 	margin-top: 40px;
 }
 
 
-/*.alinear-2{
-	display: block;
-}*/
 
 .titulo{
 	float: left;
@@ -285,14 +278,18 @@ footer p {
 
 
 
-/*Clases para colocar un div encima de otro */
+
+ /*Clases para colocar un div encima de otro */
+/*
 .posrelativa{
 	position: relative;
 }
 .posvideo{
-	/*position:absolute; */
+	/*position:absolute; 
 	z-index: 0; 
 }
+
+*/
 /*Clase para ocultar la descripcion y poner la posicion de la descripcion */
 .posdescripcion{
 	display: none;
@@ -300,8 +297,13 @@ footer p {
 	z-index:1;  /*No hace nada*/
 	text-align: center;
 
-
 }
+
+.auto{ /*Clase para centrar la imagen de cada video*/
+	margin: auto;
+	display: block;
+}
+
 
 
 /*.posdescripcion2{
@@ -318,3 +320,4 @@ footer p {
 
 }
 */
+

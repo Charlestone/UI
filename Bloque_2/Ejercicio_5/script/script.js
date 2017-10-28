@@ -60,17 +60,18 @@ $(document).ready(function(){
         }
     });
 
+/*
    
-
-    /*Hago la imagen del primer video draggable y el contendeor que contiene
-    el vídeo grande*/
-    /*var videosm = ["./img/suits.mp4", "./img/homeland.mp4", "./img/strangerthings.mp4", "./img/billions.mp4"];
+/*Hago la imagen del primer video draggable y el contendeor que contiene
+    el vídeo grande
+    var videosm = ["./img/suits.mp4", "./img/homeland.mp4", "./img/strangerthings.mp4", "./img/billions.mp4"];
     var videoso = ["./img/suits.ogg", "./img/homeland.ogg", "./img/strangerthings.ogg", "./img/billions.ogg"];
     var foto = ["./img/suits.png"], "./img/homeland.png", "./img/strangerthings.png", "./img/billions.png"];
     var desc = ["Mike Ross es un joven con una mente brillante que siempre ha soñado con ser abogado. Por un incidente desafortunado es expulsado de la facultad antes de graduarse. Sin embargo, su prodigiosa memoria fotográfica le permite ganarse la vida con un trabajo poco corriente y fuera de la ley, suplantando a otros en los exámenes admisión para la escuela de derecho. Envuelto en un encargo puntual de tráfico de drogas, Mike sospecha que le han tendido una trampa, pero consigue deshacerse de la policía al colarse en una entrevista de trabajo para uno de los bufetes más importantes de Nueva York.",
     "Carrie Mathison, agente de la C.I.A., lleva a cabo una investigación poco ortodoxa sobre las amenazas de la seguridad de Estados Unidos en Irak, hecho que provoca una grave crisis diplomática y que la inquisitiva joven sea apartada de la labor de campo.",
     "Stranger Things transcurre en Hawking, típico pueblo norteamericano donde nunca pasa nada. Will Byers, un joven que vuelve a casa después de jugar una partida de rol con sus amigos, desaparece misteriosamente. Por otro lado, cerca del pueblo hay una central energética que esconde un centro de investigación del gobierno del cual se escapa un extraño ser y una niña.",
     "Billions es un drama que examina con mirada forense el mundo de las altas finanzas mediante el seguimiento de la colisión que se avecina entre dos figuras titánicas de gran poder."];
+    var titulos = ["SUITS", "HOMELAND", "STRANGER THINGS", "BILLIONS"];
     var dragged;
     var dropped;
 
@@ -81,12 +82,14 @@ $(document).ready(function(){
         });
         $("#droppable"). droppable({
                 drop: function(event, ui){
-                
+                 (this).html("Lo soltaste!!")
             }
         });
 
 
     });
+
+
 
     /* CODIGO MARTA
     $("#container-video").droppable({
