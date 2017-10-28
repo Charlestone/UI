@@ -137,6 +137,38 @@ p {
 	align-items: center;
 }
 
+/*Estilo de la ventana modal*/
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	padding-top: 50px;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.6)
+}
+
+.modal-content {
+	display: block;
+	color: #cccccc;
+	position: relative;
+	background-image: url("../img/bg/negro.png");
+	margin: auto;
+	padding: 20px;
+	border: 2px solid #cccccc;
+	width: 60%
+}
+
+.modal-block {
+	display: block;
+	text-align: center;
+	margin-top: 30px
+}
+
+
 /* Estilo del main */
 
 h2{

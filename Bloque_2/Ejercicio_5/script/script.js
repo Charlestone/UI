@@ -8,6 +8,33 @@ $(document).ready(function(){
     var oculto2 = true;
     var oculto3 = true;
 
+    /*JS para la ventana modal*/
+    $("#body").ready(function () {
+        //El siguiente par de lineas esta puesto por firefox
+        $(".modal").show();
+
+    });
+
+
+    $("#login").click(function () {
+        /*Validacion de email en la ventana modal*/
+        if (!email.test($("#modal-email").val())) {
+            errors += "Invalid email.\n";
+        }
+        /*Validacion de contraseña en la ventana modal*/
+        if (!password.test($("#modal-password").val())) {
+            errors += "Invalid password.\n";
+        }
+        if (!errors) {
+            $(".modal").hide();
+            $("input[name=email]").val($("input[name=emailm]").val());
+            $("input[name=password]").val($("input[name=passwordm]").val());
+        } else {
+            alert(errors + "\nPlease enter valid alternatives for the wrong fields.");
+            errors = "";
+        }
+    });
+
 
     $("#corazon").click(function () {
     numlikes++;
