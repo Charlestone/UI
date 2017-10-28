@@ -59,7 +59,7 @@
 
 body {
 	margin: 0;
-	background-image: url("./bg/negro.png");
+	background-image: url("../img/bg/negro.png");
 	font-family: 'PTSans', sans-serif;
 	overflow-x: hidden;
 	overflow-y: auto
@@ -96,7 +96,7 @@ body {
 	display: block;
 	color: #cccccc;
 	position: relative;
-	background-image: url("./bg/negro.png");
+	background-image: url("../img/bg/negro.png");
 	margin: auto;
 	padding: 20px;
 	border: 2px solid #cccccc;
@@ -110,7 +110,7 @@ body {
 }
 
 header {
-	background-image: url(".bg/geometry.png");
+	background-image: url("../img/bg/geometry.png");
 	border: 3px solid #cccccc;
 	height: 94px;
 	margin-bottom: 40px;
@@ -171,7 +171,7 @@ select {
 	margin-bottom: 12px;
 	padding: 3px 8px;
 	outline: none;
-	background-image: url('./bg/negro.png');
+	background-image: url('../img/bg/negro.png');
 	color: #cccccc
 }
 
