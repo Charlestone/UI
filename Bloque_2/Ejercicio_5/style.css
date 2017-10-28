@@ -172,34 +172,36 @@ h2{
 	margin-top: 10px;
 }	
 
-.margen-2{
-	height: auto;
-	width: 100%;
+/* .margen-2{
+	/*height: auto;*/
+	/*width: 100%;
 }
+*/
 
 .margen-3{
 	margin-left: 77px;
-	margin-right: 77px;
+	
 	margin-bottom: 60px;
 	margin-top: 40px;
 }
 
 
-.alinear-2{
+/*.alinear-2{
 	display: block;
-}
+}*/
 
 .titulo{
 	float: left;
 	display: table;
 	margin-left: 3px;
+	font-weight: bold;	
 
 }	
 
 .mas{
 	float: right;
 	display: table;
-	margin-right: 3px;		
+	margin-right: 3px;	
 }
 
 
@@ -262,8 +264,6 @@ footer p {
 
 .little {
 	background-color: white;
-	
-	
 }
 
 .title {
