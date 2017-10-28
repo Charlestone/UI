@@ -1,6 +1,9 @@
 $(document).ready(function() {
     $("#body").ready(function() {
         $(".modal").show();
+        $("select").val("choose");
+        $("input[type!=button]").val("");
+        $("input[type=checkbox]").prop('checked', false);
 
     });
 
@@ -66,16 +69,20 @@ $(document).ready(function() {
             errors += "Invalid address.\n";
         }
         /* Validacion del metodo de pago */
+        if (true) {
 
+        } else {
+
+        }
         /* Validacion de la checkbox */
         if (!$("input[name=terms]").prop('checked')) {
             terms += "\nYou must agree to the terms.";
         }
         /* Impresion de errores */
         if (!errors && !terms) {} else {
-        	if (errors) {
-        		errors += "\nPlease enter valid alternatives for the wrong fields.";
-        	}
+            if (errors) {
+                errors += "\nPlease enter valid alternatives for the wrong fields.";
+            }
             alert(errors + terms);
             errors = "";
             terms = "";
