@@ -1,122 +1,113 @@
-/*Fuentes*/
+@font-face {
+	font-family: PTSans;
+	src: url(../font/PT_Sans/PT_Sans-Web-Regular.ttf)
+}
 
 @font-face {
 	font-family: PTSans;
-	src: url(../font/PT_Sans/PT_Sans-Web-Regular.ttf);
-}
-
-@font-face{
-	font-family: PTSans;
 	src: url(../font/PT_Sans/PT_Sans-Web-Bold.ttf);
-	font-weight: bold;
+	font-weight: bold
 }
-
-/*12 Tipos de columnas para asignar anchura a 
-elementos de manera más sencilla y estandarizada*/
 
 .col-1 {
-	width: 8.33%;
+	width: 8.33%
 }
 
 .col-2 {
-	width: 16.66%;
+	width: 16.66%
 }
 
 .col-3 {
-	width: 25%;
+	width: 25%
 }
 
 .col-4 {
-	width: 33.33%;
+	width: 33.33%
 }
 
 .col-5 {
-	width: 41.66%;
+	width: 41.66%
 }
 
 .col-6 {
-	width: 50%;
+	width: 50%
 }
 
 .col-7 {
-	width: 58.33%;
+	width: 58.33%
 }
 
-.col-8{
-	width: 66.66%;
+.col-8 {
+	width: 66.66%
 }
 
-.col-9{
-	width: 75%;
+.col-9 {
+	width: 75%
 }
 
 .col-10 {
-	width: 83.33%;
+	width: 83.33%
 }
 
 .col-11 {
-	width: 91.66%;
+	width: 91.66%
 }
 
 .col-12 {
-	width: 100%;
+	width: 100%
 }
-
-/*Configuracíón general de la pagina*/
 
 body {
 	margin: 0;
 	background-image: url("../img/bg/negro.png");
 	font-family: 'PTSans', sans-serif;
 	overflow-x: hidden;
-	overflow-y: auto;
+	overflow-y: auto
 }
 
 #main {
-	color: #cccccc;
+	color: #cccccc
 }
 
-.long { 
-	border: 1px solid #cccccc; 
-	width: 98%; 
+.long {
+	border: 1px solid #cccccc;
+	width: 98%
 }
+
 .short {
-	border: 1px solid #cccccc; 
-	width: 98%; 
+	border: 1px solid #cccccc;
+	width: 98%
 }
-/*Ventana modal*/
 
 .modal {
-    display: none; /* Para que se oculte */
-    position: fixed;
-    z-index: 1; /* Para que esté por encima del resto de elementos */
-    left: 0;
-    top: 0;
-    padding-top: 50px;
-    height: 100%;
-    overflow: auto;
-	background-color: rgb(255,255,255);
-    background-color: rgba(255,255,255,0.6);
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	padding-top: 50px;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.6)
 }
 
 .modal-content {
 	display: block;
 	color: #cccccc;
 	position: relative;
-    background-image: url("../img/bg/negro.png");
-    margin: auto;
-    padding: 20px;
-    border: 2px solid #cccccc;
-    width: 60%;
+	background-image: url("../img/bg/negro.png");
+	margin: auto;
+	padding: 20px;
+	border: 2px solid #cccccc;
+	width: 60%
 }
 
 .modal-block {
 	display: block;
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 30px
 }
-
-/*Cabecera-header*/
 
 header {
 	background-image: url("../img/bg/geometry.png");
@@ -125,7 +116,7 @@ header {
 	margin-bottom: 40px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	box-sizing: border-box
 }
 
 h1 {
@@ -133,202 +124,191 @@ h1 {
 	margin-bottom: 29px;
 	margin-left: 25px;
 	display: inline-block;
-	color: #404040;
+	color: #404040
 }
 
 .link-top {
 	margin-top: 38px;
 	margin-bottom: 38px;
 	margin-right: 20px;
-	float: right;
+	float: right
 }
 
-a { /*También nos sirve para los enlaces del pie de página*/
-	text-decoration: none; 
-	color: #4dd2ff;
+a {
+	text-decoration: none;
+	color: #4dd2ff
 }
 
 #logo {
 	margin-top: 22px;
 	margin-bottom: 22px;
-	margin-left: 10px; 
-	float: left;
+	margin-left: 10px;
+	float: left
 }
 
-/*Personal information*/
-
-h3 { /*También nos sirve para billing infomation*/
-	margin: 16px; 
+h3 {
+	margin: 16px
 }
 
-p { /*También nos sirve para billing infomation y footer*/
+p {
 	margin: 0;
-	padding: 0px; 
-	display: inline;
+	padding: 0px;
+	display: inline
 }
 
-.multi-column { /*También nos sirve para billing information*/
-	display: inline-flex;
+.multi-column {
+	display: inline-flex
 }
 
-ul { /*También nos sirve para billing information y footer*/
+ul {
 	padding: 0;
-	list-style: none;
+	list-style: none
 }
 
-input, select { /*También nos sirve para billing information*/
+input,
+select {
 	margin-top: 8px;
 	margin-bottom: 12px;
 	padding: 3px 8px;
 	outline: none;
 	background-image: url('../img/bg/negro.png');
-	color: #cccccc;
+	color: #cccccc
 }
 
-input { /*También nos sirve para billing information*/
+input {
 	border: none;
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid white
 }
 
-input:focus, select:focus { /*También nos sirve para billing information*/
+input:focus,
+select:focus {
 	background-color: white;
 	color: black;
-	background-image: none;
+	background-image: none
 }
 
-/*Billing Information*/
-
-.inline-form{
-	margin-left: 9px;
+.inline-form {
+	margin-left: 9px
 }
 
 .dis-input {
-	margin-top: 12.8px;
+	margin-top: 12.8px
 }
 
-.code{
-	width: 30px;
+.code {
+	width: 30px
 }
 
 .spaced {
-	margin-bottom: 30px;
+	margin-bottom: 30px
 }
 
 .multi-column3 {
-	display: inline-flex;
+	display: inline-flex
 }
 
 .block {
 	display: block;
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 30px
 }
-/*Pie de página-footer*/
 
 footer {
-	border: 3px solid #cccccc;	
+	border: 3px solid #cccccc;
 	height: 48px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	color: #cccccc;
+	color: #cccccc
 }
 
 footer ul {
 	display: inline-flex;
-    color: #4dd2ff;
-    margin: 0;
-    padding-top: 10px; 
-    padding-left: 20px;
-
+	color: #4dd2ff;
+	margin: 0;
+	padding-top: 10px;
+	padding-left: 20px
 }
 
 footer a {
 	align-self: center;
 	margin-left: 5px;
-	margin-right: 5px;
+	margin-right: 5px
 }
 
 footer p {
-	align-self: center;
+	align-self: center
 }
 
 .copy {
 	float: right;
 	margin-bottom: 11px;
 	margin-top: 11px;
-	margin-right: 20px;
+	margin-right: 20px
 }
 
-#tarjeta, #transferencia, #paypal{
-	display: none;
+#tarjeta,
+#transferencia,
+#paypal {
+	display: none
 }
 
-/*Para tablets*/
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-
-	/*Header*/
+@media only screen and (min-width:601px) and (max-width:768px) {
 	.link-top {
 		display: block;
 		width: 100%;
-		float: left;
+		float: left
 	}
 
 	.link-top a {
-		margin-left: 50px; 
+		margin-left: 50px
 	}
 
-	/*Personal y billing information*/
-
 	.multi-column {
-		display: block;
+		display: block
 	}
 
 	.col-4-1 {
 		width: 50%;
-		display: inline;
+		display: inline
 	}
 
 	.col-4-2 {
-		width: 100%;
+		width: 100%
 	}
 
 	.col-8-1 {
 		width: 100%;
-		display: inline-flex;
+		display: inline-flex
 	}
+
 	.col-8 {
-		margin-left: 30px;
+		margin-left: 30px
 	}
 
 }
 
-/*Para móviles*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width:600px) {
+	[class*="col-"] {
+		width: 100%;
+		display: block
+	}
 
-	/*Página en general*/
-	 [class*="col-"] {
-	 	width: 100%;
-	 	display: block;
-	 }
-
-	 /*Header*/
 	.link-top {
 		display: block;
 		width: 100%;
 		float: left;
-		margin: 0;
+		margin: 0
 	}
 
 	.link-top a {
 		display: block;
 		margin-bottom: 20px;
-		margin-left: 16px; 
+		margin-left: 16px
 	}
 
-	/*Personal y billing information*/
 	.multi-column2 {
-		margin: 30px;
+		margin: 30px
 	}
 
-} 
+}
