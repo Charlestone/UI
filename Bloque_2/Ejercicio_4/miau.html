@@ -1,168 +1,215 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Miau</title>
-	<link rel="stylesheet" type="text/css" href="./style/style.css"/>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="./script/script.js"></script>
-</head>
-<body id="body" class="col-12">
-	<!--Ventana modal-->
-	<div class="modal col-12">
 
- 		 <!-- Contenido de la ventana-->
-  		<div class="modal-content">
-    		<form>
-    			<ul class="modal-block">
-					<li>
-						<p>Email</p><br>
-						<input id="modal-email" type="text" name="emailm"><br>
-					</li>
-					<li>
-						<p>Password</p><br>
-						<input id="modal-password" type="password" name="passwordm">
-					</li>
-					<li>
-						<input id="login" type="button" name="log"	value="Log In">
-					</li>	
-				</ul>
-    		</form>
-  		</div>
-	</div>
-	<div class="col-12">
-		<header class="col-12">
-			<img id="logo" src="./img/miaulogo.png" alt="Logo de Miau">
-			<h1>MY ACCOUNT</h1>
-			<nav class="link-top">
-				<a href="">Series</a>
-				<a href="">Peliculas</a>
-				<a href="">Favoritos</a>
-			</nav>
-		</header>
-		<form id="main" name="formulario" class="col-12" method="post">
-			<ul class="block">
-				<li>
-					<p>Username *</p><br>
-					<input id="f-username" type="text" name="username">
-				<br></li>
-				<li>
-					<p>Password *</p><br>
-					<input id="f-password" type="password" name="password">
-				</li>	
-			</ul>
-			<hr class="long" />
-			<div class="col-12 multi-column">
-				<h3 class="col-4 col-4-2">PERSONAL INFORMATION</h3>
-				<div class="col-8 col-8-1 multi-column">
-					<div class="col-4 col-4-1 multi-column2">
-					<ul>
-						<li>
-							<p>Name &AMP; Last Name *</p><br>
-							<input type="text" name="NameLName">
-						<br></li>
-						<li>
-							<p>Birthday *</p><br>
-							<input type="text" name="Birthday" placeholder="DD/MM/YYYY">
-						<br></li>
-						<li>
-							<p>Photo</p><br>
-							<input type="file" name="foto">
-						<br></li>
-					</ul>
-					</div>
-					<div class="col-4 col-4-1 multi-column2">
-						<ul>
-							<li>
-								<p>e-mail *</p><br>
-								<input type="text" name="email" readonly= "true">
-							<br></li>
-							<li><p>language</p><br>
-							<select id="language">
-								<option value="choose">Choose one, please</option>
-								<option value="español">espa&ntilde;ol</option>
-								<option value="inglés">ingl&eacute;s</option>
-								<option value="francés">franc&eacute;s</option>
-								<option value="alemán">alem&aacute;n</option>
-							</select></li>
-						</ul>
-					</div>
-				</div>				
-			</div>
-			<hr class="long" />
-			<div class="col-12 multi-column spaced">
-				<h3 class="col-4">BILLING INFORMATION</h3>
-				<div class="col-8 multi-column2">
-					<ul>
-						<li>
-							<p>Address *</p><br>
-							<input type="text" name="address">
-						<br></li>
-						<li><p>Payment method *</p><br>
-						<select id="payment">
-							<option value="choose">Choose one, please</option>
-							<option value="paypal">PayPal</option>
-							<option value="transferencia">Transferencia bancaria</option>
-							<option value="tarjeta">Tarjeta</option>
-						</select></li>
-						<li id="tarjeta"><ul class="multi-column3">
-								<li><p>Number</p><br>
-										<input class="dis-input" type="text" name="number" maxlength="16">
-								</li>
-								<li><div class="inline-form">
-										<p>Valid Thru</p><br>
-										<input type="text" name="valid" placeholder="MM">
-								</div></li>
-								<li><div class="inline-form">
-										<p>Code</p><br>
-										<input class="dis-input code" type="text" name="code" maxlength="3">
-								</div></li>
-							</ul>
-						</li>
-						<li id="transferencia"><ul class="multi-column3">
-								<li><p>Beneficiary's name</p><br>
-          							<input type="text" name="Beneficiary">
-        						</li>
-        						<li class="inline-form"><p>Surname</p><br>
-         			 				<input type="text" name="Surname">
-        						</li>
-        						<li class="inline-form"><p>Account Number</p><br>
-          							<input type="text" name="number" maxlength="16">
-        						</li>
-        						<li class="inline-form"><p>Bank</p><br>
-          							<input type="text" name="Beneficiary">
-        						</li>
-							</ul>
-						</li>
-						<li id="paypal">
-							<a href="">PayPal</a>
-						</li>							
-					</ul>
-				</div>
-			</div>
-			<hr class="col-5"/>
-			<br>
-			<ul class="block">
-				<li>
-					<input type="checkbox" name="terms" value="terms">I have read and I agree to the<a href="Condiciones">Terms of service*</a><br>
-				</li>
-				<li>
-					<input type="button" name="guardar" value="Guardar">
-					<input type="button" name="reset" value="Borrar">
-				</li>
-			</ul>
-		</form>
-		<footer class="col-12">
-			<ul>
-				<li><a href=""><img src="./img/fb.png" alt="Facebook"></a></li>
-				<li><p>&#124;</p></li>
-				<li><a href=""><img src="./img/twitter.png" alt="Twitter"></a></li>
-				<li><p>&#124;</p></li>
-				<li><a href="">Ayuda</a></li>
-			</ul>
-			<p class="copy">&copy; 2017 Cat Entertainment, Inc.</p>
-		</footer>
-	</div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miau</title>
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./script/script.js"></script>
+</head>
+
+<body id="body" class="col-12">
+    <!--Ventana modal-->
+    <div class="modal col-12">
+        <!-- Contenido de la ventana-->
+        <div class="modal-content">
+            <form>
+                <ul class="modal-block">
+                    <li>
+                        <p>Email</p>
+                        <br>
+                        <input id="modal-email" type="text" name="emailm">
+                        <br>
+                    </li>
+                    <li>
+                        <p>Password</p>
+                        <br>
+                        <input id="modal-password" type="password" name="passwordm">
+                    </li>
+                    <li>
+                        <input id="login" type="button" name="log" value="Log In">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <div class="col-12">
+        <header class="col-12">
+            <img id="logo" src="./img/miaulogo.png" alt="Logo de Miau">
+            <h1>MY ACCOUNT</h1>
+            <nav class="link-top">
+                <a href="">Series</a>
+                <a href="">Peliculas</a>
+                <a href="">Favoritos</a>
+            </nav>
+        </header>
+        <form id="main" name="formulario" class="col-12" method="post">
+            <ul class="block">
+                <li>
+                    <p>Username *</p>
+                    <br>
+                    <input id="f-username" type="text" name="username">
+                    <br>
+                </li>
+                <li>
+                    <p>Password *</p>
+                    <br>
+                    <input id="f-password" type="password" name="password">
+                </li>
+            </ul>
+            <hr class="long" />
+            <div class="col-12 multi-column">
+                <h3 class="col-4 col-4-2">PERSONAL INFORMATION</h3>
+                <div class="col-8 col-8-1 multi-column">
+                    <div class="col-4 col-4-1 multi-column2">
+                        <ul>
+                            <li>
+                                <p>Name &AMP; Last Name *</p>
+                                <br>
+                                <input type="text" name="NameLName">
+                                <br>
+                            </li>
+                            <li>
+                                <p>Birthday *</p>
+                                <br>
+                                <input type="text" name="Birthday" placeholder="DD/MM/YYYY">
+                                <br>
+                            </li>
+                            <li>
+                                <p>Photo</p>
+                                <br>
+                                <input type="file" name="foto">
+                                <br>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4 col-4-1 multi-column2">
+                        <ul>
+                            <li>
+                                <p>e-mail *</p>
+                                <br>
+                                <input type="text" name="email" readonly="true">
+                                <br>
+                            </li>
+                            <li>
+                                <p>language</p>
+                                <br>
+                                <select id="language">
+                                    <option value="choose">Choose one, please</option>
+                                    <option value="español">espa&ntilde;ol</option>
+                                    <option value="inglés">ingl&eacute;s</option>
+                                    <option value="francés">franc&eacute;s</option>
+                                    <option value="alemán">alem&aacute;n</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="long" />
+            <div class="col-12 multi-column spaced">
+                <h3 class="col-4">BILLING INFORMATION</h3>
+                <div class="col-8 multi-column2">
+                    <ul>
+                        <li>
+                            <p>Address *</p>
+                            <br>
+                            <input type="text" name="address">
+                            <br>
+                        </li>
+                        <li>
+                            <p>Payment method *</p>
+                            <br>
+                            <select id="payment">
+                                <option value="choose">Choose one, please</option>
+                                <option value="paypal">PayPal</option>
+                                <option value="transferencia">Transferencia bancaria</option>
+                                <option value="tarjeta">Tarjeta</option>
+                            </select>
+                        </li>
+                        <li id="tarjeta">
+                            <ul class="multi-column3">
+                                <li>
+                                    <p>Number</p>
+                                    <br>
+                                    <input class="dis-input" type="text" name="number" maxlength="16">
+                                </li>
+                                <li>
+                                    <div class="inline-form">
+                                        <p>Valid Thru</p>
+                                        <br>
+                                        <input type="text" name="valid" placeholder="MM">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inline-form">
+                                        <p>Code</p>
+                                        <br>
+                                        <input class="dis-input code" type="text" name="code" maxlength="3">
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="transferencia">
+                            <ul class="multi-column3">
+                                <li>
+                                    <p>Beneficiary's name</p>
+                                    <br>
+                                    <input type="text" name="Beneficiary">
+                                </li>
+                                <li class="inline-form">
+                                    <p>Surname</p>
+                                    <br>
+                                    <input type="text" name="Surname">
+                                </li>
+                                <li class="inline-form">
+                                    <p>Account Number</p>
+                                    <br>
+                                    <input type="text" name="number" maxlength="16">
+                                </li>
+                                <li class="inline-form">
+                                    <p>Bank</p>
+                                    <br>
+                                    <input type="text" name="Beneficiary">
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="paypal">
+                            <a href="">PayPal</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="col-5" />
+            <br>
+            <ul class="block">
+                <li>
+                    <input type="checkbox" name="terms" value="terms">I have read and I agree to the<a href="Condiciones">Terms of service*</a>
+                    <br>
+                </li>
+                <li>
+                    <input type="button" name="guardar" value="Guardar">
+                    <input type="button" name="reset" value="Borrar">
+                </li>
+            </ul>
+        </form>
+        <footer class="col-12">
+            <ul>
+                <li><a href=""><img src="./img/fb.png" alt="Facebook"></a></li>
+                <li>
+                    <p>&#124;</p>
+                </li>
+                <li><a href=""><img src="./img/twitter.png" alt="Twitter"></a></li>
+                <li>
+                    <p>&#124;</p>
+                </li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+            <p class="copy">&copy; 2017 Cat Entertainment, Inc.</p>
+        </footer>
+    </div>
 </body>
+
 </html>
