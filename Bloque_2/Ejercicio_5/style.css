@@ -168,6 +168,30 @@ p {
 	margin-top: 30px
 }
 
+ul {
+	padding: 0;
+	list-style: none
+}
+
+
+input {
+	border: none;
+	border-bottom: 2px solid white
+}
+
+input:focus,
+select:focus {
+	background-color: white;
+	color: black;
+	background-image: none
+}
+
+p {
+	margin: 0;
+	padding: 0px;
+	display: inline
+}
+
 
 /* Estilo del main */
 
@@ -285,8 +309,6 @@ footer p {
 }
 
 
-
-
 .little {
 	background-color: white;
 }
@@ -306,6 +328,7 @@ footer p {
     clear: both;
     display: table;
 }
+
 
 
 
