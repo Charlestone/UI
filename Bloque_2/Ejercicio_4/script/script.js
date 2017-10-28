@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $("#body").ready(function() {
         $(".modal").show();
+        /* Restauracion de valores iniciales del formulario */
         $("select").val("choose");
         $("input[type!=button]").val("");
         $("input[type=checkbox]").prop('checked', false);
