@@ -5,7 +5,6 @@ $(document).ready(function() {
         $("select").val("choose");
         $("input[type!=button]").val("");
         $("input[type=checkbox]").prop('checked', false);
-
     });
 
     var errors = "";
@@ -14,6 +13,7 @@ $(document).ready(function() {
     var password = /[a-z0-9]{1,8}/;
     var fullname = /[A-Z][a-z]+(\s[a-z]+){0,2}\s[A-Z][a-z]+/;
     var bday = /(\d{2}\/){2}\d{4}/;
+    var today = new Date();
 
     $("#login").click(function() {
         /*Validacion de email en la ventana modal*/
@@ -33,7 +33,9 @@ $(document).ready(function() {
             errors = "";
         }
     });
-
+    $("#pay").click(function() {
+    	$(this).attr("hasBeenClicked", "true");
+    });
     $("input[name=guardar]").click(function() {
         /* Validacion del nombre de usuario */
         if (!$("input[name=username]").val()) {
@@ -57,7 +59,6 @@ $(document).ready(function() {
                 day.setDate(birthday[0]);
                 day.setMonth(birthday[1] - 1);
                 day.setFullYear(birthday[2]);
-                var today = new Date();
                 if (today <= day) {
                     errors += "Invalid birthday.\n";
                 }
@@ -70,10 +71,42 @@ $(document).ready(function() {
             errors += "Invalid address.\n";
         }
         /* Validacion del metodo de pago */
-        if (true) {
+        switch ($("#payment").val()) {
+            case 'choose':
+                errors += "Invalid payment method.\n";
+                break;
 
-        } else {
+            case 'transferencia':
+            	if (!$("input[name=Beneficiary").val() || 
+            		!$("input[name=Surname").val() ||
+            		!$("input[name=Acnumber").val() ||
+            		!$("input[name=Bank").val()) {
+            		errors += "Invalid payment method.\n";
+            	}
+                break;
 
+            case 'tarjeta':
+                if (!/\d{16}/.test($("input[name=number]").val()) ||
+                 !/\d{3}/.test($("input[name=code]").val()) || 
+                 !/\d{2}\/\d{4}/.test($("input[name=valid]").val())) {
+                    errors += "Invalid payment method.\n";
+                } else {
+                    var valid = $("input[name=valid]").val().match(/\d+/g);
+                    var vday = new Date();
+                    vday.setDate("1");
+                    vday.setMonth(valid[0] - 1);
+                    vday.setFullYear(valid[1]);
+                    if (vday<today) {
+                    	 errors += "Invalid payment method.\n";
+                    }
+                }
+                break;
+
+            case 'paypal':
+                if ($("#pay").attr("hasBeenClicked") != "true") {
+                    errors += "Invalid payment method.\n";
+                }      
+                break;
         }
         /* Validacion de la checkbox */
         if (!$("input[name=terms]").prop('checked')) {
