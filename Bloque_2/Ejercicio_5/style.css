@@ -134,7 +134,7 @@ h3 {
 }
 
 /*Estilo de la ventana modal*/
-.modal {
+/*.modal {
 	display: none;
 	position: fixed;
 	z-index: 1;
@@ -181,7 +181,7 @@ select:focus {
 	color: black;
 	background-image: none
 }
-
+*/
 p {
 	margin: 0;
 	padding: 0px;
