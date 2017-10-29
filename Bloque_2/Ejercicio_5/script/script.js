@@ -1,8 +1,10 @@
 
 
 $(document).ready(function(){
+
     /* Variables */
     var likes =$("p[id=likes]").text();
+
     var numlikes = Number(likes);
     var email = /^[a-z0-9\.]+@([a-z0-9]+\.)+[a-z]{2,4}$/;
     var password = /^[a-z0-9]{1,8}$/;
@@ -34,6 +36,7 @@ $(document).ready(function(){
             errors = "";
         }
     });
+
     /* Funcion para comprobar si existe cookie para un correo */
     function checkCookie(email) {
         var cookies = document.cookie.split(";");
@@ -50,7 +53,6 @@ $(document).ready(function(){
         }
         return false;
     }
-
 
 
     $("#corazon").click(function () {
