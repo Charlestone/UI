@@ -12,6 +12,9 @@
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
 	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"> </script>
 
+	<script src="path/to/jquery.js" type="text/javascript"></script>
+	<script src="path/to/timer.jquery.js"></script>
+	
 	<script src="js/jquery.flip.min.js" /></script>
 
 </head>
@@ -24,10 +27,21 @@
 		</header>
 
 		<div id="main" class="col-12">
+
+			<form >
+			<p>Introduce el tiempo que quieres jugar:</p>
+			<input id="tiempodejuego" type="number" name="tiempodejuego">
+			<p>segundos</p>
+			<P>Introduce el número de cartas con las que quieres jugar:</P>
+			<input type="number" name="tiempodejuego">
+			<button type="button"> EMPEZAR </button>
+
+			</form>
+
 			<div class="col-10 centrar"> <!-- Div para las cartas -->
 				<div id="carta" class="carta col-1 matriz">
-					<img id="corzo" class="front" src="./img/corzo.png" alt="foto de corzo">
-					<img class="back" src="./img/vuelta.png" alt="imagen de vuelta">
+					<img id="corzo" class="front" src="./img/vuelta.png" alt="foto de vuelta">
+					<img class="back" src="./img/corzo.png" alt="imagen de vuelta">
 				</div>
 				<div class="carta col-1 matriz">
 					<img id="ardilla" class="front" src="./img/ardilla.png" alt="foto de ardilla">

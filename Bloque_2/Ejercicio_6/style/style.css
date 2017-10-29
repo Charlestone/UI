@@ -19,6 +19,11 @@ body{
 
 }
 
+#main {
+	color: #cccccc;
+}
+
+
 /*Estilo de la cabecera */
 
 header {
@@ -106,4 +111,10 @@ h1 {
 .centrar{
 	justify-content:center; /*-no fumciona pero quiero que salga centrado*/
 
+}
+
+
+/*Estilo del form*/
+
+#formulario{
 }
