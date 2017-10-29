@@ -207,7 +207,7 @@ $(document).ready(function() {
 
             case 'paypal':
                 if ($("#pay").attr("hasBeenClicked") != "true") {
-                    errors += "Invalid payment method.\n";
+                    errors += "Please configure your Paypal account.\n";
                 }
                 break;
         }
