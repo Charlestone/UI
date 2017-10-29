@@ -144,7 +144,7 @@ h3 {
 	display: block;
 	color: #cccccc;
 	position: relative;
-	background-image: url("./img/bg/negro.png");
+	background-image: url("../img/bg/negro.png");
 	margin: auto;
 	padding: 20px;
 	border: 2px solid #cccccc;
@@ -152,6 +152,7 @@ h3 {
 }
 
 .modal-block {
+	margin: auto;
 	display: block;
 	text-align: center;
 	margin-top: 30px
@@ -187,8 +188,14 @@ p {
 
 /* Estilo del main */
 h2 {
+	display: block;
 	margin-left: 30px;
 	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+h2.titulop {
+	margin-left: 0;
 }
 
 .alinear {
@@ -322,7 +329,7 @@ footer p {
 .posdescripcion {
 	display: none;
 	position: relative;
-	z-index: 1;  /*No hace nada*/
+	z-index: 1;    /*No hace nada*/
 	text-align: center;
 }
 
@@ -338,8 +345,9 @@ p.descrp {
 	display: block;
 }
 
-h2.titulop {
-	margin: 0;
+p.titulo {
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 /*.posdescripcion2{
