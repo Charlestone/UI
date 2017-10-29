@@ -2,4 +2,4 @@
 
 No comprobamos que la ruta de la foto que estaba guardada en la cookie sigue funcionando.
 
-Cookies.
+Quitar impresiones por pantalla.
