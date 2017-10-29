@@ -87,6 +87,7 @@ $(document).ready(function() {
                             break;
                         case 'paypal':
                             $(this).attr("hasBeenClicked", "true");
+                            pay = 1;
                             break;
                     }
                     switch ($("#payment").val()) {
@@ -317,7 +318,7 @@ $(document).ready(function() {
                         break;
                 }
             }
-            
+
             /* Se muestran los cambios */
             if (cambios) {
                 alert("The following changes have been saved:\n" + cambios);
@@ -336,7 +337,7 @@ $(document).ready(function() {
     /* Si se hace click en el boton reset */
     $("input[name=borrar]").click(function() {
         /* Si hay cookie, restauramos los valores de esta*/
-        
+
         if (checkCookie($("#modal-email").val())) {
             $("input[name=username]").val(forms[0].substr(1, forms[0].length - 2));
             $("input[name=password]").val(forms[1].substr(1, forms[1].length - 2));
