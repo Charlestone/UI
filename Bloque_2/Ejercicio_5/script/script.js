@@ -111,6 +111,8 @@ $(document).ready(function(){
         var titulop = $(".titulop");
         var descrp = $(".descrp");
         var videop = $(".videop");
+
+        /*Div de los vidoes arrastable*/
         $(".draggable").draggable({
             revert : true
         });
