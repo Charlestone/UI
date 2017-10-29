@@ -12,7 +12,7 @@ $(document).ready(function() {
 
     var errors = "";
     var terms = "";
-    var email = /[a-z0-9]+@([a-z0-9]+\.)+[a-z]{2,4}/;
+    var email = /[a-z0-9\.]+@([a-z0-9]+\.)+[a-z]{2,4}/;
     var password = /[a-z0-9]{1,8}/;
     var fullname = /[A-Z][a-z]+(\s[a-z]+){0,2}\s[A-Z][a-z]+/;
     var bday = /(\d{2}\/){2}\d{4}/;
