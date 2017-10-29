@@ -1,41 +1,57 @@
 
 
 $(document).ready(function(){
+    /* Variables */
     var likes =$("p[id=likes]").text();
     var numlikes = Number(likes);
-
-    var oculto1 = true;
-    var oculto2 = true;
-    var oculto3 = true;
+    var email = /^[a-z0-9\.]+@([a-z0-9]+\.)+[a-z]{2,4}$/;
+    var password = /^[a-z0-9]{1,8}$/;
+    var forms;
 
     /*JS para la ventana modal*/
-    /*$("#body").ready(function () {
-        //El siguiente par de lineas esta puesto por firefox
+
+    $("#body").ready(function () {
         $(".modal").show();
-
     });
-
 
     $("#login").click(function () {
         /*Validacion de email en la ventana modal*/
-       /* if (!email.test($("#modal-email").val())) {
+        if (!email.test($("#modal-email").val())) {
             errors += "Invalid email.\n";
         }
-        /*Validacion de contraseña en la ventana modal
+        /*Validacion de contraseña en la ventana modal*/
         if (!password.test($("#modal-password").val())) {
             errors += "Invalid password.\n";
         }
         if (!errors) {
-            $(".modal").hide();
-            $("input[name=email]").val($("input[name=emailm]").val());
-            $("input[name=password]").val($("input[name=passwordm]").val());
+            if (checkCookie($("#modal-email").val())) {
+               $(".modal").hide(); 
+
+            }
+            
         } else {
             alert(errors + "\nPlease enter valid alternatives for the wrong fields.");
             errors = "";
         }
     });
+    /* Funcion para comprobar si existe cookie para un correo */
+    function checkCookie(email) {
+        var cookies = document.cookie.split(";");
+        if (cookies.length) {
+            for (var i = 0; i < cookies.length; i++) {
+                if (cookies[i]) {
+                    forms = cookies[i].match(/\$.+?\#/g);
+                    if (forms[4].substr(1, forms[4].length - 2) == email) {
+                        actcookie = cookies[i];
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
 
-*/
+
 
     $("#corazon").click(function () {
     numlikes++;
