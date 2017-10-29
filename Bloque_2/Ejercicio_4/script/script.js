@@ -31,11 +31,13 @@ $(document).ready(function() {
         var cookies = document.cookie.split(";");
         if (cookies.length) {
             for (var i = 0; i < cookies.length; i++) {
-                var forms = cookies[i].match(/\$.+?\#/g);
-                if (forms[4].substr(1, forms[4].length - 2) == email) {
-                    actcookie = cookies[i];
-                    actuser = actcookie.match(/\w*\d*=/);
-                    return true;
+                if (cookies[i]) {
+                    var forms = cookies[i].match(/\$.+?\#/g);
+                    if (forms[4].substr(1, forms[4].length - 2) == email) {
+                        actcookie = cookies[i];
+                        actuser = actcookie.match(/\w*\d*=/);
+                        return true;
+                    }
                 }
             }
         }
