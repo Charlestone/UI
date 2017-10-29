@@ -19,6 +19,7 @@ $(document).ready(function() {
     var today = new Date();
     var actuser = "";
     var actcookie = "";
+    var pay = 0;
 
     function setCookie(cname, cvalue) {
         var d = new Date();
@@ -79,6 +80,9 @@ $(document).ready(function() {
                             $("input[name=number]").val(forms[8].substr(1, forms[8].length - 2));
                             $("input[name=valid]").val(forms[9].substr(1, forms[9].length - 2));
                             $("input[name=code]").val(forms[10].substr(1, forms[10].length - 2));
+                            break;
+                        case 'paypal':
+                            $(this).attr("hasBeenClicked", "true");
                             break;
                     }
                     if (forms.length == 13) {
@@ -190,6 +194,8 @@ $(document).ready(function() {
             case 'paypal':
                 if ($("#pay").attr("hasBeenClicked") != "true") {
                     errors += "Invalid payment method.\n";
+                } else {
+                    pay = 1;
                 }
                 break;
         }
