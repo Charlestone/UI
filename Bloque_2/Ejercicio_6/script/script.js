@@ -16,4 +16,11 @@ $(document).ready(function(){
 
 
 	});
+
+
+	function RandomFunction(MaxValue, MinValue) {
+		return Math.round(Math.random() * (MaxValue - MinValue) + MinValue);
+	}
+
+
 });

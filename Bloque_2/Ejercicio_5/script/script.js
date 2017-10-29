@@ -88,15 +88,7 @@ $(document).ready(function(){
         }
     });
 
-    /* Variables para el vídeo principal*/
-    var titulop = $(".titulop");
-    var descrp = $(".descrp");
-    var videop = $(".videop");
 
-    /*Variable para el vídeo no principal*/
-    var titulonp = $(".titulonp:first-child");
-    var descrnp;
-    var videonp;
 
     /*var videosm = ["./img/suits.mp4", "./img/homeland.mp4", "./img/strangerthings.mp4", "./img/billions.mp4"];
     var videoso = ["./img/suits.ogg", "./img/homeland.ogg", "./img/strangerthings.ogg", "./img/billions.ogg"];
@@ -111,16 +103,37 @@ $(document).ready(function(){
 
 
 
+
+
     $(function(){
+
+        /* Variables para el vídeo principal*/
+        var titulop = $(".titulop");
+        var descrp = $(".descrp");
+        var videop = $(".videop");
         $(".draggable").draggable({
             revert : true
         });
-        $("#droppable"). droppable({
-                drop: function(event, ui){
-                 (this).html($(titulop))
-                 
-                 /*(elemento que quiero).html  para descripcion y titulo
-                 para el video: */
+
+        $(".droppable").droppable({
+
+            accept: ".draggable",
+
+            drop: function(event, ui){
+            /*Variable para el vídeo no principal*/
+                var titulonp = $("ui.draggable").find(".titulonp").html();
+                var descrnp = $("ui.draggable").find(".descrnp").html();
+                var videonp = $("ui.draggable").find(".videonp");
+            
+
+                $("ui.draggable").find(".titulonp").html(titulop);
+                $("ui.draggable").find(".descrnp").html(descrp);
+
+
+                /*$("ui.draggable").find(".videonp").remove();
+                $("ui.draggable").prepend($("ui.draggable").find(".videonp").html(videop));
+*/
+
 
             }
         });
