@@ -12,10 +12,10 @@ $(document).ready(function() {
 
     var errors = "";
     var terms = "";
-    var email = /[a-z0-9\.]+@([a-z0-9]+\.)+[a-z]{2,4}/;
-    var password = /[a-z0-9]{1,8}/;
-    var fullname = /[A-Z][a-z]+(\s[a-z]+){0,2}\s[A-Z][a-z]+/;
-    var bday = /(\d{2}\/){2}\d{4}/;
+    var email = /^[a-z0-9\.]+@([a-z0-9]+\.)+[a-z]{2,4}$/;
+    var password = /^[a-z0-9]{1,8}$/;
+    var fullname = /^[A-Z][a-z]+(\s[a-z]+){0,2}\s[A-Z][a-z]+$/;
+    var bday = /^(\d{2}\/){2}\d{4}$/;
     var today = new Date();
     var actuser = "";
     var actcookie = "";
@@ -35,7 +35,7 @@ $(document).ready(function() {
                     var forms = cookies[i].match(/\$.+?\#/g);
                     if (forms[4].substr(1, forms[4].length - 2) == email) {
                         actcookie = cookies[i];
-                        actuser = actcookie.match(/\w*\d*=/);
+                        actuser = actcookie.match(/^\w*\d*=/);
                         return true;
                     }
                 }
@@ -54,9 +54,10 @@ $(document).ready(function() {
             errors += "Invalid password.\n";
         }
         if (!errors) {
-
+            /*Comprueba si el usuario tiene cookie*/
             if (checkCookie($("#modal-email").val())) {
                 var forms = actcookie.match(/\$.+?\#/g);
+                /* Si la contraseña es correcta */
                 if (forms[1].substr(1, forms[1].length - 2) == $("#modal-password").val()) {
                     $("input[name=username]").val(forms[0].substr(1, forms[0].length - 2));
                     $("input[name=password]").val(forms[1].substr(1, forms[1].length - 2));
