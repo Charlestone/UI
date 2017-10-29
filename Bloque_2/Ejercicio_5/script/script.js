@@ -9,7 +9,7 @@ $(document).ready(function(){
     var oculto3 = true;
 
     /*JS para la ventana modal*/
-    $("#body").ready(function () {
+    /*$("#body").ready(function () {
         //El siguiente par de lineas esta puesto por firefox
         $(".modal").show();
 
@@ -18,10 +18,10 @@ $(document).ready(function(){
 
     $("#login").click(function () {
         /*Validacion de email en la ventana modal*/
-        if (!email.test($("#modal-email").val())) {
+       /* if (!email.test($("#modal-email").val())) {
             errors += "Invalid email.\n";
         }
-        /*Validacion de contraseña en la ventana modal*/
+        /*Validacion de contraseña en la ventana modal
         if (!password.test($("#modal-password").val())) {
             errors += "Invalid password.\n";
         }
@@ -35,6 +35,7 @@ $(document).ready(function(){
         }
     });
 
+*/
 
     $("#corazon").click(function () {
     numlikes++;
@@ -87,11 +88,17 @@ $(document).ready(function(){
         }
     });
 
-/*
-   
-/*Hago la imagen del primer video draggable y el contendeor que contiene
-    el vídeo grande
-    var videosm = ["./img/suits.mp4", "./img/homeland.mp4", "./img/strangerthings.mp4", "./img/billions.mp4"];
+    /* Variables para el vídeo principal*/
+    var titulop = $(".titulop");
+    var descrp = $(".descrp");
+    var videop = $(".videop");
+
+    /*Variable para el vídeo no principal*/
+    var titulonp = $(".titulonp:first-child");
+    var descrnp;
+    var videonp;
+
+    /*var videosm = ["./img/suits.mp4", "./img/homeland.mp4", "./img/strangerthings.mp4", "./img/billions.mp4"];
     var videoso = ["./img/suits.ogg", "./img/homeland.ogg", "./img/strangerthings.ogg", "./img/billions.ogg"];
     var foto = ["./img/suits.png"], "./img/homeland.png", "./img/strangerthings.png", "./img/billions.png"];
     var desc = ["Mike Ross es un joven con una mente brillante que siempre ha soñado con ser abogado. Por un incidente desafortunado es expulsado de la facultad antes de graduarse. Sin embargo, su prodigiosa memoria fotográfica le permite ganarse la vida con un trabajo poco corriente y fuera de la ley, suplantando a otros en los exámenes admisión para la escuela de derecho. Envuelto en un encargo puntual de tráfico de drogas, Mike sospecha que le han tendido una trampa, pero consigue deshacerse de la policía al colarse en una entrevista de trabajo para uno de los bufetes más importantes de Nueva York.",
@@ -100,16 +107,21 @@ $(document).ready(function(){
     "Billions es un drama que examina con mirada forense el mundo de las altas finanzas mediante el seguimiento de la colisión que se avecina entre dos figuras titánicas de gran poder."];
     var titulos = ["SUITS", "HOMELAND", "STRANGER THINGS", "BILLIONS"];
     var dragged;
-    var dropped;
+    var dropped;*/
 
-*/
+
+
     $(function(){
-        $("#draggable").draggable({
+        $(".draggable").draggable({
             revert : true
         });
         $("#droppable"). droppable({
                 drop: function(event, ui){
-                 (this).html("Lo soltaste!!")
+                 (this).html($(titulop))
+                 
+                 /*(elemento que quiero).html  para descripcion y titulo
+                 para el video: */
+
             }
         });
 
@@ -118,24 +130,8 @@ $(document).ready(function(){
 
 
 
-    /* CODIGO MARTA
-    $("#container-video").droppable({
-        activeClass: 'activo',
-        hoverClass: 'hovereado',
-        drop: function (event, ui){
-           var url = $(ui.draggable).attr('videourl');  
-           var $video = $('#container-video');
-           $video.empty().append('<video id = "videoprincipal" controls> <source src="'+url+'" type="video/mp4" />'); 
-           $video.get(0).load();
-           $video.get(0).play();
-           
-        }
-      });*/
 
-    /*Hago la imagen del primer video droppable*/
-/*var video = $("#droppable");*/
-                /*video.empty().append('<video id = "videoprincipal" controls> <source src="'+dirvideo+'" type="video/mp4" />');*/ 
-               
+
 
 
 /* var sm = $("#sourcem").attr("src");
