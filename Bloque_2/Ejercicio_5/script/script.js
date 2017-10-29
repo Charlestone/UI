@@ -1,7 +1,7 @@
 
 
 $(document).ready(function(){
-    var likes =$("p[id=likes]").text();
+    var likes = $("p[id=likes]").text();
     var numlikes = Number(likes);
 
     var oculto1 = true;
@@ -18,7 +18,7 @@ $(document).ready(function(){
 
     $("#login").click(function () {
         /*Validacion de email en la ventana modal*/
-       /* if (!email.test($("#modal-email").val())) {
+        if (!email.test($("#modal-email").val())) {
             errors += "Invalid email.\n";
         }
         /*Validacion de contraseña en la ventana modal
@@ -34,8 +34,8 @@ $(document).ready(function(){
             errors = "";
         }
     });
-
 */
+
 
     $("#corazon").click(function () {
     numlikes++;
