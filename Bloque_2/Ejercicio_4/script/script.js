@@ -9,7 +9,7 @@ $(document).ready(function() {
         //document.cookie = "usern; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
         //alert(document.cookie.split(";"));
     });
-
+    /* Variables */
     var errors = "";
     var terms = "";
     var email = /^[a-z0-9\.]+@([a-z0-9]+\.)+[a-z]{2,4}$/;
@@ -20,14 +20,14 @@ $(document).ready(function() {
     var actuser = "";
     var actcookie = "";
     var pay = 0;
-
+    /* Funcion para guardar cookies */
     function setCookie(cname, cvalue) {
         var d = new Date();
         d.setTime(d.getTime() + (30 * 24 * 60 * 60 * 1000));
         var expires = "expires=" + d.toUTCString();
         document.cookie = cname + cvalue + ";" + expires + ";path=/";
     }
-
+    /* Funcion para comprobar si existe cookie para un correo */
     function checkCookie(email) {
         var cookies = document.cookie.split(";");
         if (cookies.length) {
@@ -45,6 +45,7 @@ $(document).ready(function() {
         actuser = "user" + cookies.length + "=";
         return false;
     }
+    /* Si se hace click en login */
     $("#login").click(function() {
         /*Validacion de email en la ventana modal*/
         if (!email.test($("#modal-email").val())) {
@@ -107,24 +108,29 @@ $(document).ready(function() {
                             $("#paypal").show();
                             break;
                     }
-                    $(".modal").hide();
+                    $(".modal").hide();                    
                 } else {
+                    /* Si la contraseña no es correcta */
                     alert("Wrong password\nPlease enter a valid one.\n");
                     $("#modal-password").val("");
                 }
             } else {
+                /* Si no hay cookie para el correo */
                 $("input[name=email]").val($("input[name=emailm]").val());
                 $("input[name=password]").val($("input[name=passwordm]").val());
                 $(".modal").hide();
             }
         } else {
+            /* Si hay algun campo invalido */
             alert(errors + "\nPlease enter valid alternatives for the wrong fields.");
             errors = "";
         }
     });
+    /* Si se hace click en el enlace a Paypal */
     $("#pay").click(function() {
         $(this).attr("hasBeenClicked", "true");
     });
+    /* Si se hace click en el boton guardar */
     $("input[name=guardar]").click(function() {
         /* Validacion del nombre de usuario */
         if (!$("input[name=username]").val()) {
@@ -203,7 +209,7 @@ $(document).ready(function() {
         if (!$("input[name=terms]").prop('checked')) {
             terms += "\nYou must agree to the terms.";
         }
-
+        /* Si no hay campos invalidos */
         if (!errors && !terms) {
             /* Guardado de usuario */
             var user = "$" + $("input[name=username]").val() + "#";
@@ -233,7 +239,7 @@ $(document).ready(function() {
             setCookie(actuser, user);
             //alert(document.cookie);
         } else {
-            /* Impresion de errores */
+            /* Si los hay */
             if (errors) {
                 errors += "\nPlease enter valid alternatives for the wrong fields.\n";
             }
@@ -242,7 +248,7 @@ $(document).ready(function() {
             terms = "";
         }
     });
-
+    /* Si se cambia el metodo de pago */
     $("#payment").change(function() {
         $("#tarjeta input").val("");
         $("#transferencia input").val("");
