@@ -86,7 +86,7 @@ $(document).ready(function() {
                             $("input[name=code]").val(forms[10].substr(1, forms[10].length - 2));
                             break;
                         case 'paypal':
-                            $(this).attr("hasBeenClicked", "true");
+                            $("#pay").attr("hasBeenClicked", "true");
                             pay = 1;
                             break;
                     }
@@ -129,10 +129,10 @@ $(document).ready(function() {
     });
     /* Si se hace click en el enlace a Paypal */
     $("#pay").click(function() {
-        if ($(this).attr("hasBeenClicked") == "true") {
+        if ($("#pay").attr("hasBeenClicked") == "true") {
             pay = 1;
         }
-        $(this).attr("hasBeenClicked", "true");
+        $("#pay").attr("hasBeenClicked", "true");
     });
     /* Si se cambia la foto*/
     $("input[name=foto]").change(function() {
@@ -312,7 +312,7 @@ $(document).ready(function() {
                         }
                         break;
                     case 'paypal':
-                        if (pay) {
+                        if (!pay) {
                             cambios += "Paypal";
                         }
                         break;
@@ -361,7 +361,7 @@ $(document).ready(function() {
                     $("input[name=code]").val(forms[10].substr(1, forms[10].length - 2));
                     break;
                 case 'paypal':
-                    $(this).attr("hasBeenClicked", "true");
+                    $("#pay").attr("hasBeenClicked", "true");
                     break;
             }
             switch ($("#payment").val()) {
