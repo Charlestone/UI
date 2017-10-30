@@ -1,31 +1,26 @@
 /*Fuentes*/
-
 @font-face {
 	font-family: PTSans;
 	src: url(./font/PT_Sans/PT_Sans-Web-Regular.ttf);
 }
 
-@font-face{
+@font-face {
 	font-family: PTSans;
 	src: url(./font/PT_Sans/PT_Sans-Web-Bold.ttf);
 	font-weight: bold;
 }
 
 /*Estilo del body*/
-body{
+body {
 	background-image: url("../img/bg/negro.png");
 	font-family: 'PTSans', sans-serif;
-
-
 }
 
 #main {
 	color: #cccccc;
 }
 
-
 /*Estilo de la cabecera */
-
 header {
 	background-image: url("../img/bg/geometry.png");
 	border: 3px solid #cccccc;
@@ -43,15 +38,13 @@ h1 {
 	color: #404040;
 }
 
-
-#logo{
+#logo {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
 	float: left;
 }
-
 
 /*Estilo general de la página*/
 .col-1 {
@@ -82,11 +75,11 @@ h1 {
 	width: 58.33%;
 }
 
-.col-8{
+.col-8 {
 	width: 66.66%;
 }
 
-.col-9{
+.col-9 {
 	width: 75%;
 }
 
@@ -103,18 +96,16 @@ h1 {
 }
 
 /*Estilo de la matriz con las imágenes*/
-.matriz{
+.matriz {
 	float: left;
 	margin: 10px;
 }
 
-.centrar{
-	justify-content:center; /*-no fumciona pero quiero que salga centrado*/
-
+.centrar {
+	justify-content: center;    /*-no fumciona pero quiero que salga centrado*/
 }
 
-
 /*Estilo del form*/
-
-#formulario{
+.segundos {
+	display: inline-block;
 }
