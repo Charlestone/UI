@@ -17,7 +17,7 @@ $(document).ready(function() {
     var mostrardesc3 = false;
     /*JS para la ventana modal*/
     $("#body").ready(function() {
-        //$(".modal").show();
+        $(".modal").show();
         $("input[type!=button]").val("");
     });
     /* Si se hace click en el boton log in */
@@ -112,8 +112,6 @@ $(document).ready(function() {
 
     $(function() {
         /* Variables para el vídeo principal*/
-
-        /*Div de los vidoes arrastable*/
         $(".draggable").draggable({
             helper: "clone"
         });
@@ -143,13 +141,6 @@ $(document).ready(function() {
                 }
                 $(ui.draggable).find(".titulo").html(titulop);
                 $(ui.draggable).find(".posdescripcion").html(descrp);
-                //var big = $(this).find("video");
-                //var small = $(ui.draggable).find("img");
-                //$(this).children("video").remove();
-                //$(ui.draggable).children("img").remove();
-                //$(this).prepend(big);
-                //$(ui.draggable).prepend(small);
-
             }
         });
     });
