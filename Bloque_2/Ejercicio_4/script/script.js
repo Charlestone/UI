@@ -21,7 +21,7 @@ $(document).ready(function() {
     var actcookie = "";
     var pay = 0;
     var cambios = "";
-    var forms;
+    var forms = "";
     var photo = false;
     /* Funcion para guardar cookies */
     function setCookie(cname, cvalue) {

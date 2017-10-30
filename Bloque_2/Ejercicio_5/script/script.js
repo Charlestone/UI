@@ -5,7 +5,7 @@ $(document).ready(function() {
     var numlikes = Number(likes);
     var email = /^[a-z0-9\.]+@([a-z0-9]+\.)+[a-z]{2,4}$/;
     var password = /^[a-z0-9]{1,8}$/;
-    var forms;
+    var forms = "";
     var errors = "";
     var videosm = ["./img/suits.mp4", "./img/homeland.mp4", "./img/strangerthings.mp4", "./img/billions.mp4"];
     var videoso = ["./img/suits.ogg", "./img/homeland.ogg", "./img/strangerthings.ogg", "./img/billions.ogg"];
@@ -17,8 +17,9 @@ $(document).ready(function() {
     var mostrardesc3 = false;
     /*JS para la ventana modal*/
     $("#body").ready(function() {
+        $("#modal-email").val("");
+        $("#modal-password").val("");
         $(".modal").show();
-        $("input[type!=button]").val("");
     });
     /* Si se hace click en el boton log in */
     $("#login").click(function() {
@@ -32,9 +33,14 @@ $(document).ready(function() {
         }
         if (!errors) {
             if (checkCookie($("#modal-email").val())) {
-                if (forms[0]) {}
-                $("#username").text(forms[0].substr(1, forms[0].length - 2));
-                $(".modal").hide();
+                if (forms[1].substr(1 , forms[1].length -2).localeCompare($("#modal-password").val()) && forms[1]) {
+                    alert("Please enter a valid password");
+                } else {
+                    if (forms[0]) {
+                        $("#username").text(forms[0].substr(1, forms[0].length - 2));
+                        $(".modal").hide();
+                        }
+                }
 
             } else {
                 window.location.href = "../Ejercicio_4/miau.html";
