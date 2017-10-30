@@ -65,7 +65,7 @@ body {
 	margin: 0;
 	background-image: url("../img/bg/negro.png");
 	font-family: 'PTSans', sans-serif;
-	overflow-x: hidden;
+	overflow-x: auto;
 	overflow-y: auto;
 }
 
@@ -229,8 +229,8 @@ h2.titulop {
 }
 
 .margen-3 {
-	margin-left: 60px;
-	margin-right: 60px;
+	margin-left: 15px;
+	margin-right: 15px;
 	margin-bottom: 60px;
 	margin-top: 40px;
 }
