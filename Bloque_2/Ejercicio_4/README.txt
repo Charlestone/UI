@@ -1,14 +1,5 @@
-Problemas no resueltos:
+ï»¿Problemas no resueltos:
 
--No hemos podido implementar los input con type date y month para Firefox.
+No guardamos la foto en una cookie (tampoco la cargamos) porque a veces da problemas al ser cargada despuÃ©s de haberse creado una cuenta, bajo el error de operacion insegura ("SecurityError: The operation is insecure.").
 
--Los input para el número de la tarjeta y el código de seguridad son type text en vez de number 
-porque siendo number no hemos conseguido que maxlength se aplique de manera correcta.
-
--No hemos podido implementar que se muestre una previsualización de la imagen de perfil cuando 
-seleccionas un archivo en el form "photo".
-
--No hemos podido implementar que los datos para el método de pago cambien dependiendo del método
-que se seleccione.
-
--No hemos conseguido que la primera barra horizontal no desaparezca en Firefox.
+Quitar impresiones por pantalla.
