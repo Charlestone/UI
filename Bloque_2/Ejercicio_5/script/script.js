@@ -29,16 +29,20 @@ $(document).ready(function() {
         /*Validacion de email en la ventana modal*/
         if (!email.test($("#modal-email").val())) {
             errors += "Invalid email.\n";
+            $("#modal-email").value("");
         }
         /*Validacion de contraseña en la ventana modal*/
         if (!password.test($("#modal-password").val())) {
             errors += "Invalid password.\n";
+            $("#modal-password").value("");
         }
         if (!errors) {
 
             if (checkCookie($("#modal-email").val())) {
                 if (forms[1].substr(1, forms[1].length - 2).localeCompare($("#modal-password").val()) && forms[1]) {
+                    $("#modal-password").val("");
                     alert("Please enter a valid password");
+                    
                 } else {
                     if (forms[0]) {
                         $("#username").text(forms[0].substr(1, forms[0].length - 2));
