@@ -33,6 +33,7 @@ $(document).ready(function() {
                 clearInterval(contador);
                 alert("TIME'S UP!\nTry again");
                 matches = 0;
+                $(".back").addClass("front");
             }
         }, 1000);
     }
