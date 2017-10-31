@@ -141,13 +141,15 @@ $(document).ready(function() {
                 var titulonp = $(ui.draggable).find(".titulo").html();
                 var descrnp = $(ui.draggable).find(".posdescripcion").html();
                 var videonp = $(ui.draggable).find(".posvideo").attr("src");
+                var likesaux = $("#likes").text();
+                var sharesaux = $("#shares").text();
                 $(".titulop").html(titulonp);
                 $(".descrp").html(descrnp);
                 for (var i = 0; i < videoso.length; i++) {
                     if (!videoso[i].substr(-6, 2).localeCompare(videop.substr(-6, 2))) {
                         $(ui.draggable).find(".posvideo").attr('src', foto[i]);
-                        eachlikes[i] = $("#likes").text();
-                        eachshares[i] = $("#shares").text();
+                        eachlikes[i] = likesaux;
+                        eachshares[i] = sharesaux;
                     }
                     if (!videoso[i].substr(-6, 2).localeCompare(videonp.substr(-6, 2))) {
                         $(this).find("#sourcem").attr('src', videosm[i]);
