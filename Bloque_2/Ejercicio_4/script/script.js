@@ -21,7 +21,8 @@ $(document).ready(function() {
     var actcookie = "";
     var pay = 0;
     var cambios = "";
-    var forms = "";
+    var forms = ["stop", "stop", "stop", "stop", "stop", "stop", "stop", "stop", "stop", "stop", "stop", "stop"];
+    var cookies;
     var photo = false;
     /* Funcion para guardar cookies */
     function setCookie(cname, cvalue) {
@@ -32,7 +33,7 @@ $(document).ready(function() {
     }
     /* Funcion para comprobar si existe cookie para un correo */
     function checkCookie(email) {
-        var cookies = document.cookie.split(";");
+        cookies = document.cookie.split(";");
         if (cookies.length) {
             for (var i = 0; i < cookies.length; i++) {
                 if (cookies[i]) {
@@ -45,7 +46,12 @@ $(document).ready(function() {
                 }
             }
         }
-        actuser = "user" + cookies.length + "=";
+        if (forms[0] != "stop") {
+            actuser = "user" + cookies.length + "=";
+        } else {
+            actuser = "user" + 0 + "=";
+        }
+
         return false;
     }
     /* Si se hace click en login */
@@ -318,6 +324,7 @@ $(document).ready(function() {
                         break;
                 }
             }
+
 
             /* Se muestran los cambios */
             if (cambios) {
