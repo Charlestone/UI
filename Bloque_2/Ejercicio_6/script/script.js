@@ -146,6 +146,7 @@ $(document).ready(function() {
                                         matches = 0;
                                     }
                                 } else {
+                                    /*Si no son iguales*/
                                     $(".front").toggle();
                                     $(".front").removeClass('front');
                                     carta1 = "";
