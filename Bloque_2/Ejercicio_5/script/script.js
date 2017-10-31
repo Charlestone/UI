@@ -1,27 +1,28 @@
 $(document).ready(function() {
 
     /* Variables */
-    var likes = $("p[id=likes]").text();
+    var likes = $("#likes").text();
     var numlikes = Number(likes);
+    var shares = $("#shares").text();
+    var numshares = Number(shares);
     var email = /^[a-z0-9\.]+@([a-z0-9]+\.)+[a-z]{2,4}$/;
     var password = /^[a-z0-9]{1,8}$/;
     var forms = "";
     var errors = "";
     var eachlikes = [0, 0, 0, 0];
-    var eachshares = "";
+    var eachshares = [0, 0, 0, 0];
     var videosm = ["./img/suits.mp4", "./img/homeland.mp4", "./img/strangerthings.mp4", "./img/billions.mp4"];
     var videoso = ["./img/suits.ogg", "./img/homeland.ogg", "./img/strangerthings.ogg", "./img/billions.ogg"];
     var foto = ["./img/suits.png", "./img/homeland.png", "./img/strangerthings.png", "./img/billions.png"];
-    var shares = $("p[id=shares]").text();
-    var numshares = Number(shares);
     var mostrardesc1 = false;
     var mostrardesc2 = false;
     var mostrardesc3 = false;
     /*JS para la ventana modal*/
     $("#body").ready(function() {
-        $("#modal-email").val("");        
+        $("#modal-email").val("");
         $("#modal-password").val("");
         $(".modal").show();
+
     });
     /* Si se hace click en el boton log in */
     $("#login").click(function() {
@@ -36,13 +37,13 @@ $(document).ready(function() {
         if (!errors) {
 
             if (checkCookie($("#modal-email").val())) {
-                if (forms[1].substr(1 , forms[1].length -2).localeCompare($("#modal-password").val()) && forms[1]) {
+                if (forms[1].substr(1, forms[1].length - 2).localeCompare($("#modal-password").val()) && forms[1]) {
                     alert("Please enter a valid password");
                 } else {
                     if (forms[0]) {
                         $("#username").text(forms[0].substr(1, forms[0].length - 2));
                         $(".modal").hide();
-                        }
+                    }
                 }
 
             } else {
@@ -139,17 +140,26 @@ $(document).ready(function() {
                 $(".titulop").html(titulonp);
                 $(".descrp").html(descrnp);
                 for (var i = 0; i < videoso.length; i++) {
+                    if (!videoso[i].substr(-6, 2).localeCompare(videop.substr(-6, 2))) {
+                        $(ui.draggable).find(".posvideo").attr('src', foto[i]);
+                        eachlikes[i] = $("#likes").text();
+                        eachshares[i] = $("#shares").text();
+                    }
                     if (!videoso[i].substr(-6, 2).localeCompare(videonp.substr(-6, 2))) {
                         $(this).find("#sourcem").attr('src', videosm[i]);
                         $(this).find("#sourceo").attr('src', videoso[i]);
                         $(this).find("video").load();
+                        $("#likes").text(eachlikes[i]);
+                        $("#shares").text(eachshares[i]);
                     }
-                    if (!videoso[i].substr(-6, 2).localeCompare(videop.substr(-6, 2))) {
-                        $(ui.draggable).find(".posvideo").attr('src', foto[i]);
-                    }
+
                 }
                 $(ui.draggable).find(".titulo").html(titulop);
                 $(ui.draggable).find(".posdescripcion").html(descrp);
+                likes = $("#likes").text();
+                numlikes = Number(likes);
+                shares = $("#shares").text();
+                numshares = Number(shares);
             }
         });
     });
