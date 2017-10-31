@@ -7,6 +7,8 @@ $(document).ready(function() {
     var password = /^[a-z0-9]{1,8}$/;
     var forms = "";
     var errors = "";
+    var eachlikes = [0, 0, 0, 0];
+    var eachshares = "";
     var videosm = ["./img/suits.mp4", "./img/homeland.mp4", "./img/strangerthings.mp4", "./img/billions.mp4"];
     var videoso = ["./img/suits.ogg", "./img/homeland.ogg", "./img/strangerthings.ogg", "./img/billions.ogg"];
     var foto = ["./img/suits.png", "./img/homeland.png", "./img/strangerthings.png", "./img/billions.png"];
@@ -17,7 +19,7 @@ $(document).ready(function() {
     var mostrardesc3 = false;
     /*JS para la ventana modal*/
     $("#body").ready(function() {
-        $("#modal-email").val("");
+        $("#modal-email").val("");        
         $("#modal-password").val("");
         $(".modal").show();
     });
@@ -32,6 +34,7 @@ $(document).ready(function() {
             errors += "Invalid password.\n";
         }
         if (!errors) {
+
             if (checkCookie($("#modal-email").val())) {
                 if (forms[1].substr(1 , forms[1].length -2).localeCompare($("#modal-password").val()) && forms[1]) {
                     alert("Please enter a valid password");
