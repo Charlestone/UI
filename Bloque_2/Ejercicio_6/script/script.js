@@ -51,10 +51,12 @@ $(document).ready(function() {
         $("input[type!=button]").val("");
         $("#matches").html("0 MATCHES");
         $(".datospart").hide();
+        clearInterval(contador);
     });
     /* Cuando se pulsa start */
     $("input[name=start]").click(function() {
-        $("input[name=start]").hide();
+        
+        aux = "";
         imagenes = "";
         finimg = [];
         alt = [];
@@ -62,6 +64,7 @@ $(document).ready(function() {
         ncards = Number(cards);
         time = $("input[name=time]").val();
         ntime = Number(time);
+        /* Se comprueban los campos */
         if (!(ncards < 11 && ncards > 2) || !expn.test(cards)) {
             errors += "Please enter a number of cards between 3 and 10.\n";
             $("input[name=cards]").val("");
@@ -71,10 +74,13 @@ $(document).ready(function() {
             $("input[name=time]").val("");
         }
         if (errors) {
+            /* Se avisa si hay errores */
             alert(errors);
             errors = "";
         } else {
-
+            /* Escondemos el boton start */
+            $("input[name=start]").hide();
+            /* Si va todo bien */
             /* Cartas */
             /* Barajamos las posibles imagenes */
             img.sort(function(a, b) { return 0.5 - Math.random() });
@@ -85,16 +91,20 @@ $(document).ready(function() {
             }
             /* Barajamos las cartas duplicadas */
             finimg.sort(function(a, b) { return 0.5 - Math.random() });
-            /* Creamos los alt para las cartasfor (i = 0; i < finimg.length; i++) {
-                aux = expalt.exec(finimg[i]);
+
+            /* Creamos los alt para las cartas*/
+            for (i = 0; i < finimg.length; i++) {
+                aux = expalt.exec(finimg[i]).toString;
+                aux= aux[0];
                 if (aux) {
-                	alt.push(aux.substr(1, aux.length - 1));
-                }                
-            }*/
+                    alt.push(aux.substring(1, aux.length - 1));
+                }
+                               
+            }
             /* "Montamos" las imagenes */
             for (i = 0; i < finimg.length; i++) {
                 imagenes += "<div class=\"carta col-1 matriz\">\n" +
-                    "<img class=\"back\" src=\"" + finimg[i] + "\" alt=\"" + i + "\">\n" +
+                    "<img class=\"back\" src=\"" + finimg[i] + "\" alt=\"" + alt[i] + "\">\n" +
                     "</div>";
             }
             /* Metemos el tablero en la pagina */
@@ -108,8 +118,10 @@ $(document).ready(function() {
             contar();
             /* Si se pulsa en una carta */
             $(".carta").click(function() {
+                /* Se comprueba que la carta esta boca abajo y no hay mas de dos levantadas*/
                 if (!$(this).find("img").hasClass('front') && !$(this).find("img").hasClass('ok') && !carta2) {
                     var este = $(this);
+                    /* Se revela la carta */
                     $(this).find("img").toggle(function() {
                         if (!carta1) {
                             carta1 = este.find("img").attr('src');
@@ -118,7 +130,9 @@ $(document).ready(function() {
                             if (!carta2) {
                                 carta2 = este.find("img").attr('src');
                                 este.find("img").addClass('front');
+                                /* Si es igual a una ya levantada */
                                 if (!carta1.localeCompare(carta2)) {
+                                    /* Se registra el acierto*/
                                     matches++;
                                     $("#matches").html(matches + " MATCHES");
                                     carta1 = "";
@@ -126,8 +140,8 @@ $(document).ready(function() {
                                     $(".front").addClass('ok');
                                     $(".front").removeClass('front');
                                     if (matches == ncards) {
+                                        /* Si ya estan todas bocaarriba, se termina el juego */
                                         clearInterval(contador);
-                                        /* poner que ha ganado e incrementar el tiempo */
                                         alert("CONGRATS! YOU'VE WON\nNumber of matches: " + matches + "\nTime spent:" + (ntime - auxtime));
                                         matches = 0;
                                     }
