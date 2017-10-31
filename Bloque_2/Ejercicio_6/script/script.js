@@ -32,6 +32,7 @@ $(document).ready(function() {
             if (auxtime == 0) {
                 clearInterval(contador);
                 alert("TIME'S UP!\nTry again");
+                matches = 0;
             }
         }, 1000);
     }
