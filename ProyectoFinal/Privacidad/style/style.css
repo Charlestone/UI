@@ -343,6 +343,7 @@ footer p {
 p.descrp {
 	margin-right: 50px;
 	display: block;
+	margin-bottom: 70px;
 }
 
 p.titulo {
@@ -358,7 +359,13 @@ p.titulo {
 }
 
 .tituloaux{
-	margin-left: 10%;
+	margin-left: 8%;
+	color: #cccccc;
+
+}
+
+.margen{
+	margin-left: 0;
 }
 
 
