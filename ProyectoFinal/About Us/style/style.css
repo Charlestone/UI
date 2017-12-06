@@ -353,11 +353,12 @@ p.titulo {
 	margin-left: 12.5%;
 	margin-right: 12.5%;
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 
 #about{
-	margin-left: 10%;
+	margin-left: 8%;
+	color: #cccccc;
 }
 
 
