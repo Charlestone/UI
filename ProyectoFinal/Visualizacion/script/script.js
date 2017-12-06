@@ -19,12 +19,12 @@ $(document).ready(function() {
     var mostrardesc3 = false;
 
     /*JS para la ventana modal*/
-   $("#body").ready(function() {
+   /*$("#body").ready(function() {
         $("#modal-email").val("");
         $("#modal-password").val("");
         $(".modal").show();
 
-    });
+    });*/
     /* Si se hace click en el boton log in */
     $("#login").click(function() {
         /*Validacion de email en la ventana modal*/
