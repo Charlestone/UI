@@ -115,13 +115,13 @@ h1:hover{
 	display: inline-flex;
 }
 
-.sesion {
+.inises {
 	margin-right: 30px;
 }
 button:hover{
 	cursor: pointer;
 }
-
+/* Estilo del menu desplegable */
 .dropdown {
 	position: relative;
 	display: inline-block;
@@ -140,6 +140,77 @@ button:hover{
     display: block;
 }
 
+/*Estilo de la ventana modal*/
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	padding-top: 50px;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.6)
+}
+
+.modal-content {
+	display: block;
+	color: #cccccc;
+	position: relative;
+	background-image: url("../img/bg/negro.png");
+	margin: auto;
+	padding: 20px;
+	border: 2px solid #cccccc;
+}
+
+.modal-block {
+	margin: auto;
+	display: block;
+	text-align: center;
+	margin-top: 30px
+}
+
+ul {
+	padding: 0;
+	list-style: none
+}
+
+.modal input {
+	margin-top: 8px;
+	margin-bottom: 12px;
+	padding: 3px 8px;
+	outline: none;
+	border: none;
+	background-image: url("../img/bg/negro.png");
+	color: #cccccc;
+	border-bottom: 2px solid white
+}
+
+.modal input:focus,
+.modal select:focus {
+	background-color: white;
+	color: black;
+	background-image: none
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+p {
+	padding: 0;
+	display: inline
+}
 /*Pie de página-footer*/
 footer {
 	border: 3px solid #cccccc;
