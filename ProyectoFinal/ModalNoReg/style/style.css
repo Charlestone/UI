@@ -98,7 +98,7 @@ h1 {
 	float: left;
 }
 
-h3 {
+#username {
 	display: inline-flex;
 	float: right;
 }
@@ -126,7 +126,7 @@ h3 {
 	align-items: center;
 }
 
-/*Estilo de la ventana modal*/
+/*Estilo de la ventana modal inicio sesión*/
 .modal {
 	display: none;
 	position: fixed;
@@ -156,6 +156,7 @@ h3 {
 	text-align: center;
 	margin-top: 30px
 }
+
 
 ul {
 	padding: 0;
@@ -190,6 +191,46 @@ ul a{
 
 }
 
+/*Estilo ventana modal no estas registrdo*/
+.modal2 {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	padding-top: 50px;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.6)
+}
+
+
+.modal-noreg{
+	display: block;
+	color: #cccccc;
+	position: relative;
+	background-color: #cccccc
+	margin: auto;
+	padding: 20px;
+	border: 2px solid #595959;
+}
+
+button{
+	background-color: #ffffff;
+	border: 1px solid #595959;
+	border-radius: 15px;
+	color: #595959;
+	padding: 15px 30px;
+	text-align: center;
+	display: inline-block;
+	font-size: 15px;
+}
+.ubicacion{
+	margin-left: 35.5%;
+	margin-right: 35.5%;
+	margin-top: 60px;
+}
 
 /* Estilo del main */
 h2 {
