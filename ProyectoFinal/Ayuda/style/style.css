@@ -358,7 +358,9 @@ p.titulo {
 }
 
 .tituloaux{
-	margin-left: 10%;
+	margin-left: 8%;
+	color: #cccccc;
+
 }
 .margen{
 	margin-left: 8%;
@@ -368,21 +370,20 @@ p.titulo {
 	color:rgb(51, 255, 252);
 }
 
-/*.posdescripcion2{
-position:relative; 
-z-index:1; 
-background-color: black;
-
+h2.preguntas{
+	margin-left: 0;
 }
 
-.posdescripcion3{
-position:relative; 
-z-index:1; 
-background-color: black;
-
+.centrar2{
+	text-align: center;
 }
-*/
 
-/*NUEVAS */
+img{
+	margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
 
 
