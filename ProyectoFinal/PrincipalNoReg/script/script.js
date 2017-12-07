@@ -94,7 +94,7 @@ $(document).ready(function() {
         $("p[id=shares]").text(numshares);
     });
     /* Si se hace click en el boton + o - */
-    $("#mas1").click(function() {
+    /*$("#mas1").click(function() {
         $("#descripcion1").toggle();
 
         if (mostrardesc1 == false) {
@@ -104,9 +104,9 @@ $(document).ready(function() {
             $("#mas1").attr('src', './img/mas.png');
             mostrardesc1 = false;
         }
-    });
+    }); */
     /* Si se hace click en el boton + o - */
-    $("#mas2").click(function() {
+    /*$("#mas2").click(function() {
         $("#descripcion2").toggle();
         if (mostrardesc2 == false) {
             $("#mas2").attr('src', './img/menos.png');
@@ -115,6 +115,6 @@ $(document).ready(function() {
             $("#mas2").attr('src', './img/mas.png');
             mostrardesc2 = false;
         }
-    });
+    }); */
 
 });
