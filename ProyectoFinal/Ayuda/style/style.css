@@ -376,10 +376,12 @@ h2.preguntas{
 
 .centrar2{
 	text-align: center;
+	margin-left: 29.17%;
+	margin-right: 29.17%;
 }
 
 img{
-	margin-left: 30px;
+	margin-left: 10px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
