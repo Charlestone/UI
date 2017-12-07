@@ -149,7 +149,15 @@ h1 {
 	padding: 20px;
 	border: 2px solid #cccccc;
 }
-
+.modal-noreg {
+	display: block;
+	color: #cccccc;
+	position: relative;
+	background-image: url("../img/bg/negro.png");
+	margin: auto;
+	padding: 20px;
+	border: 2px solid #cccccc;
+}
 .modal-block {
 	margin: auto;
 	display: block;
@@ -206,7 +214,7 @@ ul a{
 }
 
 
-.modal-noreg{
+/*.modal-noreg{
 	display: block;
 	color: #cccccc;
 	position: relative;
@@ -214,7 +222,7 @@ ul a{
 	margin: auto;
 	padding: 20px;
 	border: 2px solid #595959;
-}
+}*/
 
 button{
 	background-color: #ffffff;
