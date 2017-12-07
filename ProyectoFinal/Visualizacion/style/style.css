@@ -182,8 +182,14 @@ select:focus {
 
 p {
 	padding: 0;
-	display: inline
+	display: inline;
 }
+ul a{
+	color: #66ffff;
+
+
+}
+
 
 /* Estilo del main */
 h2 {
@@ -349,17 +355,4 @@ p.titulo {
 	margin-bottom: 0;
 }
 
-/*.posdescripcion2{
-position:relative; 
-z-index:1; 
-background-color: black;
 
-}
-
-.posdescripcion3{
-position:relative; 
-z-index:1; 
-background-color: black;
-
-}
-*/
