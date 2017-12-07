@@ -349,6 +349,13 @@ p.titulo {
 	margin-bottom: 0;
 }
 
+.alinearder {
+	float: right;
+	display: table;
+	margin-right: 3px;
+}
+
+
 /*.posdescripcion2{
 position:relative; 
 z-index:1; 
