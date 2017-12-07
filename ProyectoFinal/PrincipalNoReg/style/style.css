@@ -46,6 +46,7 @@ elementos de manera más sencilla y estandarizada*/
 
 .col-9 {
 	width: 75%;
+	
 }
 
 .col-10 {
@@ -58,6 +59,11 @@ elementos de manera más sencilla y estandarizada*/
 
 .col-12 {
 	width: 100%;
+}
+
+.col-9-centrar{
+	margin-left: 12%;
+    margin-right: 12%;
 }
 
 /*Configuracíón general de la pagina*/
@@ -223,9 +229,10 @@ h2.titulop {
 
 	/*clase para el contenedor que incluye el titulo y el +*/
 	padding-top: 5px;
-	background-color: white;
 	color: black;
 	margin-top: 10px;
+	margin-right: 30px;
+    margin-left: 30px;
 }
 
 .margen-3 {
@@ -240,12 +247,35 @@ h2.titulop {
 	display: table;
 	margin-left: 3px;
 	font-weight: bold;
+	color: white;
 }
-
+/*Estilo de los iconos*/
 .mas {
 	float: right;
 	display: table;
 	margin-right: 3px;
+	width: 23px;
+    height: 23px;
+    margin-left: 2px;
+    margin-right: 20px;
+}
+
+.corazon{
+	float: right;
+	display: table;
+	width: 23px;
+    height: 23px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.compartir{
+	float: right;
+	display: table;
+	width: 23px;
+    height: 23px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 .clearfix::after {
