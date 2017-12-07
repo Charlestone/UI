@@ -21,13 +21,7 @@ $("#listas").hide();
     var mostrardesc2 = false;
     var mostrardesc3 = false;
 
-    /*JS para la ventana modal*/
-   /*$("#body").ready(function() {
-        $("#modal-email").val("");
-        $("#modal-password").val("");
-        $(".modal").show();
-
-    });*/
+    
     /* Si se hace click en el boton log in */
     $("#login").click(function() {
         /*Validacion de email en la ventana modal*/
@@ -136,56 +130,24 @@ $("#listas").hide();
                 $("#listas").hide();
         } 
     });
-
-    /*Funciones para cambiar los likes de color*/
-    $("#1corazon").click(function() {
-        $("#1corazon").toggle();
-        $("#1corazon1").toggle();
+    /*Funcion para que al clickar en el div de las listas no desaparezca*/
+    $('#listas').click(function(event){
+     event.stopPropagation();
+ });
+    $(".corazon").click(function() {
+       if($(this).attr("src") == "./img/corazon.png"){
+            $(this).attr("src", "./img/corazon1.png");
+       }else{
+            $(this).attr("src", "./img/corazon.png");
+       }
     });
-    $("#1corazon1").click(function() {
-        $("#1corazon").toggle();
-        $("#1corazon1").toggle();
-    });
-    $("#2corazon").click(function() {
-        $("#2corazon").toggle();
-        $("#2corazon1").toggle();
-    });
-    $("#2corazon1").click(function() {
-        $("#2corazon").toggle();
-        $("#2corazon1").toggle();
-    });
-    $("#3corazon").click(function() {
-        $("#3corazon").toggle();
-        $("#3corazon1").toggle();
-    });
-    $("#3corazon1").click(function() {
-        $("#3corazon").toggle();
-        $("#3corazon1").toggle();
-    });
-       /*Funciones para cambiar los compartir de color*/
-    $("#1compartir").click(function() {
-        $("#1compartir").toggle();
-        $("#1compartir1").toggle();
-    });
-    $("#1compartir1").click(function() {
-        $("#1compartir").toggle();
-        $("#1compartir1").toggle();
-    });
-    $("#2compartir").click(function() {
-        $("#2compartir").toggle();
-        $("#2compartir1").toggle();
-    });
-    $("#2compartir1").click(function() {
-        $("#2compartir").toggle();
-        $("#2compartir1").toggle();
-    });
-    $("#3compartir").click(function() {
-        $("#3compartir").toggle();
-        $("#3compartir1").toggle();
-    });
-    $("#3compartir1").click(function() {
-        $("#3compartir").toggle();
-        $("#3compartir1").toggle();
+    /* Si se hace click en el icono de compartir */
+        $(".compartir").click(function() {
+       if($(this).attr("src") == "./img/compartir.png"){
+            $(this).attr("src", "./img/compartir1.png");
+       }else{
+            $(this).attr("src", "./img/compartir.png");
+       }
     });
     $(function() {
         /* Variables para el vídeo principal*/

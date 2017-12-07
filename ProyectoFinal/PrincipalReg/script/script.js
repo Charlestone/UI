@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+    $("#listas").hide();
     /* Variables */
     var likes = $("#likes").text();
     var numlikes = Number(likes);
@@ -82,77 +82,47 @@ $(document).ready(function() {
     }
 
     /* Si se hace click en el corazon */
-    $("#corazon").click(function() {
-        numlikes++;
-        numlikes.toString();
-        $("p[id=likes]").text(numlikes);
+    $(".corazon").click(function() {
+       if($(this).attr("src") == "./img/corazon.png"){
+            $(this).attr("src", "./img/corazon1.png");
+       }else{
+            $(this).attr("src", "./img/corazon.png");
+       }
     });
     /* Si se hace click en el icono de compartir */
-    $("#compartir").click(function() {
-        numshares++;
-        numshares.toString();
-        $("p[id=shares]").text(numshares);
+        $(".compartir").click(function() {
+       if($(this).attr("src") == "./img/compartir.png"){
+            $(this).attr("src", "./img/compartir1.png");
+       }else{
+            $(this).attr("src", "./img/compartir.png");
+       }
     });
-
-    /* Si se hace click en el corazon */
-    $("#corazon").click(function() {
-        numlikes++;
-        numlikes.toString();
-        $("p[id=likes]").text(numlikes);
-        $("#corazon").hide();
-        $("#corazon1").show();
-    });
-    /* Si se hace click en el icono de compartir */
-    $("#compartir").click(function() {
-        numshares++;
-        numshares.toString();
-        $("p[id=shares]").text(numshares);
-        $("#compartir").hide();
-        $("#compartir1").show();
-    });
-    /* Si se hace click en el corazon coloreado se reduce */
-    $("#corazon1").click(function() {
-        numlikes--;
-        numlikes.toString();
-        $("p[id=likes]").text(numlikes);
-        $("#corazon").show();
-        $("#corazon1").hide();
-    });
-    /* Si se hace click en el icono de compartir coloreado se reduce */
-    $("#compartir1").click(function() {
-        numshares--;
-        numshares.toString();
-        $("p[id=shares]").text(numshares);
-        $("#compartir").show();
-        $("#compartir1").hide();
-    });
-    /* Si se hace click en el boton + o - */
-    /*$("#mas1").click(function() {
-        $("#descripcion1").toggle();
-
-        if (mostrardesc1 == false) {
-            $("#mas1").attr('src', './img/menos.png');
-            mostrardesc1 = true;
-        } else {
-            $("#mas1").attr('src', './img/mas.png');
-            mostrardesc1 = false;
-        }
-    });
-    /* Si se hace click en el boton + o - */
-    /*$("#mas2").click(function() {
-        $("#descripcion2").toggle();
-        if (mostrardesc2 == false) {
-            $("#mas2").attr('src', './img/menos.png');
-            mostrardesc2 = true;
-        } else {
-            $("#mas2").attr('src', './img/mas.png');
-            mostrardesc2 = false;
-        }
+    /* Valores para saber donde esta el raton*/
+    var ejeX=0;
+    var ejeXespecial=0;
+    var ejeY=0;
+    /*Funcion para obtener la posicion del raton*/
+    $(document).mousemove( function(e) {
+            ejeX = e.pageX;
+            ejeXespecial = e.pageX-150;
+            ejeY = e.pageY;
+        });
+    /* Funciones para mostrar las listas donde añadir el video*/
+    $(".añadir").mouseover(function(){
+            $('#listas').css({'top':ejeY,'left':ejeX}).fadeIn("fast"); 
+    });  
+   /* $(".masd").mouseover(function(){
+                $('#listas').css({'top':ejeY,'left':ejeXespecial}).fadeIn();
     });*/
-
-
-
-
-
-
+    /*Funcion para ocultar el div con las listas*/
+    $(document).click(function(){
+        if ( $("#listas").css('display') != 'none' ){
+                $("#listas").hide();
+        } 
+    });
+    /*Funcion para que al clickar en el div de las listas no desaparezca*/
+    $('#listas').click(function(event){
+     event.stopPropagation();
+ });
+        
 });

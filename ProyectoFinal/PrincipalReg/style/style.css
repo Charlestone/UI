@@ -250,7 +250,7 @@ h2.titulop {
 	color: white;
 }
 /*Estilo de los iconos*/
-.mas {
+.añadir {
 	float: right;
 	display: table;
 	margin-right: 3px;
@@ -277,7 +277,15 @@ h2.titulop {
     margin-left: 2px;
     margin-right: 2px;
 }
-
+#listas{
+	background-color: white;
+	width: 10%;
+	position: absolute;
+	border-radius: 10px;
+}
+.lista{
+	margin-left: 3%;
+}
 .clearfix::after {
 	content: "";
 	clear: both;
