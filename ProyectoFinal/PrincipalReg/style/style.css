@@ -62,8 +62,8 @@ elementos de manera más sencilla y estandarizada*/
 }
 
 .col-9-centrar{
-	margin-left: 5%;
-    margin-right: 5%;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 /*Configuracíón general de la pagina*/
@@ -88,6 +88,12 @@ header {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+header a {
+	align-self: center;
+	margin-left: 15px;
+	text-decoration: none;
+	color: #4dd2ff;
+}
 
 h1 {
 	margin-top: 29px;
@@ -96,7 +102,10 @@ h1 {
 	display: inline-block;
 	color: #404040;
 }
-
+h1:hover{
+	color: #686868;
+	cursor: pointer;
+}
 #logo {
 	margin-top: 22px;
 	margin-bottom: 22px;
@@ -111,18 +120,19 @@ h3 {
 
 .user {
 	margin-right: 20px;
-	float: right;
 }
 
-#logueo {
-	order: 1;
+#username {
 	display: flex;
 }
 
 #userphoto {
-	order: 2;
+	order: 1;
 	margin-top: auto;
 	margin-bottom: auto;
+}
+#userphoto:hover {
+	cursor: pointer;
 }
 
 .right-header {
@@ -130,6 +140,31 @@ h3 {
 	float: right;
 	height: 100px;
 	align-items: center;
+}
+.busqueda {
+	margin-top: 30px;
+	margin-left: 250px;
+	display: inline-flex;
+}
+
+
+/* Estilo del menu desplegable */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: white;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 /*Estilo de la ventana modal*/
@@ -168,7 +203,7 @@ ul {
 	list-style: none
 }
 
-input {
+.modal input {
 	margin-top: 8px;
 	margin-bottom: 12px;
 	padding: 3px 8px;
@@ -179,13 +214,26 @@ input {
 	border-bottom: 2px solid white
 }
 
-input:focus,
-select:focus {
+.modal input:focus,
+.modal select:focus {
 	background-color: white;
 	color: black;
 	background-image: none
 }
 
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 p {
 	padding: 0;
 	display: inline
@@ -211,9 +259,9 @@ h2.titulop {
 }
 
 .multi-column {
-
-	/*Clase para colocar la reproduccion del video a la derecha */
 	display: inline-flex;
+	width: 100%;
+	
 }
 
 .margen {
@@ -231,15 +279,15 @@ h2.titulop {
 	padding-top: 5px;
 	color: black;
 	margin-top: 10px;
-	margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .margen-3 {
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-bottom: 60px;
-	margin-top: 40px;
+	margin-top: 10px;
 }
 
 .titulo {
@@ -247,36 +295,38 @@ h2.titulop {
 	display: table;
 	margin-left: 3px;
 	font-weight: bold;
-	color: white;
+	color: white;	
 }
+
+.divDerecha{
+	float: right;
+	display: table;	
+}
+
+
 /*Estilo de los iconos*/
 .mas {
-	float: right;
-	display: table;
-	margin-right: 3px;
-	width: 23px;
+    float: right;
+    display: table;
     height: 23px;
-    margin-left: 2px;
-    margin-right: 20px;
+    width: 33%;
 }
 
 .corazon{
-	float: right;
-	display: table;
-	width: 23px;
+    float: right;
+    display: table;
+    width: 33%;
     height: 23px;
-    margin-left: 2px;
-    margin-right: 2px;
 }
 
 .compartir{
 	float: right;
-	display: table;
-	width: 23px;
+    display: table;
+    width: 33%;
     height: 23px;
-    margin-left: 2px;
-    margin-right: 2px;
 }
+/*fin iconos*/
+
 
 .clearfix::after {
 	content: "";
@@ -287,6 +337,13 @@ h2.titulop {
 .bordes {
 	outline: 1px solid #cccccc;
 	outline-offset: 1px;
+}
+
+/*Titulo de cada video*/
+p.titulo {
+	margin-top: 0;
+	margin-bottom: 0;
+	width:50%;
 }
 
 /*Pie de página-footer*/
@@ -328,57 +385,16 @@ footer p {
 	margin-right: 20px;
 }
 
-.little {
-	background-color: white;
-}
-
-.title {
-	float: left;
-	display: table;
-	overflow: auto;
-}
-
-.plus {
-	float: right;
-	display: table;
-	overflow: auto;
-}
-
-.clearfix::after {
-	content: "";
-	clear: both;
-	display: table;
-}
-
-.tamvideo {
-	width: 300px;
-	height: 188px;
-}
-
-/*Clase para ocultar la descripcion y poner la posicion de la descripcion */
-.posdescripcion {
-	display: none;
-	position: relative;
-	z-index: 1;    /*No hace nada*/
-	text-align: center;
-}
-
 .auto {
 
 	/*Clase para centrar la imagen de cada video*/
 	margin: auto;
 	display: block;
+	width:100%;
 }
 
-p.descrp {
-	margin-right: 50px;
-	display: block;
-}
 
-p.titulo {
-	margin-top: 0;
-	margin-bottom: 0;
-}
+
 
 /*.posdescripcion2{
 position:relative; 
