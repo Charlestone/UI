@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Miau</title>
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./script/script.js"></script>
+</head>
+
+<body class="col-12">
+    <!--Ventana modal-->
+    <div id="modal" class="modal col-12">
+        <!-- Contenido de la ventana-->
+        <div class="modal-content col-3">
+            <span class="close">&times;</span>
+            <form>
+                <ul class="modal-block">
+                    <li>
+                        <p>Email</p>
+                        <br>
+                        <input id="modal-email" type="text" name="emailm">
+                        <br>
+                    </li>
+                    <li>
+                        <p>Password</p>
+                        <br>
+                        <input id="modal-password" type="password" name="passwordm">
+                    </li>
+                    <li>
+                        <input id="login" type="button" name="log" value="Log In">
+                    </li>
+                    <li>
+                        <p>¿No tienes cuenta?</p>
+                        <input id="registro" type="button" name="log" value="Regístrate aquí">                     
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <div class="col-12">
+        <header class="col-12">
+            <img id="logo" src="../../img/miaulogo.png" alt="Logo de Miau">
+            <div class="dropdown">
+                <h1 class="menu">Men&uacute;</h1>
+                <div class="dropdown-content">
+                    <a href="../../pelis/noreg/pelisnr.html" title="pelis">Pel&iacute;culas</a>
+                    <a href="../../series/noreg/seriesnr.html" title="series">Series</a>
+                </div>
+            </div>
+            
+            <div class="busqueda col-4">
+                <form class="buscar">
+                    <input type="text"  placeholder="Buscar...." name="busca">
+                </form>
+            </div>
+            <div class="right-header">
+                <button class="inises">Iniciar Sesi&oacute;n</button>
+            </div>
+        </header>
+        <div class="col-12 modal" id="noreg">
+            <!-- Contenido de la ventana modal inicio sesión-->
+                <div class="modal-noreg col-3 ubicacion">
+                    <ul class="modal-block">
+                            <li>
+                                <span class="close">&times;</span>
+                            </li>
+                           <li>
+                               <h3>¿No estás registrado todavía?</h3>  
+                               <br>
+                           </li>
+                           <li>
+                               <p>Regístrate para poder dar like, compartir y añadir vídeos a tus listas de reproducción.</p> 
+                               <br>
+                               <br>
+                           </li>
+                           <br>
+                           <li>
+                   <button id="registrar" type="button">QUIERO REGISTRARME</button>
+                            </li>
+               
+                    </ul>   
+                </div>   
+        </div>
+        <div class="col-9 col-9-centrar">
+                <!-- Contenedor para series -->
+                <h2> Series </h2>
+                <div class="multi-column">
+                    <div class="col-4 margen-3">
+                        <img class="posvideo auto" src="../../img/homeland.png" alt="foto de homeland">
+                        <div class="titulomas clearfix ancho ">
+                            <p class="titulo">HOMELAND</p>
+                            <div class="divDerecha">
+                                <img class="mas funcionalidad" src="../../img/mas.png"  alt="icono de mas">
+                                <img class="compartir funcionalidad" src="../../img/compartir.png" alt="icono de compartir">
+                                <img class="corazon funcionalidad" src="../../img/corazon.png" alt="icono like"> 
+                            </div>                  
+                        </div>
+                    </div>
+                    <div class="col-4 margen-3 ">
+                        <img class="posvideo auto" src="../../img/strangerthings.png" alt="foto del video">
+                        <div class="titulomas clearfix">
+                            <p class="titulo">STRANGER THINGS</p>
+                            <div class="divDerecha"> 
+                                <img class="mas funcionalidad" src="../../img/mas.png"  alt="icono de mas">
+                                <img class="compartir funcionalidad" src="../../img/compartir.png" alt="icono de compartir">
+                                <img class="corazon funcionalidad" src="../../img/corazon.png" alt="icono like"> 
+                            </div>                                                 
+                        </div>
+                    </div>
+                    <div class="col-4 margen-3">
+                        <img class="posvideo auto" src="../../img/billions.png" alt="foto del video">
+                        <div class="titulomas clearfix">
+                            <p class="titulo">BILLIONS</p>
+                            <div class="divDerecha">
+                                <img class="mas funcionalidad" src="../../img/mas.png"  alt="icono de mas">
+                                <img class="compartir funcionalidad" src="../../img/compartir.png" alt="icono de compartir">
+                                <img class="corazon funcionalidad" src="../../img/corazon.png" alt="icono like">
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="col-9 col-9-centrar">
+                <!-- Contenedor para peliculas -->
+                <h2> Películas </h2>
+                <div class="multi-column">
+                    <div  class="col-4 margen-3">
+                        <img class="posvideo auto" src="../../img/alien.png" alt="foto de homeland">
+                        <div class="titulomas clearfix ancho ">
+                            <p class="titulo">ALIEN COVENANT</p>
+                            <div class="divDerecha">
+                                <img class="mas funcionalidad" src="../../img/mas.png"  alt="icono de mas">
+                                <img class="compartir funcionalidad" src="../../img/compartir.png" alt="icono de compartir">
+                                <img class="corazon funcionalidad" src="../../img/corazon.png" alt="icono like">
+                            </div>                           
+                        </div>
+                    </div>
+                    <div class="col-4 margen-3">
+                        <img class="posvideo auto" src="../../img/xmen.png" alt="foto del video">
+                        <div class="titulomas clearfix">
+                            <p class="titulo">X-MEN</p>
+                            <div class="divDerecha">
+                                <img class="mas funcionalidad" src="../../img/mas.png"  alt="icono de mas">
+                                <img class="compartir funcionalidad" src="../../img/compartir.png" alt="icono de compartir">
+                                <img class="corazon funcionalidad" src="../../img/corazon.png" alt="icono like">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 margen-3">
+                        <img class="posvideo auto" src="../../img/thor.png" alt="foto del video">
+                        <div class="titulomas clearfix">
+                            <p class="titulo">THOR RAGNAROK</p>
+                            <div class="divDerecha">
+                                <img class="mas funcionalidad" src="../../img/mas.png"  alt="icono de mas">
+                                <img class="compartir funcionalidad" src="../../img/compartir.png" alt="icono de compartir">
+                                <img class="corazon funcionalidad" src="../../img/corazon.png" alt="icono like">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <footer class="col-12">
+            <ul>
+                <li><a class="margenes" href="../../privacidad/noreg/privacidadnr.html">Privacidad</a></li>
+                <li><a class="margenes" href="../../aboutus/noreg/aboutusnr.html">About us</a></li>
+                <li><a class="margenes" href="../../ayuda/noreg/ayudanr.html">Ayuda</a></li>                
+                <li><a class="margenes" href="../../politica/noreg/politicanr.html">Pol&iacute;tica y seguridad</a></li>
+
+            </ul>
+            <p class="copy">&copy; 2017 Cat Entertainment, Inc.</p>
+
+        </footer>
+    </div>
+</body>
+
+</html>
