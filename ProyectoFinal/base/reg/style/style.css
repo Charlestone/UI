@@ -1,12 +1,12 @@
 /*Fuentes*/
 @font-face {
 	font-family: PTSans;
-	src: url(../font/PT_Sans/PT_Sans-Web-Regular.ttf);
+	src: url(../../../font/PT_Sans/PT_Sans-Web-Regular.ttf);
 }
 
 @font-face {
 	font-family: PTSans;
-	src: url(../font/PT_Sans/PT_Sans-Web-Bold.ttf);
+	src: url(../../../font/PT_Sans/PT_Sans-Web-Bold.ttf);
 	font-weight: bold;
 }
 
@@ -63,7 +63,7 @@ elementos de manera más sencilla y estandarizada*/
 /*Configuracíón general de la pagina*/
 body {
 	margin: 0;
-	background-image: url("../img/bg/negro.png");
+	background-image: url("../../../img/bg/negro.png");
 	font-family: 'PTSans', sans-serif;
 	overflow-x: auto;
 	overflow-y: auto;
@@ -72,7 +72,7 @@ body {
 
 /*Cabecera-header*/
 header {
-	background-image: url("../img/bg/geometry.png");
+	background-image: url("../../../img/bg/geometry.png");
 	border: 3px solid #cccccc;
 	margin-bottom: 40px;
 	-webkit-box-sizing: border-box;
