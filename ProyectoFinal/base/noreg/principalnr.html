@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Miau</title>
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./script/script.js"></script>
+</head>
+
+<body class="col-12">
+    <!--Ventana modal-->
+    <div class="modal col-12">
+        <!-- Contenido de la ventana-->
+        <div class="modal-content col-3">
+            <span class="close">&times;</span>
+            <form>
+                <ul class="modal-block">
+                    <li>
+                        <p>Email</p>
+                        <br>
+                        <input id="modal-email" type="text" name="emailm">
+                        <br>
+                    </li>
+                    <li>
+                        <p>Password</p>
+                        <br>
+                        <input id="modal-password" type="password" name="passwordm">
+                    </li>
+                    <li>
+                        <input id="login" type="button" name="log" value="Log In">
+                    </li>
+                    <li>
+                        <p>¿No tienes cuenta?</p>
+                        <input id="registro" type="button" name="log" value="Regístrate aquí">                     
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <div class="col-12">
+        <header class="col-12">
+            <img id="logo" src="../../img/miaulogo.png" alt="Logo de Miau">
+            <div class="dropdown">
+                <h1 class="menu">Men&uacute;</h1>
+                <div class="dropdown-content">
+                    <a href="../../pelis/noreg/pelisnr.html" title="pelis">Pel&iacute;culas</a>
+                    <a href="../../series/noreg/seriesnr.html" title="series">Series</a>
+                </div>
+            </div>
+            
+            <div class="busqueda col-4">
+                <form class="buscar">
+                    <input type="text"  placeholder="Buscar...." name="busca">
+                </form>
+            </div>
+            <div class="right-header">
+                <button class="inises">Iniciar Sesi&oacute;n</button>
+            </div>
+        </header>
+        
+        <footer class="col-12">
+            <ul>
+                <li><a class="margenes" href="../../privacidad/noreg/privacidadnr.html">Privacidad</a></li>
+                <li><a class="margenes" href="../../aboutus/noreg/aboutusnr.html">About us</a></li>
+                <li><a class="margenes" href="../../ayuda/noreg/ayudanr.html">Ayuda</a></li>                
+                <li><a class="margenes" href="../../politica/noreg/politicanr.html">Pol&iacute;tica y seguridad</a></li>
+
+            </ul>
+            <p class="copy">&copy; 2017 Cat Entertainment, Inc.</p>
+
+        </footer>
+    </div>
+</body>
+
+</html>
