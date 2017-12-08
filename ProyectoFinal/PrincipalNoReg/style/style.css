@@ -96,6 +96,14 @@ h1 {
 	display: inline-block;
 	color: #404040;
 }
+h1:hover{
+	color: #686868;
+	cursor: pointer;
+}
+#logo:hover {
+	cursor: pointer;
+	opacity: 0.6;
+}
 
 #logo {
 	margin-top: 22px;
@@ -104,32 +112,44 @@ h1 {
 	float: left;
 }
 
-h3 {
-	display: inline-flex;
-	float: right;
-}
-
-.user {
-	margin-right: 20px;
-	float: right;
-}
-
-#logueo {
-	order: 1;
-	display: flex;
-}
-
-#userphoto {
-	order: 2;
-	margin-top: auto;
-	margin-bottom: auto;
-}
-
 .right-header {
 	display: flex;
 	float: right;
 	height: 100px;
 	align-items: center;
+}
+
+.busqueda {
+	margin-top: 30px;
+	margin-left: 250px;
+	display: inline-flex;
+}
+
+.inises {
+	margin-right: 30px;
+}
+button:hover{
+	cursor: pointer;
+}
+
+/*Estilo de la ventana modal*/
+/* Estilo del menu desplegable */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: white;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 /*Estilo de la ventana modal*/
@@ -168,7 +188,7 @@ ul {
 	list-style: none
 }
 
-input {
+.modal input {
 	margin-top: 8px;
 	margin-bottom: 12px;
 	padding: 3px 8px;
@@ -179,13 +199,26 @@ input {
 	border-bottom: 2px solid white
 }
 
-input:focus,
-select:focus {
+.modal input:focus,
+.modal select:focus {
 	background-color: white;
 	color: black;
 	background-image: none
 }
 
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 p {
 	padding: 0;
 	display: inline
@@ -279,6 +312,8 @@ h2.titulop {
     width: 33%;
     height: 23px;
 }
+/*fin iconos*/
+
 
 .clearfix::after {
 	content: "";
@@ -289,6 +324,13 @@ h2.titulop {
 .bordes {
 	outline: 1px solid #cccccc;
 	outline-offset: 1px;
+}
+
+/*Titulo de cada video*/
+p.titulo {
+	margin-top: 0;
+	margin-bottom: 0;
+	width:50%;
 }
 
 /*Pie de página-footer*/
@@ -330,40 +372,9 @@ footer p {
 	margin-right: 20px;
 }
 
-.little {
-	background-color: white;
-}
 
-.title {
-	float: left;
-	display: table;
-	overflow: auto;
-}
 
-.plus {
-	float: right;
-	display: table;
-	overflow: auto;
-}
 
-.clearfix::after {
-	content: "";
-	clear: both;
-	display: table;
-}
-
-.tamvideo {
-	width: 300px;
-	height: 188px;
-}
-
-/*Clase para ocultar la descripcion y poner la posicion de la descripcion */
-.posdescripcion {
-	display: none;
-	position: relative;
-	z-index: 1;    /*No hace nada*/
-	text-align: center;
-}
 
 .auto {
 
@@ -373,16 +384,8 @@ footer p {
 	width:100%;
 }
 
-p.descrp {
-	margin-right: 50px;
-	display: block;
-}
 
-p.titulo {
-	margin-top: 0;
-	margin-bottom: 0;
-	width:50%;
-}
+
 
 /*.posdescripcion2{
 position:relative; 

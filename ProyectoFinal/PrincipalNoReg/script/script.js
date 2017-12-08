@@ -18,16 +18,26 @@ $(document).ready(function() {
     var mostrardesc2 = false;
     var mostrardesc3 = false;
 
-    /*JS para la ventana modal*/
-   $("#body").ready(function() {
-        $("#modal-email").val("");
-        $("#modal-password").val("");
-        //$(".modal").show();
-
+    /* Para el logo */
+    $("#logo").click(function(){
+        window.location.href= './basenr.html';
     });
-   $("#logueo").click(function(){
-        $(".modal").show();
-   })
+    /* Para el menu desplegable */
+    $(".menu").click(function() {
+        $(".dropdown-content").toggle();
+    });
+    /* Para el boton de iniciar sesion */
+    $(".inises").click(function(){
+         $(".modal").show();
+    });
+    /* Para la x de la ventana modal */
+    $(".close").click(function(){
+        $(".modal").hide();
+    });
+    /* Para registrate aquí de la ventana modal */
+    $("#registro").click(function(){
+        window.location.href= './registro.html';
+    });
     /* Si se hace click en el boton log in */
     $("#login").click(function() {
         /*Validacion de email en la ventana modal*/
@@ -49,13 +59,14 @@ $(document).ready(function() {
                     
                 } else {
                     if (forms[0]) {
-                        $("#logueo").text(forms[0].substr(1, forms[0].length - 2));
+                        window.location.href = "./principalr.html";
+                        $("#username").text(forms[0].substr(1, forms[0].length - 2));
                         $(".modal").hide();
                     }
                 }
 
             } else {
-                window.location.href = "../Formulario/formulario.html";
+                window.location.href = "./registro.html";
             }
 
         } else {
@@ -63,7 +74,6 @@ $(document).ready(function() {
             errors = "";
         }
     });
-
     /* Funcion para comprobar si existe cookie para un correo */
     function checkCookie(email) {
         var cookies = document.cookie.split(";");
@@ -81,18 +91,192 @@ $(document).ready(function() {
         return false;
     }
 
-    /* Si se hace click en el corazon */
-    $("#corazon").click(function() {
-        numlikes++;
-        numlikes.toString();
-        $("p[id=likes]").text(numlikes);
+
+ var    corazon1 = true,
+        corazon2 = true,
+        corazon3 = true,
+        corazon4 = true,
+        corazon5 = true,
+        corazon6 = true,
+        compartir1 = true,
+        compartir2 = true,
+        compartir3 = true,
+        compartir4 = true,
+        compartir5 = true,
+        compartir6 = true;
+
+
+    /* Si se hace click en el corazon1 */
+    $("#corazon1").click(function() {
+        if (corazon1) {
+            $("#corazon1").attr('src', './img/corazonColoreado.png');
+            corazon1 = false;
+            return;
+        }
+        else{
+            $("#corazon1").attr('src', './img/corazon.png');
+            corazon1 = true;
+            return;
+        }
     });
-    /* Si se hace click en el icono de compartir */
-    $("#compartir").click(function() {
-        numshares++;
-        numshares.toString();
-        $("p[id=shares]").text(numshares);
+
+    /* Si se hace click en el corazon2 */
+    $("#corazon2").click(function() {
+        if (corazon2) {
+            $("#corazon2").attr('src', './img/corazonColoreado.png');
+            corazon2 = false;
+            return;
+        }
+        else{
+            $("#corazon2").attr('src', './img/corazon.png');
+            corazon2 = true;
+            return;
+        }
     });
+
+        /* Si se hace click en el corazon3 */
+    $("#corazon3").click(function() {
+        if (corazon3) {
+            $("#corazon3").attr('src', './img/corazonColoreado.png');
+            corazon3 = false;
+            return;
+        }
+        else{
+            $("#corazon3").attr('src', './img/corazon.png');
+            corazon3 = true;
+            return;
+        }
+    });
+
+        /* Si se hace click en el corazon4 */
+    $("#corazon4").click(function() {
+        if (corazon4) {
+            $("#corazon4").attr('src', './img/corazonColoreado.png');
+            corazon4 = false;
+            return;
+        }
+        else{
+            $("#corazon4").attr('src', './img/corazon.png');
+            corazon4 = true;
+            return;
+        }
+    });
+
+        /* Si se hace click en el corazon5 */
+    $("#corazon5").click(function() {
+        if (corazon5) {
+            $("#corazon5").attr('src', './img/corazonColoreado.png');
+            corazon5 = false;
+            return;
+        }
+        else{
+            $("#corazon5").attr('src', './img/corazon.png');
+            corazon5 = true;
+            return;
+        }
+    });
+
+        /* Si se hace click en el corazon6 */
+    $("#corazon6").click(function() {
+        if (corazon6) {
+            $("#corazon6").attr('src', './img/corazonColoreado.png');
+            corazon6 = false;
+            return;
+        }
+        else{
+            $("#corazon6").attr('src', './img/corazon.png');
+            corazon6 = true;
+            return;
+        }
+    });
+
+
+
+        /* Si se hace click en el compartir1 */
+    $("#compartir1").click(function() {
+        if (compartir1) {
+            $("#compartir1").attr('src', './img/compartirColoreado.png');
+            compartir1 = false;
+            return;
+        }
+        else{
+            $("#compartir1").attr('src', './img/compartir.png');
+            compartir1 = true;
+            return;
+        }
+    });
+        /* Si se hace click en el compartir2 */
+    $("#compartir2").click(function() {
+        if (compartir2) {
+            $("#compartir2").attr('src', './img/compartirColoreado.png');
+            compartir2 = false;
+            return;
+        }
+        else{
+            $("#compartir2").attr('src', './img/compartir.png');
+            compartir2 = true;
+            return;
+        }
+    });
+
+        /* Si se hace click en el compartir3 */
+    $("#compartir3").click(function() {
+        if (compartir3) {
+            $("#compartir3").attr('src', './img/compartirColoreado.png');
+            compartir3 = false;
+            return;
+        }
+        else{
+            $("#compartir3").attr('src', './img/compartir.png');
+            compartir3 = true;
+            return;
+        }
+    });
+
+        /* Si se hace click en el compartir4 */
+    $("#compartir4").click(function() {
+        if (compartir4) {
+            $("#compartir4").attr('src', './img/compartirColoreado.png');
+            compartir4 = false;
+            return;
+        }
+        else{
+            $("#compartir4").attr('src', './img/compartir.png');
+            compartir4 = true;
+            return;
+        }
+    });
+
+        /* Si se hace click en el compartir5 */
+    $("#compartir5").click(function() {
+        if (compartir5) {
+            $("#compartir5").attr('src', './img/compartirColoreado.png');
+            compartir5 = false;
+            return;
+        }
+        else{
+            $("#compartir5").attr('src', './img/compartir.png');
+            compartir5 = true;
+            return;
+        }
+    });
+
+        /* Si se hace click en el compartir6 */
+    $("#compartir6").click(function() {
+        if (compartir6) {
+            $("#compartir6").attr('src', './img/compartirColoreado.png');
+            compartir6 = false;
+            return;
+        }
+        else{
+            $("#compartir6").attr('src', './img/compartir.png');
+            compartir6 = true;
+            return;
+        }
+    });
+
+
+
     /* Si se hace click en el boton + o - */
     /*$("#mas1").click(function() {
         $("#descripcion1").toggle();
@@ -115,6 +299,6 @@ $(document).ready(function() {
             $("#mas2").attr('src', './img/mas.png');
             mostrardesc2 = false;
         }
-    }); */
+    });*/
 
 });

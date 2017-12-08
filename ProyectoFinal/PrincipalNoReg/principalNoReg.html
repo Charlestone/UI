@@ -17,6 +17,7 @@
     <div class="modal col-12">
         <!-- Contenido de la ventana-->
         <div class="modal-content col-3">
+            <span class="close">&times;</span>
             <form>
                 <ul class="modal-block">
                     <li>
@@ -34,7 +35,7 @@
                         <input id="login" type="button" name="log" value="Log In">
                     </li>
                     <li>
-                        <p>No tienes cuenta?</p>
+                        <p>¿No tienes cuenta?</p>
                         <input id="registro" type="button" name="log" value="Regístrate aquí">                     
                     </li>
                 </ul>
@@ -44,12 +45,24 @@
     <div class="col-12">
         <header class="col-12">
             <img id="logo" src="./img/miaulogo.png" alt="Logo de Miau">
-            <h1>HOME</h1>
+            <div class="dropdown">
+                <h1 class="menu">Men&uacute;</h1>
+                <div class="dropdown-content">
+                    <a href="./pelisnr.html" title="pelis">Pel&iacute;culas</a>
+                    <a href="./seriesnr.html" title="series">Series</a>
+                </div>
+            </div>
+            
+            <div class="busqueda col-4">
+                <form class="buscar">
+                    <input type="text"  placeholder="Buscar...." name="busca">
+                </form>
+            </div>
             <div class="right-header">
-                <h3 id="logueo" class="user">Iniciar Sesión</h3>
-                <img id="userphoto" class="user" src="./img/usuario.png" alt="Foto de usuario">
+                <button class="inises">Iniciar Sesi&oacute;n</button>
             </div>
         </header>
+        
 
             <div class="col-9 col-9-centrar">
                 <!-- Contenedor para series -->
@@ -71,7 +84,7 @@
                         <div class="titulomas clearfix">
                             <p class="titulo">STRANGER THINGS</p>
                             <div class="divDerecha"> 
-                                <img class="mas" src="./img/mas.png" id="mas" alt="icono de mas">
+                                <img class="mas" src="./img/mas.png" id="mas2" alt="icono de mas">
                                 <img class="corazon" src="./img/corazon.png" id="corazon2" alt="icono like">
                                 <img class="compartir" src="./img/compartir.png" id="compartir2" alt="icono de compartir">
                             </div>                                                 
@@ -82,7 +95,7 @@
                         <div class="titulomas clearfix">
                             <p class="titulo">BILLIONS</p>
                             <div class="divDerecha">
-                                <img class="mas" src="./img/mas.png" id="mas1" alt="icono de mas3">
+                                <img class="mas" src="./img/mas.png" id="mas3" alt="icono de mas3">
                                 <img class="corazon" src="./img/corazon.png" id="corazon3" alt="icono like">
                                 <img class="compartir" src="./img/compartir.png" id="compartir3" alt="icono de compartir">
                             </div> 
@@ -121,9 +134,9 @@
                         <div class="titulomas clearfix">
                             <p class="titulo">BILLIONS</p>
                             <div class="divDerecha">
-                                <img class="mas" src="./img/mas.png" id="mas5" alt="icono de mas">
-                                <img class="corazon" src="./img/corazon.png" id="corazon5" alt="icono like">
-                                <img class="compartir" src="./img/compartir.png" id="compartir5" alt="icono de compartir">
+                                <img class="mas" src="./img/mas.png" id="mas6" alt="icono de mas">
+                                <img class="corazon" src="./img/corazon.png" id="corazon6" alt="icono like">
+                                <img class="compartir" src="./img/compartir.png" id="compartir6" alt="icono de compartir">
                             </div>
                             
                         </div>
@@ -134,15 +147,11 @@
         </div>
         <footer class="col-12">
             <ul>
-                <li><a target="_blank" href="facebook"><img src="./img/fb.png" alt="Facebook"></a></li>
-                <li>
-                    <p>&#124;</p>
-                </li>
-                <li><a target="_blank" href="twitter"><img src="./img/twitter.png" alt="Twitter"></a></li>
-                <li>
-                    <p>&#124;</p>
-                </li>
-                <li><a target="_blank" href="ayuda">Ayuda</a></li>
+                <li><a class="margenes" href="./privacidadnr.html">Privacidad</a></li>
+                <li><a class="margenes" href="./aboutusnr.html">About us</a></li>
+                <li><a class="margenes" href="./ayudanr.html">Ayuda</a></li>                
+                <li><a class="margenes" href="./politicanr.html">Pol&iacute;tica y seguridad</a></li>
+
             </ul>
             <p class="copy">&copy; 2017 Cat Entertainment, Inc.</p>
         </footer>
