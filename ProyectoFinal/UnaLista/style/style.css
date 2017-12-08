@@ -430,6 +430,10 @@ a{
 	color: #595959;
 }
 
+a:hover{
+	font-weight: bold;
+}
+
 /*.posdescripcion2{
 position:relative; 
 z-index:1; 
