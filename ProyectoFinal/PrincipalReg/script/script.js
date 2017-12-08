@@ -113,6 +113,48 @@ $(document).ready(function() {
         }
     });
 
+        /* Si se hace click en el corazon7 */
+    $("#corazon7").click(function() {
+        if (corazon7) {
+            $("#corazon7").attr('src', './img/corazonColoreado.png');
+            corazon7 = false;
+            return;
+        }
+        else{
+            $("#corazon7").attr('src', './img/corazon.png');
+            corazon7 = true;
+            return;
+        }
+    });
+
+        /* Si se hace click en el corazon8 */
+    $("#corazon8").click(function() {
+        if (corazon8) {
+            $("#corazon8").attr('src', './img/corazonColoreado.png');
+            corazon8 = false;
+            return;
+        }
+        else{
+            $("#corazon8").attr('src', './img/corazon.png');
+            corazon8 = true;
+            return;
+        }
+    });
+
+        /* Si se hace click en el corazon9 */
+    $("#corazon9").click(function() {
+        if (corazon9) {
+            $("#corazon9").attr('src', './img/corazonColoreado.png');
+            corazon9 = false;
+            return;
+        }
+        else{
+            $("#corazon9").attr('src', './img/corazon.png');
+            corazon9 = true;
+            return;
+        }
+    });
+
 
 
         /* Si se hace click en el compartir1 */
@@ -198,4 +240,45 @@ $(document).ready(function() {
         }
     });
 
+        /* Si se hace click en el compartir7 */
+    $("#compartir7").click(function() {
+        if (compartir7) {
+            $("#compartir7").attr('src', './img/compartirColoreado.png');
+            compartir7 = false;
+            return;
+        }
+        else{
+            $("#compartir7").attr('src', './img/compartir.png');
+            compartir7 = true;
+            return;
+        }
+    });
+
+        /* Si se hace click en el compartir8 */
+    $("#compartir8").click(function() {
+        if (compartir8) {
+            $("#compartir8").attr('src', './img/compartirColoreado.png');
+            compartir8 = false;
+            return;
+        }
+        else{
+            $("#compartir8").attr('src', './img/compartir.png');
+            compartir8 = true;
+            return;
+        }
+    });
+
+        /* Si se hace click en el compartir9 */
+    $("#compartir9").click(function() {
+        if (compartir9) {
+            $("#compartir9").attr('src', './img/compartirColoreado.png');
+            compartir9 = false;
+            return;
+        }
+        else{
+            $("#compartir9").attr('src', './img/compartir.png');
+            compartir9 = true;
+            return;
+        }
+    });
 });
