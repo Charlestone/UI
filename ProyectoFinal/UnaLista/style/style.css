@@ -414,6 +414,12 @@ p.titulo {
 	width: 150px;
 
 }
+.compartir-2{
+	/*width: 42px; 
+	height: 42px; */
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
 
 .duracion{
 	width: 100px;
