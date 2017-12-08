@@ -386,6 +386,15 @@ p.titulo {
 	width: 70px;
 }
 
+a.nombre{
+	color: #595959;
+	text-decoration: none;
+	margin-top: 15px;
+}
+a:hover{
+	font-weight: bold;
+}
+
 /*.posdescripcion2{
 position:relative; 
 z-index:1; 

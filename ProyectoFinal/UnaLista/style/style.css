@@ -426,6 +426,10 @@ p.titulo {
 
 }
 
+a{
+	color: #595959;
+}
+
 /*.posdescripcion2{
 position:relative; 
 z-index:1; 
