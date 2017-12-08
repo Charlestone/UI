@@ -5,10 +5,6 @@ $(document).ready(function() {
     var numlikes = Number(likes);
     var shares = $("#shares").text();
     var numshares = Number(shares);
-    var email = /^[a-z0-9\.]+@([a-z0-9]+\.)+[a-z]{2,4}$/;
-    var password = /^[a-z0-9]{1,8}$/;
-    var forms = "";
-    var errors = "";
     var eachlikes = [0, 0, 0, 0];
     var eachshares = [0, 0, 0, 0];
     var videosm = ["./img/suits.mp4", "./img/homeland.mp4", "./img/strangerthings.mp4", "./img/billions.mp4"];
@@ -53,7 +49,6 @@ $(document).ready(function() {
                         $("#likes").text(eachlikes[i]);
                         $("#shares").text(eachshares[i]);
                     }
-
                 }
                 $(ui.draggable).find(".titulo").html(titulop);
                 $(ui.draggable).find(".posdescripcion").html(descrp);
@@ -64,4 +59,9 @@ $(document).ready(function() {
             }
         });
     });
+    /*Funcion para que muestre una modal al usuario no registrado*/
+   $(".funcionalidad").click(function(){
+       $("#noreg").show();
+   });
+
 });

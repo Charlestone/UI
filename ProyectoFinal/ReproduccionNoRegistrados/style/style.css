@@ -354,19 +354,33 @@ p.titulo {
 	display: table;
 	margin-right: 3px;
 }
-
-
-/*.posdescripcion2{
-position:relative; 
-z-index:1; 
-background-color: black;
-
+.modal-block {
+margin: auto;
+display: block;
+text-align: center;
+margin-top: 30px
 }
-
-.posdescripcion3{
-position:relative; 
-z-index:1; 
-background-color: black;
-
+button{
+background-color: #ffffff;
+border: 1px solid #595959;
+border-radius: 15px;
+color: #595959;
+padding: 15px 30px;
+text-align: center;
+display: inline-block;
+font-size: 15px;
 }
-*/
+.ubicacion{
+margin-left: 35.5%;
+margin-right: 35.5%;
+margin-top: 60px;
+}
+.modal-noreg {
+display: block;
+color: #cccccc;
+position: relative;
+background-image: url("../img/bg/negro.png");
+margin: auto;
+padding: 20px;
+border: 2px solid #cccccc;
+}

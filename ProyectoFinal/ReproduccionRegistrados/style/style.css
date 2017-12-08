@@ -12,8 +12,48 @@
 
 /*12 Tipos de columnas para asignar anchura a 
 elementos de manera más sencilla y estandarizada*/
+.col-1 {
+	width: 8.33%;
+}
+
+.col-2 {
+	width: 16.66%;
+}
+
 .col-3 {
 	width: 25%;
+}
+
+.col-4 {
+	width: 33.33%;
+}
+
+.col-5 {
+	width: 41.66%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-7 {
+	width: 58.33%;
+}
+
+.col-8 {
+	width: 66.66%;
+}
+
+.col-9 {
+	width: 75%;
+}
+
+.col-10 {
+	width: 83.33%;
+}
+
+.col-11 {
+	width: 91.66%;
 }
 
 .col-12 {
@@ -201,7 +241,7 @@ h2.titulop {
 	font-weight: bold;
 }
 
-.alinearder {
+.mas {
 	float: right;
 	display: table;
 	margin-right: 3px;
@@ -309,6 +349,12 @@ p.titulo {
 	margin-bottom: 0;
 }
 
+.alinearder {
+	float: right;
+	display: table;
+	margin-right: 3px;
+}
+
 #listas{
 	background-color: white;
 	width: 10%;
@@ -318,20 +364,4 @@ p.titulo {
 .lista{
 	margin-left: 3%;
 }
-.ocultos{
-	display:none;
-}
-/*.posdescripcion2{
-position:relative; 
-z-index:1; 
-background-color: black;
 
-}
-
-.posdescripcion3{
-position:relative; 
-z-index:1; 
-background-color: black;
-
-}
-*/

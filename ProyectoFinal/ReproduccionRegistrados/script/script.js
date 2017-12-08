@@ -59,9 +59,9 @@ $("#listas").hide();
     /* Funciones para mostrar las listas donde añadir el video*/
     $(".añadir").mouseover(function(){
             $('#listas').css({'top':ejeY,'left':ejeX}).fadeIn("fast"); 
-    });  
-    $("#mas3").mouseover(function(){
-                $('#listas').css({'top':ejeY,'left':ejeXespecial}).fadeIn();
+    }); 
+        $("#mas3").mouseover(function(){
+            $('#listas').css({'top':ejeY,'left':ejeXespecial}).fadeIn("fast"); 
     });
     /*Funcion para ocultar el div con las listas*/
     $(document).click(function(){
