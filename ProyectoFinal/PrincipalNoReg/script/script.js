@@ -82,4 +82,7 @@ $(document).ready(function() {
     $(".titulo").click(function(){
         window.location.href= './reproduccionnr.html';
     });
+     $("#registrar").click(function(){
+        window.location.href= './formulario.html';
+    });
 });
