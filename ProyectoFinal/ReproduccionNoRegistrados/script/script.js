@@ -63,5 +63,7 @@ $(document).ready(function() {
    $(".funcionalidad").click(function(){
        $("#noreg").show();
    });
-
+    $("#registrar").click(function(){
+        window.location.href= './formulario.html';
+    });
 });
