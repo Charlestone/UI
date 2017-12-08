@@ -79,14 +79,14 @@ header {
 	box-sizing: border-box;
 }
 
-header h1 {
+h1 {
 	margin-top: 29px;
 	margin-bottom: 29px;
 	margin-left: 25px;
 	display: inline-block;
 	color: #404040;
 }
-header h1:hover{
+h1:hover{
 	color: #686868;
 	cursor: pointer;
 }
@@ -249,7 +249,23 @@ footer p {
 	margin-top: 11px;
 	margin-right: 20px;
 }
-
+#nombrepagina{
+	margin-left: 8%;
+	color:#cccccc;
+}
+.centrar{
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+p.descrp {
+	margin-right: 50px;
+	display: block;
+}
+#main {
+	color: #cccccc;
+}
 
 
 

@@ -69,6 +69,7 @@ body {
 	overflow-y: auto;
 }
 
+
 /*Cabecera-header*/
 header {
 	background-image: url("../../../img/bg/geometry.png");
@@ -78,8 +79,14 @@ header {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+header a {
+	align-self: center;
+	margin-left: 15px;
+	text-decoration: none;
+	color: #4dd2ff;
+}
 
-header h1 {
+hearder h1 {
 	margin-top: 29px;
 	margin-bottom: 29px;
 	margin-left: 25px;
@@ -90,16 +97,34 @@ header h1:hover{
 	color: #686868;
 	cursor: pointer;
 }
-#logo:hover {
-	cursor: pointer;
-	opacity: 0.6;
-}
-
 #logo {
 	margin-top: 22px;
 	margin-bottom: 22px;
 	margin-left: 10px;
 	float: left;
+	cursor: pointer;
+}
+
+h3 {
+	display: inline-flex;
+	float: right;
+}
+
+.user {
+	margin-right: 20px;
+}
+
+#username {
+	display: flex;
+}
+
+#userphoto {
+	order: 1;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+#userphoto:hover {
+	cursor: pointer;
 }
 
 .right-header {
@@ -108,21 +133,14 @@ header h1:hover{
 	height: 100px;
 	align-items: center;
 }
-
 .busqueda {
 	margin-top: 30px;
 	margin-left: 250px;
 	display: inline-flex;
 }
-
-.inises {
-	margin-right: 30px;
-}
-button:hover{
-	cursor: pointer;
-}
 /* Estilo del menu desplegable */
 .dropdown {
+	clear: both;
 	position: relative;
 	display: inline-block;
 }
@@ -139,78 +157,34 @@ button:hover{
     text-decoration: none;
     display: block;
 }
-
-/*Estilo de la ventana modal*/
-.modal {
-	display: none;
-	position: fixed;
-	z-index: 1;
-	left: 0;
-	top: 0;
-	padding-top: 50px;
-	height: 100%;
-	overflow: auto;
-	background-color: rgb(255, 255, 255);
-	background-color: rgba(255, 255, 255, 0.6)
-}
-
-.modal-content {
-	display: block;
-	color: #cccccc;
+/* Estilo del menu desplegable en la foto de usuario */
+.dropdown-1 {
 	position: relative;
-	background-image: url("../../../img/bg/negro.png");
-	margin: auto;
-	padding: 20px;
-	border: 2px solid #cccccc;
+	display: inline-block;
 }
-
-.modal-block {
-	margin: auto;
-	display: block;
-	text-align: center;
-	margin-top: 30px
+.dropdown-content-1{
+	display: none;
+	position: absolute;
+	background-color: white;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content-1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 ul {
 	padding: 0;
 	list-style: none
 }
-
-.modal input {
-	margin-top: 8px;
-	margin-bottom: 12px;
-	padding: 3px 8px;
-	outline: none;
-	border: none;
-	background-image: url("../../../img/bg/negro.png");
-	color: #cccccc;
-	border-bottom: 2px solid white
-}
-
-.modal input:focus,
-.modal select:focus {
-	background-color: white;
-	color: black;
-	background-image: none
-}
-
-.close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
 p {
 	padding: 0;
 	display: inline
 }
+
 /*Pie de página-footer*/
 footer {
 	border: 3px solid #cccccc;
@@ -250,7 +224,20 @@ footer p {
 	margin-right: 20px;
 }
 
-
-
-
-
+#nombrepagina{
+	margin-left: 8%;
+	color:#cccccc;
+}
+.centrar{
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+p.descrp {
+	margin-right: 50px;
+	display: block;
+}
+#main {
+	color: #cccccc;
+}
