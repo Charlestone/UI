@@ -11,30 +11,6 @@
 </head>
 
 <body id="body" class="col-12">
-    <!--Ventana modal-->
-    <div class="modal col-12">
-        <!-- Contenido de la ventana-->
-        <div class="modal-content col-3">
-            <form>
-                <ul class="modal-block">
-                    <li>
-                        <p>Email</p>
-                        <br>
-                        <input id="modal-email" type="text" name="emailm">
-                        <br>
-                    </li>
-                    <li>
-                        <p>Password</p>
-                        <br>
-                        <input id="modal-password" type="password" name="passwordm">
-                    </li>
-                    <li>
-                        <input id="login" type="button" name="log" value="Log In">
-                    </li>
-                </ul>
-            </form>
-        </div>
-    </div>
     <div class="col-12">
         <header class="col-12">
             <img id="logo" src="./img/miaulogo.png" alt="Logo de Miau">
@@ -77,12 +53,6 @@
                                 <input type="text" name="Birthday" placeholder="DD/MM/YYYY">
                                 <br>
                             </li>
-                            <li>
-                                <p>Photo</p>
-                                <br>
-                                <input type="file" name="foto">
-                                <br>
-                            </li>
                         </ul>
                     </div>
                     <div class="col-4 col-4-1 multi-column2">
@@ -105,80 +75,6 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-            </div>
-            <hr class="long" />
-            <div class="col-12 multi-column spaced">
-                <h3 class="col-4">BILLING INFORMATION</h3>
-                <div class="col-8 multi-column2">
-                    <ul>
-                        <li>
-                            <p>Address *</p>
-                            <br>
-                            <input type="text" name="address">
-                            <br>
-                        </li>
-                        <li>
-                            <p>Payment method *</p>
-                            <br>
-                            <select id="payment">
-                                <option value="choose" disabled hidden>Choose one, please</option>
-                                <option value="paypal">PayPal</option>
-                                <option value="transferencia">Transferencia bancaria</option>
-                                <option value="tarjeta">Tarjeta</option>
-                            </select>
-                        </li>
-                        <li id="tarjeta">
-                            <ul class="multi-column3">
-                                <li>
-                                    <p>Number*</p>
-                                    <br>
-                                    <input  type="text" name="number" placeholder="XXXXXXXXXXXXXXXX">
-                                </li>
-                                <li>
-                                    <div class="inline-form">
-                                        <p>Valid Thru*</p>
-                                        <br>
-                                        <input type="text" name="valid" placeholder="MM/YYYY">
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="inline-form">
-                                        <p>Code*</p>
-                                        <br>
-                                        <input class="code" type="text" name="code" placeholder="XXX">
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li id="transferencia">
-                            <ul class="multi-column3">
-                                <li>
-                                    <p>Beneficiary's name*</p>
-                                    <br>
-                                    <input type="text" name="Beneficiary">
-                                </li>
-                                <li class="inline-form">
-                                    <p>Surname*</p>
-                                    <br>
-                                    <input type="text" name="Surname">
-                                </li>
-                                <li class="inline-form">
-                                    <p>Account Number*</p>
-                                    <br>
-                                    <input type="text" name="Acnumber">
-                                </li>
-                                <li class="inline-form">
-                                    <p>Bank*</p>
-                                    <br>
-                                    <input type="text" name="Bank">
-                                </li>
-                            </ul>
-                        </li>
-                        <li id="paypal">
-                            <a id="pay" target="_blank" href="link">PayPal (Press before save)*</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
             <hr class="col-5" />
