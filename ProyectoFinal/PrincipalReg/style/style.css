@@ -314,7 +314,8 @@ h2.titulop {
 	display: table;
 	margin-left: 3px;
 	font-weight: bold;
-	color: white;	
+	color: white;
+	cursor: pointer;	
 }
 
 .divDerecha{
@@ -346,6 +347,15 @@ h2.titulop {
 }
 /*fin iconos*/
 
+#listas{
+background-color: white;
+width: 10%;
+position: absolute;
+border-radius: 10px;
+}
+.lista{
+margin-left: 3%;
+}
 
 .clearfix::after {
 	content: "";
@@ -413,20 +423,8 @@ footer p {
 	height: 80%;
 }
 
-
-
-
-/*.posdescripcion2{
-position:relative; 
-z-index:1; 
-background-color: black;
-
+.posvideo{
+	cursor:pointer;
 }
 
-.posdescripcion3{
-position:relative; 
-z-index:1; 
-background-color: black;
 
-}
-*/

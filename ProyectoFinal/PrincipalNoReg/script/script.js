@@ -1,23 +1,4 @@
 $(document).ready(function() {
-
-    /* Variables */
-    var likes = $("#likes").text();
-    var numlikes = Number(likes);
-    var shares = $("#shares").text();
-    var numshares = Number(shares);
-    var email = /^[a-z0-9\.]+@([a-z0-9]+\.)+[a-z]{2,4}$/;
-    var password = /^[a-z0-9]{1,8}$/;
-    var forms = "";
-    var errors = "";
-    var eachlikes = [0, 0, 0, 0];
-    var eachshares = [0, 0, 0, 0];
-    var videosm = ["./img/suits.mp4", "./img/homeland.mp4", "./img/strangerthings.mp4", "./img/billions.mp4"];
-    var videoso = ["./img/suits.ogg", "./img/homeland.ogg", "./img/strangerthings.ogg", "./img/billions.ogg"];
-    var foto = ["./img/suits.png", "./img/homeland.png", "./img/strangerthings.png", "./img/billions.png"];
-    var mostrardesc1 = false;
-    var mostrardesc2 = false;
-    var mostrardesc3 = false;
-
     /* Para el logo */
     $("#logo").click(function(){
         window.location.href= './basenr.html';
@@ -90,35 +71,15 @@ $(document).ready(function() {
         }
         return false;
     }
-
-
-
-
-
-
-
-    /* Si se hace click en el boton + o - */
-    /*$("#mas1").click(function() {
-        $("#descripcion1").toggle();
-
-        if (mostrardesc1 == false) {
-            $("#mas1").attr('src', './img/menos.png');
-            mostrardesc1 = true;
-        } else {
-            $("#mas1").attr('src', './img/mas.png');
-            mostrardesc1 = false;
-        }
-    }); */
-    /* Si se hace click en el boton + o - */
-    /*$("#mas2").click(function() {
-        $("#descripcion2").toggle();
-        if (mostrardesc2 == false) {
-            $("#mas2").attr('src', './img/menos.png');
-            mostrardesc2 = true;
-        } else {
-            $("#mas2").attr('src', './img/mas.png');
-            mostrardesc2 = false;
-        }
-    });*/
-
+    /*Funcion para que muestre una modal al usuario no registrado*/
+    $(".funcionalidad").click(function(){
+        $("#noreg").show();
+    });
+    /* Funcion para redirigir a el usuario a ver un video*/
+    $(".posvideo").click(function(){
+        window.location.href= './reproduccionnr.html';
+    });
+    $(".titulo").click(function(){
+        window.location.href= './reproduccionnr.html';
+    });
 });
