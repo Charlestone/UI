@@ -62,8 +62,8 @@ elementos de manera más sencilla y estandarizada*/
 }
 
 .col-9-centrar{
-	margin-left: 5%;
-    margin-right: 5%;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 /*Configuracíón general de la pagina*/
@@ -211,8 +211,9 @@ h2.titulop {
 }
 
 .multi-column {
-	/*Clase para colocar la reproduccion del video a la derecha */
 	display: inline-flex;
+	width: 100%;
+	
 }
 
 .margen {
@@ -231,8 +232,10 @@ h2.titulop {
 	color: black;
 	margin-top: 10px;
 	margin-right: 30px;
-    margin-left: 30px;
+    margin-left: 5%;
 }
+
+
 
 .margen-3 {
 	margin-left: 10px;
@@ -246,35 +249,34 @@ h2.titulop {
 	display: table;
 	margin-left: 3px;
 	font-weight: bold;
-	color: white;
+	color: white;	
+}
+
+.divDerecha{
+	float: right;
+	display: table;	
 }
 /*Estilo de los iconos*/
 .mas {
-	float: right;
-	display: table;
-	margin-right: 3px;
-	width: 23px;
+    float: right;
+    display: table;
+    width: 23px;
     height: 23px;
-    margin-left: 2px;
-    margin-right: 20px;
+    width: 33%;
 }
 
 .corazon{
-	float: right;
-	display: table;
-	width: 23px;
+    float: right;
+    display: table;
+    width: 33%;
     height: 23px;
-    margin-left: 2px;
-    margin-right: 2px;
 }
 
 .compartir{
 	float: right;
-	display: table;
-	width: 23px;
+    display: table;
+    width: 33%;
     height: 23px;
-    margin-left: 2px;
-    margin-right: 2px;
 }
 
 .clearfix::after {
@@ -367,6 +369,7 @@ footer p {
 	/*Clase para centrar la imagen de cada video*/
 	margin: auto;
 	display: block;
+	width:100%;
 }
 
 p.descrp {
@@ -377,6 +380,7 @@ p.descrp {
 p.titulo {
 	margin-top: 0;
 	margin-bottom: 0;
+	width:50%;
 }
 
 /*.posdescripcion2{
