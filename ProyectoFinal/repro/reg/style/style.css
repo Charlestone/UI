@@ -184,7 +184,123 @@ p {
 	padding: 0;
 	display: inline
 }
+/* Estilo del main */
+h2 {
+	display: block;
+	margin-left: 30px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+h2.titulop {
+	margin-left: 0;
+}
+.main {
+	color: #cccccc;
+}
+.multi-column {
+	display: inline-flex;
+}
+.margen {
+	margin-left: 60px;
+	margin-top: 30px;
+}
 
+.margen-letras {
+	margin-left: 15px;
+}
+
+.titulomas {
+
+	/*clase para el contenedor que incluye el titulo y el +*/
+	padding-top: 5px;
+	background-color: white;
+	color: black;
+	margin-top: 10px;
+}
+
+.margen-3 {
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 60px;
+	margin-top: 40px;
+}
+
+.titulo {
+	float: left;
+	display: table;
+	margin-left: 3px;
+	font-weight: bold;
+}
+.alinearder {
+	float: right;
+	display: table;
+	margin-right: 3px;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+/* Estio de los videos */
+.little {
+	background-color: white;
+}
+
+.title {
+	float: left;
+	display: table;
+	overflow: auto;
+}
+
+.plus {
+	float: right;
+	display: table;
+	overflow: auto;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.tamvideo {
+	width: 300px;
+	height: 188px;
+}
+.posdescripcion {
+	display: none;
+	position: relative;
+	text-align: center;
+}
+
+.auto {
+	margin: auto;
+	display: block;
+}
+
+p.descrp {
+	margin-right: 50px;
+	display: block;
+}
+
+p.titulo {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#listas{
+	background-color: white;
+	width: 10%;
+	position: absolute;
+	border-radius: 10px;
+}
+.lista{
+	margin-left: 3%;
+}
+.ocultos{
+	display:none;
+}
 /*Pie de página-footer*/
 footer {
 	border: 3px solid #cccccc;

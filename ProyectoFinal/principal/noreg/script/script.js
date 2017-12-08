@@ -82,9 +82,9 @@ $(document).ready(function() {
     });
     /* Funcion para redirigir a el usuario a ver un video*/
     $(".posvideo").click(function(){
-        window.location.href= '../../../repro/noreg/repronr.html';
+        window.location.href= '../../repro/noreg/repronr.html';
     });
     $(".titulo").click(function(){
-        window.location.href= '../../../repro/noreg/repronr.html';
+        window.location.href= '../../repro/noreg/repronr.html';
     });
 });
