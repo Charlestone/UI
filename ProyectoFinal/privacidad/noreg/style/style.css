@@ -214,7 +214,16 @@ p {
 	padding: 0;
 	display: inline
 }
-
+button{
+background-color: #ffffff;
+border: 1px solid #595959;
+border-radius: 15px;
+color: #595959;
+padding: 15px 30px;
+text-align: center;
+display: inline-block;
+font-size: 15px;
+}
 /* Estilo del main */
 h2 {
 	display: block;
