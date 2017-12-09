@@ -6,7 +6,7 @@ $(document).ready(function() {
     var errors = "";
     /* Para el logo */
     $("#logo").click(function(){
-        window.location.href= './principalnr.html';
+        window.location.href= '../../principal/noreg/principalnr.html';
     });
     /* Para el menu desplegable */
     $(".menu").click(function() {

@@ -2,7 +2,7 @@ $(document).ready(function() {
     $("#listas").hide();
      /* Para el logo */
     $("#logo").click(function(){
-        window.location.href= './basenr.html';
+        window.location.href= '../../principal/reg/principalr.html';
     });
     /* Para el menu desplegable */
     $(".menu").click(function() {
