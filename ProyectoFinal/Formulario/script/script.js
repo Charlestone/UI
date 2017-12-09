@@ -21,7 +21,7 @@ $(document).ready(function() {
     var actcookie = "";
     var pay = 0;
     var cambios = "";
-    var forms = ["stop", "stop", "stop", "stop", "stop", "stop", "stop", "stop", "stop", "stop", "stop", "stop"];
+    var forms = ["stop", "stop", "stop", "stop", "stop", "stop"];
     var cookies;
     var photo = false;
     /* Funcion para guardar cookies */
@@ -76,45 +76,6 @@ $(document).ready(function() {
                     $("input[name=Birthday]").val(forms[3].substr(1, forms[3].length - 2));
                     $("input[name=email]").val(forms[4].substr(1, forms[4].length - 2));
                     $("#language").val(forms[5].substr(1, forms[5].length - 2));
-                    $("input[name=address]").val(forms[6].substr(1, forms[6].length - 2));
-                    $("#payment").val(forms[7].substr(1, forms[7].length - 2));
-                    switch ($("#payment").val()) {
-                        case 'transferencia':
-                            $("input[name=Beneficiary]").val(forms[8].substr(1, forms[8].length - 2));
-                            $("input[name=Surname]").val(forms[9].substr(1, forms[9].length - 2));
-                            $("input[name=Acnumber]").val(forms[10].substr(1, forms[10].length - 2));
-                            $("input[name=Bank]").val(forms[11].substr(1, forms[11].length - 2));
-                            break;
-
-                        case 'tarjeta':
-                            $("input[name=number]").val(forms[8].substr(1, forms[8].length - 2));
-                            $("input[name=valid]").val(forms[9].substr(1, forms[9].length - 2));
-                            $("input[name=code]").val(forms[10].substr(1, forms[10].length - 2));
-                            break;
-                        case 'paypal':
-                            $("#pay").attr("hasBeenClicked", "true");
-                            pay = 1;
-                            break;
-                    }
-                    switch ($("#payment").val()) {
-                        case 'transferencia':
-                            $("#paypal").hide();
-                            $("#tarjeta").hide();
-                            $("#transferencia").show();
-                            break;
-
-                        case 'tarjeta':
-                            $("#paypal").hide();
-                            $("#transferencia").hide();
-                            $("#tarjeta").show();
-                            break;
-
-                        case 'paypal':
-                            $("#tarjeta").hide();
-                            $("#transferencia").hide();
-                            $("#paypal").show();
-                            break;
-                    }
                     $(".modal").hide();
                 } else {
                     /* Si la contraseña no es correcta */
@@ -132,17 +93,6 @@ $(document).ready(function() {
             alert(errors + "\nPlease enter valid alternatives for the wrong fields.");
             errors = "";
         }
-    });
-    /* Si se hace click en el enlace a Paypal */
-    $("#pay").click(function() {
-        if ($("#pay").attr("hasBeenClicked") == "true") {
-            pay = 1;
-        }
-        $("#pay").attr("hasBeenClicked", "true");
-    });
-    /* Si se cambia la foto*/
-    $("input[name=foto]").change(function() {
-        photo = true;
     });
     /* Si se hace click en el boton guardar */
     $("input[name=guardar]").click(function() {
@@ -175,48 +125,6 @@ $(document).ready(function() {
         } else {
             errors += "Invalid birthday.\n";
         }
-        /* Validacion de la direccion */
-        if (!$("input[name=address]").val()) {
-            errors += "Invalid address.\n";
-        }
-        /* Validacion del metodo de pago */
-        switch ($("#payment").val()) {
-            case 'choose':
-                errors += "Invalid payment method.\n";
-                break;
-
-            case 'transferencia':
-                if (!$("input[name=Beneficiary]").val() ||
-                    !$("input[name=Surname]").val() ||
-                    !$("input[name=Acnumber]").val() ||
-                    !$("input[name=Bank]").val()) {
-                    errors += "Invalid payment method.\n";
-                }
-                break;
-
-            case 'tarjeta':
-                if (!/\d{16}/.test($("input[name=number]").val()) ||
-                    !/\d{3}/.test($("input[name=code]").val()) ||
-                    !/\d{2}\/\d{4}/.test($("input[name=valid]").val())) {
-                    errors += "Invalid payment method.\n";
-                } else {
-                    var valid = $("input[name=valid]").val().match(/\d+/g);
-                    var vday = new Date();
-                    vday.setDate("1");
-                    vday.setMonth(valid[0] - 1);
-                    vday.setFullYear(valid[1]);
-                    if (vday < today) {
-                        errors += "Invalid payment method.\n";
-                    }
-                }
-                break;
-
-            case 'paypal':
-                if ($("#pay").attr("hasBeenClicked") != "true") {
-                    errors += "Please configure your Paypal account.\n";
-                }
-                break;
-        }
         /* Validacion de la checkbox */
         if (!$("input[name=terms]").prop('checked')) {
             terms += "\nYou must agree to the terms.";
@@ -230,29 +138,6 @@ $(document).ready(function() {
             user += "$" + $("input[name=Birthday]").val() + "#";
             user += "$" + $("input[name=email]").val() + "#";
             user += "$" + $("#language").val() + "#";
-            user += "$" + $("input[name=address]").val() + "#";
-            user += "$" + $("#payment").val() + "#";
-            switch ($("#payment").val()) {
-                case 'tarjeta':
-                    user += "$" + $("input[name=number]").val() + "#";
-                    user += "$" + $("input[name=valid]").val() + "#";
-                    user += "$" + $("input[name=code]").val() + "#";
-                    user += "$" + " " + "#";
-                    break;
-
-                case 'transferencia':
-                    user += "$" + $("input[name=Beneficiary]").val() + "#";
-                    user += "$" + $("input[name=Surname]").val() + "#";
-                    user += "$" + $("input[name=Acnumber]").val() + "#";
-                    user += "$" + $("input[name=Bank]").val() + "#";
-                    break;
-                case 'paypal':
-                    user += "";
-                    user += "";
-                    user += "";
-                    user += "";
-                    break;
-            }
             checkCookie($("input[name=email]").val());
             setCookie(actuser, user);
             /* Se comprueba en que campos se han producido cambios */
@@ -268,64 +153,9 @@ $(document).ready(function() {
             if ($("input[name=Birthday]").val() != forms[3].substr(1, forms[3].length - 2) && forms[3]) {
                 cambios += "Birthday\n";
             }
-            if (photo) {
-                cambios += "Photo\n";
-                photo = false;
-            }
             if ($("#language").val() != forms[5].substr(1, forms[5].length - 2) && forms[5]) {
                 cambios += "Language\n";
             }
-            if ($("input[name=address]").val() != forms[6].substr(1, forms[6].length - 2) && forms[6]) {
-                cambios += "Address\n";
-            }
-            if ($("#payment").val() != forms[7].substr(1, forms[7].length - 2) && forms[7]) {
-                cambios += "Payment method\n";
-                switch ($("#payment").val()) {
-                    case 'tarjeta':
-                        cambios += "Number\nValid Thru\nCode\n";
-                        break;
-
-                    case 'transferencia':
-                        cambios += "Beneficiary's Name\nSurname\nAccount Number\nBank\n";
-                        break;
-                }
-            } else {
-                switch ($("#payment").val()) {
-                    case 'transferencia':
-                        if ($("input[name=Beneficiary]").val() != forms[8].substr(1, forms[8].length - 2) && forms[8]) {
-                            cambios += "Beneficiary's Name\n";
-                        }
-                        if ($("input[name=Surname]").val() != forms[9].substr(1, forms[9].length - 2) && forms[9]) {
-                            cambios += "Surname\n";
-                        }
-                        if ($("input[name=Acnumber]").val() != forms[10].substr(1, forms[10].length - 2) && forms[10]) {
-                            cambios += "Account Number\n";
-                        }
-                        if ($("input[name=Bank]").val() != forms[11].substr(1, forms[11].length - 2) && forms[11]) {
-                            cambios += "Bank\n";
-                        }
-                        break;
-
-                    case 'tarjeta':
-                        if ($("input[name=number]").val() != forms[8].substr(1, forms[8].length - 2) && forms[8]) {
-                            cambios += "Number\n";
-                        }
-                        if ($("input[name=valid]").val() != forms[9].substr(1, forms[9].length - 2) && forms[9]) {
-                            cambios += "Valid Thru\n";
-                        }
-                        if ($("input[name=code]").val() != forms[10].substr(1, forms[10].length - 2) && forms[10]) {
-                            cambios += "Code\n";
-                        }
-                        break;
-                    case 'paypal':
-                        if (!pay) {
-                            cambios += "Paypal";
-                        }
-                        break;
-                }
-            }
-
-
             /* Se muestran los cambios */
             if (cambios) {
                 alert("The following changes have been saved:\n" + cambios);
@@ -352,91 +182,14 @@ $(document).ready(function() {
             $("input[name=Birthday]").val(forms[3].substr(1, forms[3].length - 2));
             $("input[name=email]").val(forms[4].substr(1, forms[4].length - 2));
             $("#language").val(forms[5].substr(1, forms[5].length - 2));
-            $("input[name=address]").val(forms[6].substr(1, forms[6].length - 2));
-            $("#payment").val(forms[7].substr(1, forms[7].length - 2));
-            switch ($("#payment").val()) {
-                case 'transferencia':
-                    $("input[name=Beneficiary]").val(forms[8].substr(1, forms[8].length - 2));
-                    $("input[name=Surname]").val(forms[9].substr(1, forms[9].length - 2));
-                    $("input[name=Acnumber]").val(forms[10].substr(1, forms[10].length - 2));
-                    $("input[name=Bank]").val(forms[11].substr(1, forms[11].length - 2));
-                    break;
-
-                case 'tarjeta':
-                    $("input[name=number]").val(forms[8].substr(1, forms[8].length - 2));
-                    $("input[name=valid]").val(forms[9].substr(1, forms[9].length - 2));
-                    $("input[name=code]").val(forms[10].substr(1, forms[10].length - 2));
-                    break;
-                case 'paypal':
-                    $("#pay").attr("hasBeenClicked", "true");
-                    break;
-            }
-            switch ($("#payment").val()) {
-                case 'transferencia':
-                    $("#paypal").hide();
-                    $("#tarjeta").hide();
-                    $("#transferencia").show();
-                    break;
-
-                case 'tarjeta':
-                    $("#paypal").hide();
-                    $("#transferencia").hide();
-                    $("#tarjeta").show();
-                    break;
-
-                case 'paypal':
-                    $("#tarjeta").hide();
-                    $("#transferencia").hide();
-                    $("#paypal").show();
-                    break;
-            }
-            $("input[name=foto]").val("");
         } else {
             /* Si no hay cookie, dejamos solo los valores que el usuario 
             ha introducido en la ventana modal */
             $("input[name=username]").val("");
             $("input[name=NameLName]").val("");
             $("input[name=Birthday]").val("");
-            $("input[name=foto]").val("");
-            $("input[name=address]").val("");
-            $("input[name=number]").val("");
-            $("input[name=valid]").val("");
-            $("input[name=code]").val("");
-            $("input[name=Beneficiary]").val("");
-            $("input[name=Surname]").val("");
-            $("input[name=Acnumber]").val("");
-            $("input[name=Bank]").val("");
             $("#language").val("español");
-            $("#payment").val("choose");
-            $("#tarjeta").hide();
-            $("#transferencia").hide();
-            $("#paypal").hide();
             $("input[type=checkbox]").prop('checked', false);
-        }
-    });
-
-    /* Si se cambia el metodo de pago */
-    $("#payment").change(function() {
-        $("#tarjeta input").val("");
-        $("#transferencia input").val("");
-        switch ($("#payment").val()) {
-            case 'transferencia':
-                $("#paypal").hide();
-                $("#tarjeta").hide();
-                $("#transferencia").show();
-                break;
-
-            case 'tarjeta':
-                $("#paypal").hide();
-                $("#transferencia").hide();
-                $("#tarjeta").show();
-                break;
-
-            case 'paypal':
-                $("#tarjeta").hide();
-                $("#transferencia").hide();
-                $("#paypal").show();
-                break;
         }
     });
 });
