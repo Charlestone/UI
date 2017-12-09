@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Miau</title>
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./script/script.js"></script>
+</head>
+
+<body class="col-12">
+    
+    <div class="col-12">
+        <header class="col-12">
+            <img id="logo" src="../img/miaulogo.png" alt="Logo de Miau">
+            <div class="dropdown">
+                <h1 class="menu">Men&uacute;</h1>
+                <div class="dropdown-content">
+                    <a href="../pelis/reg/pelisr.html" title="pelis">Pel&iacute;culas</a>
+                    <a href="../series/reg/seriesr.html" title="series">Series</a>
+                </div>
+            </div>
+            <a href="../listas/listas.html" title="listas">Listas</a>
+            <a href="../favoritos/favoritos.html" title="favs">Favoritos</a>
+            
+            <div class="busqueda col-4">
+                <form class="buscar">
+                    <input type="text"  placeholder="Buscar...." name="busca">
+                </form>
+            </div>
+            <div class="right-header">
+                <h3 class="username user">Username</h3>
+                <div class="dropdown-1">
+                    <img id="userphoto" class="user" src="../img/usuario.png" alt="Foto de usuario">
+                    <div class="dropdown-content-1">
+                        <a href="./cuenta.html" title="pelis">Mi cuenta</a>
+                        <a href="../principal/noreg/principalnr.html" title="series">Cerrar sesi&oacute;n</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <form id="main" name="formulario" class="col-12" method="post">
+            <ul class="block">
+                <li>
+                    <p>Username *</p>
+                    <br>
+                    <input id="username" type="text" name="username">
+                    <br>
+                </li>
+                <li>
+                    <p>Password *</p>
+                    <br>
+                    <input id="password" type="password" name="password">
+                </li>
+            </ul>
+            <hr class="long" />
+            <div class="col-12 multi-column">
+                <h3 class="col-4 col-4-2">PERSONAL INFORMATION</h3>
+                <div class="col-8 col-8-1 multi-column">
+                    <div class="col-4 col-4-1 multi-column2">
+                        <ul>
+                            <li>
+                                <p>Name &AMP; Last Name *</p>
+                                <br>
+                                <input type="text" name="NameLName" placeholder="Name [last] Name">
+                                <br>
+                            </li>
+                            <li>
+                                <p>Birthday *</p>
+                                <br>
+                                <input type="text" name="Birthday" placeholder="DD/MM/YYYY">
+                                <br>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4 col-4-1 multi-column2">
+                        <ul>
+                            <li>
+                                <p>e-mail *</p>
+                                <br>
+                                <input type="text" name="email" readonly="true">
+                                <br>
+                            </li>
+                            <li>
+                                <p>language</p>
+                                <br>
+                                <select id="language">
+                                    <option value="español">espa&ntilde;ol</option>
+                                    <option value="inglés">ingl&eacute;s</option>
+                                    <option value="francés">franc&eacute;s</option>
+                                    <option value="alemán">alem&aacute;n</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="col-5" />
+            <br>
+            <ul class="block">
+                <li>
+                    <input type="checkbox" name="terms" value="terms">I have read and I agree to the <a target="_blank" href="Condiciones">Terms of service</a> *
+                    <br>
+                </li>
+                <li>
+                    <input type="button" name="guardar" value="Save">
+                    <input type="button" name="borrar" value="Reset">
+                </li>
+            </ul>
+        </form>
+        <footer class="col-12">
+            <ul>
+                <li><a class="margenes" href="../privacidad/reg/privacidadr.html">Privacidad</a></li>
+                <li><a class="margenes" href="../aboutus/reg/aboutusr.html">About us</a></li>
+                <li><a class="margenes" href="../ayuda/reg/ayudar.html">Ayuda</a></li>                
+                <li><a class="margenes" href="../politica/reg/politicar.html">Pol&iacute;tica y seguridad</a></li>
+
+            </ul>
+            <p class="copy">&copy; 2017 Cat Entertainment, Inc.</p>
+
+        </footer>
+    </div>
+</body>
+
+</html>
