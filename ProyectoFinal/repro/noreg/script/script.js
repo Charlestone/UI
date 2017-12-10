@@ -88,7 +88,6 @@ $(document).ready(function() {
         return false;
     }
     $(function() {
-        /* Variables para el vídeo principal*/
         $(".draggable").draggable({
             helper: "clone"
         });
@@ -125,10 +124,6 @@ $(document).ready(function() {
                 }
                 $(ui.draggable).find(".titulo").html(titulop);
                 $(ui.draggable).find(".posdescripcion").html(descrp);
-                likes = $("#likes").text();
-                numlikes = Number(likes);
-                shares = $("#shares").text();
-                numshares = Number(shares);
             }
         });
     });
