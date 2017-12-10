@@ -99,6 +99,11 @@ $(document).ready(function() {
             $(this).attr("src", "../../img/compartir.png");
        }
     });
+        $(function() {
+        
+        $(".draggable").draggable({
+            helper: "clone"
+        });
         $("#droppable").droppable({
 
             acept: ".draggable",
@@ -144,4 +149,5 @@ $(document).ready(function() {
                 numshares = Number(shares);
             }
         });
+    });
 });
