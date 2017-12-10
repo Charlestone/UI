@@ -6,14 +6,17 @@ $(document).ready(function() {
         $("input[type=checkbox]").prop('checked', false);
         /* Para poner el nombre del usuario */
         var cookiesa = document.cookie.split(";");
-        var formsa = cookiesa[0].match(/\$.+?\#/g);
-        $(".username").text(formsa[0].substr(1, formsa[0].length - 2));
-        $("input[name=username]").val(formsa[0].substr(1, formsa[0].length - 2));
-        $("input[name=password]").val(formsa[1].substr(1, formsa[1].length - 2));
-        $("input[name=NameLName]").val(formsa[2].substr(1, formsa[2].length - 2));
-        $("input[name=Birthday]").val(formsa[3].substr(1, formsa[3].length - 2));
-        $("input[name=email]").val(formsa[4].substr(1, formsa[4].length - 2));
-        $("#language").val(formsa[5].substr(1, formsa[5].length - 2));
+        if (cookiesa[0]) {
+            var formsa = cookiesa[0].match(/\$.+?\#/g);
+            $(".username").text(formsa[0].substr(1, formsa[0].length - 2));
+            $("input[name=username]").val(formsa[0].substr(1, formsa[0].length - 2));
+            $("input[name=password]").val(formsa[1].substr(1, formsa[1].length - 2));
+            $("input[name=NameLName]").val(formsa[2].substr(1, formsa[2].length - 2));
+            $("input[name=Birthday]").val(formsa[3].substr(1, formsa[3].length - 2));
+            $("input[name=email]").val(formsa[4].substr(1, formsa[4].length - 2));
+            $("#language").val(formsa[5].substr(1, formsa[5].length - 2));
+        }
+        
         //document.cookie = "user1=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
         //alert(document.cookie.split(";"));
     });
