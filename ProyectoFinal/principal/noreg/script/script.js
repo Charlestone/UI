@@ -22,7 +22,7 @@ $(document).ready(function() {
     });
     /* Para registrate aquí de la ventana modal */
     $("#registro").click(function(){
-    	window.location.href= '../../../registro/registro.html';
+    	window.location.href= '../../registro/registro.html';
     });
     /* Si se hace click en el boton log in */
     $("#login").click(function() {
