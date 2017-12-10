@@ -35,6 +35,9 @@ $(document).ready(function() {
     $("#registro").click(function(){
     	window.location.href= '../../registro/registro.html';
     });
+    $("#registrar").click(function(){
+        window.location.href= '../../registro/registro.html';
+    });
     /* Si se hace click en el boton log in */
     $("#login").click(function() {
         /*Validacion de email en la ventana modal*/
