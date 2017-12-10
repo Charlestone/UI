@@ -4,19 +4,29 @@ $(document).ready(function() {
         $("#language").val("español");
         $("input[type!=button]").val("");
         $("input[type=checkbox]").prop('checked', false);
+        /* Para poner el nombre del usuario */
+        var cookiesa = document.cookie.split(";");
+        var formsa = cookiesa[0].match(/\$.+?\#/g);
+        $(".username").text(formsa[0].substr(1, formsa[0].length - 2));
+        $("input[name=username]").val(formsa[0].substr(1, formsa[0].length - 2));
+        $("input[name=password]").val(formsa[1].substr(1, formsa[1].length - 2));
+        $("input[name=NameLName]").val(formsa[2].substr(1, formsa[2].length - 2));
+        $("input[name=Birthday]").val(formsa[3].substr(1, formsa[3].length - 2));
+        $("input[name=email]").val(formsa[4].substr(1, formsa[4].length - 2));
+        $("#language").val(formsa[5].substr(1, formsa[5].length - 2));
         //document.cookie = "user1=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
         //alert(document.cookie.split(";"));
     });
-     /* Para el logo */
-    $("#logo").click(function(){
-        window.location.href= '../principal/reg/principalr.html';
+    /* Para el logo */
+    $("#logo").click(function() {
+        window.location.href = '../principal/reg/principalr.html';
     });
     /* Para el menu desplegable */
     $(".menu").click(function() {
         $(".dropdown-content").toggle();
     });
     /* Para el menu de usuario*/
-    $("#userphoto").click(function(){
+    $("#userphoto").click(function() {
         $(".dropdown-content-1").toggle();
     });
     /* Variables */
@@ -84,7 +94,6 @@ $(document).ready(function() {
                     $("input[name=Birthday]").val(forms[3].substr(1, forms[3].length - 2));
                     $("input[name=email]").val(forms[4].substr(1, forms[4].length - 2));
                     $("#language").val(forms[5].substr(1, forms[5].length - 2));
-                    $(".modal").hide();
                 } else {
                     /* Si la contraseña no es correcta */
                     alert("Wrong password\nPlease enter a valid one.\n");
@@ -169,6 +178,7 @@ $(document).ready(function() {
                 alert("The following changes have been saved:\n" + cambios);
                 cambios = "";
             }
+            document.location.href = './cuenta.html';
         } else {
             /* Si los hay */
             if (errors) {
