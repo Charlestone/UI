@@ -45,7 +45,7 @@ $(document).ready(function() {
                     
                 } else {
                     if (forms[0]) {
-                    	window.location.href = "../reg/principalr.html";
+                    	window.location.href = "../../principal/reg/principalr.html";
                         $("#username").text(forms[0].substr(1, forms[0].length - 2));
                         $(".modal").hide();
                     }
