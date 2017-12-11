@@ -90,6 +90,7 @@ $(document).ready(function() {
         }
         return false;
     }
+    /* Función para poder intercabiar los videos*/
     $(function() {
         $(".draggable").draggable({
             helper: "clone"

@@ -106,6 +106,7 @@ $(document).ready(function() {
             $(this).attr("src", "../../img/compartir.png");
        }
     });
+        /*Función para poder intercambiar los videos*/
         $(function() {
         
         $(".draggable").draggable({
@@ -140,6 +141,7 @@ $(document).ready(function() {
                         $("#shares").text(eachshares[i]);
                     }
                 }
+                /* Se vuelven a poner los iconos que no estan coloreados*/
                 if ( $("#compartir1").css('display') != 'none' ){       
                         $("#compartir").show();
                         $("#compartir1").hide();
