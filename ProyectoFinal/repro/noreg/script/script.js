@@ -16,7 +16,7 @@ $(document).ready(function() {
     var foto = ["../../img/suits.png", "../../img/homeland.png", "../../img/strangerthings.png", "../../img/billions.png"];
     /* Para el logo */
     $("#logo").click(function(){
-        window.location.href= '../../principalnr.html';
+        window.location.href= '../../principal/noreg/principalnr.html';
     });
     /* Para el menu desplegable */
     $(".menu").click(function() {
