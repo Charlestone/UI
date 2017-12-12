@@ -37,7 +37,6 @@ $(document).ready(function() {
         var d = new Date();
         d.setTime(d.getTime() + (30 * 24 * 60 * 60 * 1000));
         var expires = "expires=" + d.toUTCString();
-        alert(cname + cvalue + ";" + expires + ";path=/");
         document.cookie = cname + cvalue + ";" + expires + ";path=/";
     }
     /* Funcion para comprobar si existe cookie para un correo */
@@ -67,40 +66,40 @@ $(document).ready(function() {
     $("input[name=guardar]").click(function() {
         /*Validacion de email */
         if (!email.test($("input[name=email]").val())) {
-            errors += "Invalid email.\n";
+            errors += "Email inválido.\n";
         }
         /* Validacion del nombre de usuario */
         if (!$("input[name=username]").val()) {
-            errors += "Invalid username.\n";
+            errors += "Usuario inválido.\n";
         }
         /*Validacion de contraseña en el formualrio*/
         if (!password.test($("input[name=password]").val())) {
-            errors += "Invalid password.\n";
+            errors += "Contraseña inválida.\n";
         }
         /*Validacion del nombre y el apellido*/
         if (!fullname.test($("input[name=NameLName]").val())) {
-            errors += "Invalid name and last name.\n";
+            errors += "Nombre y Apellido inválidos.\n";
         }
         /*Validacion de la fecha de nacimiento*/
         if (bday.test($("input[name=Birthday]").val())) {
             var birthday = $("input[name=Birthday]").val().match(/\d+/g);
             if (birthday[0] > 31 || birthday[0] < 1 || birthday[1] > 12 || birthday[1] < 1 || birthday[2] < 1907) {
-                errors += "Invalid birthday.\n";
+                errors += "Fecha de nacimiento inválida.\n";
             } else {
                 var day = new Date();
                 day.setDate(birthday[0]);
                 day.setMonth(birthday[1] - 1);
                 day.setFullYear(birthday[2]);
                 if (today <= day) {
-                    errors += "Invalid birthday.\n";
+                    errors += "Fecha de nacimiento inválida.\n";
                 }
             }
         } else {
-            errors += "Invalid birthday.\n";
+            errors += "Fecha de nacimiento inválida.\n";
         }
         /* Validacion de la checkbox */
         if (!$("input[name=terms]").prop('checked')) {
-            terms += "\nYou must agree to the terms.";
+            terms += "\nDebes aceptar los términos.";
         }
         /* Si no hay campos inválidos */
         if (!errors && !terms) {
@@ -115,30 +114,30 @@ $(document).ready(function() {
             setCookie(actuser, user);
             /* Se comprueba en que campos se han producido cambios */
             if ($("input[name=username]").val() != forms[0].substr(1, forms[0].length - 2) && forms[0]) {
-                cambios += "Username\n";
+                cambios += "Usuario\n";
             }
             if ($("input[name=password]").val() != forms[1].substr(1, forms[1].length - 2) && forms[1]) {
-                cambios += "Password\n";
+                cambios += "Contraseña\n";
             }
             if ($("input[name=NameLName]").val() != forms[2].substr(1, forms[2].length - 2) && forms[2]) {
-                cambios += "Name & Last Name\n";
+                cambios += "Nombre y Apellido\n";
             }
             if ($("input[name=Birthday]").val() != forms[3].substr(1, forms[3].length - 2) && forms[3]) {
-                cambios += "Birthday\n";
+                cambios += "Fecha de nacimiento\n";
             }
             if ($("#language").val() != forms[5].substr(1, forms[5].length - 2) && forms[5]) {
-                cambios += "Language\n";
+                cambios += "Idioma\n";
             }
             /* Se muestran los cambios */
             if (cambios) {
-                alert("The following changes have been saved:\n" + cambios);
+                alert("Se han guardado los siguientes cambios:\n" + cambios);
                 cambios = "";
             }
             window.location.href = '../principal/reg/principalr.html';
         } else {
             /* Si los hay */
             if (errors) {
-                errors += "\nPlease enter valid alternatives for the wrong fields.\n";
+                errors += "\nPor favor, introduzca alternativas válidas para los campos anteriores.\n";
             }
             alert(errors + terms);
             errors = "";
