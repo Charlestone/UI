@@ -231,6 +231,9 @@ h2.titulop {
 	color: white;
 	cursor: pointer;	
 }
+.posvideo:hover,.titulo:hover {
+	opacity: 0.6;
+}
 
 .divDerecha{
 	float: right;

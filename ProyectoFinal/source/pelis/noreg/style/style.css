@@ -278,6 +278,9 @@ h2 {
 .posvideo{
 	cursor:pointer;
 }
+.posvideo:hover,.titulo:hover {
+	opacity: 0.6;
+}
 .clearfix::after {
 	content: "";
 	clear: both;

@@ -89,6 +89,9 @@ header {
 	margin-left: 10px;
 	float: left;
 }
+#logo:hover{
+	cursor: pointer;
+}
 
 .right-header {
 	display: flex;
